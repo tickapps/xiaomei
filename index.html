@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // 使用JavaScript获取屏幕宽度
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        // 将屏幕宽度输出到控制台
+        console.log("屏幕宽度：" + screenWidth + " 像素");
+    </script>
     <title>小美证件照</title>
     <style>
         body {
@@ -26,14 +32,6 @@
             line-height: 1.6;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
         .app-container {
             display: -webkit-flex;
             display: flex;
@@ -53,9 +51,7 @@
             /* flex-shrink: 2; */
 
             margin-right: 20px;
-
             border-radius: 22.5%;
-
             overflow: hidden;
         }
 
@@ -78,22 +74,60 @@
         .row {
             display: -webkit-flex;
             display: flex;
-            justify-content: space-around; /* 水平居中 */
-            align-items: center; /* 垂直居中 */
+            justify-content: space-around;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
             flex-wrap: wrap;
         }
 
-        .column {
-            margin: 10px auto;
-            flex: auto;
-            background-color: aquamarine;
+        /* 当屏幕宽度小于500像素时应用这些样式 */
+        @media screen and (max-width: 499px) {
+
+            .container {
+                max-width: 100%;
+                margin: 0px auto;
+                padding: 20px;
+                background-color: #fff;
+            }
+
+            .column {
+                margin: 10px auto;
+                background-color: red;
+            }
+
+            .screenshot {
+                width: 260px;
+                height: auto;
+                display: block;
+            }
         }
 
-        .screenshot {
-            width: 200px;
-            height: auto;
-            display: block;
+        /* 当屏幕宽度大于500像素时应用这些样式 */
+        @media screen and (min-width: 500px) {
+
+            .container {
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .column {
+                margin: 10px auto;
+                flex: auto;
+                background-color: aquamarine;
+            }
+
+            .screenshot {
+                width: 200px;
+                height: auto;
+                display: block;
+            }
         }
+
+
 
         ul {
             list-style-type: none;
@@ -114,9 +148,6 @@
 </head>
 
 <body>
-
-
-
     <div class="container">
         <!-- 应用程序图标 -->
         <div class="app-container">
