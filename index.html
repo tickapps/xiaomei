@@ -158,13 +158,13 @@
             var searchParams = new URLSearchParams(window.location.search);
             return searchParams.get(param);
         }
-
-        // 假设URL是 http://example.com/?lang=en
-        var language = getQueryParam('lang');
-        console.log(language); // 输出: en
         // 根据语言参数跳转到不同页面
         function redirectToLanguagePage() {
-            const lang = getParameterByName('lang');
+
+            // 假设URL是 http://example.com/?lang=en
+            var lang = getQueryParam('lang');
+            console.log(lang); // 输出: en
+
             if (lang === 'zh') {
                 //window.location.href = 'index.html';
             } else {
