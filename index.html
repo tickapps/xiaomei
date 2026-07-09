@@ -1,164 +1,399 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        // 使用JavaScript获取屏幕宽度
-        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        // 将屏幕宽度输出到控制台
-        console.log("Screen width: " + screenWidth + "px");
-    </script>
-    <title>小美证件照</title>
-    <style>
-        body {
-            font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple WebExp Icons Custom", "Apple Legacy Chevron", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #1d1d1f;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小美证件照 – iOS 与安卓的免费证件照 App，上百种规格一键出片</title>
+  <meta name="description"
+    content="小美证件照是一款 iOS 和 Android 平台的免费证件照 App，三步制作合规证件照：内置全球尺寸与上百种中国证照规格（一寸/两寸、毕业照、考研、公务员、会计等）、一键 AI 抠图换背景、看广告免费导出高清（含广告，无订阅、无内购）。">
+  <link rel="canonical" href="https://xiaomei.appro7.com/?lang=zh">
+  <link rel="alternate" hreflang="zh-Hans" href="https://xiaomei.appro7.com/?lang=zh">
+  <link rel="alternate" hreflang="en" href="https://xiaomei.appro7.com/index_en.html">
+  <link rel="alternate" hreflang="x-default" href="https://xiaomei.appro7.com/index_en.html">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="小美证件照 – 免费证件照 App，上百种规格一键出片">
+  <meta property="og:description" content="三步制作证件照：全球尺寸与上百种中国证照规格、AI 一键换背景、免费导出高清。iOS 与安卓均可下载。">
+  <meta property="og:url" content="https://xiaomei.appro7.com/?lang=zh">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "小美证件照",
+  "alternateName": ["Passport Photo Maker", "ID Photo Passport Photo Maker"],
+  "inLanguage": "zh-CN",
+  "operatingSystem": "iOS, ANDROID",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Photography",
+  "description": "小美证件照是一款 iOS 和 Android 平台的免费证件照 App。它三步即可制作合规的证件照，内置全球各国标准尺寸以及上百种中国证照规格（一寸照、两寸照、毕业照、学位照、入学照，以及会计、考研、计算机、公务员、医护、幼师、语言类考试等专业证照），支持自定义尺寸，提供一键 AI 抠图换背景、AI 美颜，看广告后可免费导出高清照片。",
+  "url": "https://xiaomei.appro7.com/?lang=zh",
+  "installUrl": [
+    "https://apps.apple.com/app/id6480401479",
+    "https://play.google.com/store/apps/details?id=id.photo.passport.photo.maker"
+  ],
+  "downloadUrl": [
+    "https://apps.apple.com/app/id6480401479",
+    "https://play.google.com/store/apps/details?id=id.photo.passport.photo.maker"
+  ],
+  "featureList": [
+    "内置全球各国标准证件照尺寸，并支持自定义尺寸",
+    "上百种中国证照规格：一寸照、两寸照等常规尺寸，毕业照、学位照、入学照等学生类证照，以及会计、考研、计算机、公务员、医护、幼师、语言类考试等专业证照",
+    "三步流程：选尺寸、拍照或上传、选背景色，智能抠图一键出片",
+    "一键 AI 抠图并更换标准背景色",
+    "AI 美颜（磨皮、亮眼、美白），强度可调",
+    "高清导出，不压缩",
+    "多联排版：将多张照片排在 6×4 英寸相纸上打印"
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "Xiaomei Photo Studio",
+    "url": "https://xiaomei.appro7.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CNY",
+    "description": "免费、含广告。看广告后可免费导出高清照片。无订阅、无内购。"
+  }
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "zh-CN",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "小美证件照是免费的吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "是的。小美证件照可以免费使用，看广告后即可免费导出高清照片。没有订阅，也没有内购。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "支持哪些证件照尺寸和规格？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "内置全球各国的标准证件照尺寸，以及上百种中国证照规格，包括一寸照、两寸照等常规尺寸，毕业照、学位照、入学照等学生类证照，也可以输入完全自定义的尺寸。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "支持考研、公务员、会计等专业考试的证件照吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "支持。内置会计、考研、计算机、公务员、医护、幼师、语言类考试等各类专业证照规格。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "能自动去除或更换照片背景吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以。它用 AI 一键抠掉原背景，并可切换为标准背景色。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "iPhone 和安卓都能用吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "都能用。iOS 可在 App Store 下载，安卓可在 Google Play 下载。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "拍好的照片能用来做什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可用于护照、签证、学生证、简历（CV）、毕业照，以及考研、公务员、会计等各类考试报名照片。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "制作一张照片需要几步？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "三步。选尺寸、拍照或上传照片、选背景色，智能抠图后一键导出即可。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "有美颜或修图功能吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "有。提供 AI 美颜，如磨皮、亮眼、美白，强度可以调整。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "能把多张照片排在一张纸上打印吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以。你可以把多张照片排在 6×4 英寸相纸上进行打印。"
+      }
+    }
+  ]
+}
+</script>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #141a2e;
+      --muted: #5a6478;
+      --line: #e6e9f0;
+      --accent: #1f6feb;
+      --accent-soft: #eef4ff;
+      --radius: 14px;
+      --maxw: 820px;
+    }
 
-        h2 {
-            font-size: 20px;
-            line-height: 1.2;
-            font-weight: 700;
-            letter-spacing: .024em;
-            font-family: "SF Pro Display", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
+    * {
+      box-sizing: border-box
+    }
 
-        p {
-            line-height: 1.6;
-        }
+    html {
+      -webkit-text-size-adjust: 100%
+    }
 
-        .app-container {
-            display: -webkit-flex;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            /* flex-wrap: wrap */
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
 
-            margin: 20px;
-        }
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 20px
+    }
 
-        .app-icon {
-            max-width: 157px;
-            max-height: 157px;
-            width: auto;
-            height: auto;
+    header {
+      padding: 56px 0 8px;
+      text-align: center
+    }
 
-            /* flex-shrink: 2; */
+    header img {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+    }
 
-            margin-right: 20px;
-            border-radius: 22.5%;
-            overflow: hidden;
-        }
+    h1 {
+      font-size: 1.9rem;
+      line-height: 1.3;
+      margin: 16px 0 14px;
+      letter-spacing: -.01em
+    }
 
-        .app-icon img {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
+    .tagline {
+      font-size: 1.12rem;
+      color: var(--fg);
+      max-width: 640px;
+      margin: 0 auto 22px
+    }
 
-        .app-title {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
+    .tagline b {
+      font-weight: 600
+    }
 
-        .app-desc {
-            /* margin: 20px auto; */
-        }
+    .badges {
+      margin: 8px 0 4px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
 
-        .row {
-            display: -webkit-flex;
-            display: flex;
-            justify-content: space-around;
-            /* 水平居中 */
-            align-items: center;
-            /* 垂直居中 */
-            flex-wrap: wrap;
-        }
+    .badges a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      text-decoration: none;
+      transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease
+    }
 
-        /* 当屏幕宽度小于500像素时应用这些样式 */
-        @media screen and (max-width: 499px) {
+    .badges a:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .12)
+    }
 
-            .container {
-                max-width: 100%;
-                margin: 0px auto;
-                padding: 20px;
-                background-color: #fff;
-            }
+    .badges a img {
+      display: block;
+      width: auto;
+      height: 56px;
+      max-width: none;
+      border-radius: 14px
+    }
 
-            .column {
-                margin: 10px auto;
-                background-color: white;
-            }
+    .app-store-badge,
+    .google-play-badge {
+      background: transparent
+    }
 
-            .screenshot {
-                width: 260px;
-                height: auto;
-                display: block;
-                border-radius: 20px;
-                overflow: hidden;
-            }
-        }
+    h2 {
+      font-size: 1.28rem;
+      margin: 44px 0 12px;
+      letter-spacing: -.01em
+    }
 
-        /* 当屏幕宽度大于500像素时应用这些样式 */
-        @media screen and (min-width: 500px) {
+    p {
+      margin: 0 0 14px
+    }
 
-            .container {
-                max-width: 1100px;
-                margin: 20px auto;
-                padding: 20px;
-                background-color: #fff;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
+    ul {
+      margin: 0 0 16px;
+      padding-left: 1.2em
+    }
 
-            .column {
-                margin: 10px auto;
-                flex: auto;
-                background-color: white;
-            }
+    ol {
+      margin: 0 0 16px;
+      padding-left: 1.2em
+    }
 
-            .screenshot {
-                width: 200px;
-                height: auto;
-                display: block;
-                border-radius: 20px;
-                overflow: hidden;
-            }
-        }
+    li {
+      margin: 6px 0
+    }
 
+    a {
+      color: var(--accent);
+      text-decoration: none
+    }
 
+    a:hover {
+      text-decoration: underline
+    }
 
-        ul {
-            list-style-type: none;
-            padding: 0px;
-        }
+    .facts {
+      background: var(--accent-soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin: 24px 0;
+    }
 
-        li {
-            line-height: 2;
-        }
+    .facts dl {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 8px 16px;
+      margin: 0
+    }
 
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid #ccc;
-            font-size: 14px;
-        }
+    .facts dt {
+      color: var(--muted);
+      font-weight: 600;
+      white-space: nowrap
+    }
 
-        .icp {
-            text-decoration: none; /* Removes the underline */
-            color: black
-        }
-    </style>
+    .facts dd {
+      margin: 0
+    }
+
+    .steps {
+      counter-reset: s;
+      list-style: none;
+      padding: 0
+    }
+
+    .steps li {
+      position: relative;
+      padding-left: 38px;
+      margin: 12px 0
+    }
+
+    .steps li::before {
+      counter-increment: s;
+      content: counter(s);
+      position: absolute;
+      left: 0;
+      top: 1px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-size: .85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .shots {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 10px 0;
+      margin: 4px 0 10px;
+    }
+
+    .shots img {
+      height: 340px;
+      border-radius: 14px;
+      flex: 0 0 auto;
+    }
+
+    details {
+      border-top: 1px solid var(--line);
+      padding: 14px 0
+    }
+
+    details summary {
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none
+    }
+
+    details summary::-webkit-details-marker {
+      display: none
+    }
+
+    details summary::before {
+      content: "＋";
+      color: var(--accent);
+      font-weight: 700;
+      margin-right: 10px
+    }
+
+    details[open] summary::before {
+      content: "－"
+    }
+
+    details p {
+      margin: 12px 0 2px;
+      color: var(--muted)
+    }
+
+    footer {
+      text-align: center;
+      border-top: 1px solid var(--line);
+      margin-top: 56px;
+      padding: 20px 0 20px;
+      color: var(--muted);
+      font-size: .9rem
+    }
+
+    footer a {
+      color: var(--muted)
+    }
+
+    .icp {
+      text-decoration: none;
+      /* Removes the underline */
+      color: var(--muted);
+    }
+  </style>
 </head>
 
 <body>
-    <script>
+
+      <script>
 
         function getQueryParam(param) {
             var searchParams = new URLSearchParams(window.location.search);
@@ -181,46 +416,134 @@
         // 调用函数进行跳转
         redirectToLanguagePage();
     </script>
+    
+  <div class="wrap">
 
-    <div class="container">
-        <!-- 应用程序图标 -->
-        <div class="app-container">
-            <div class="app-icon">
-                <img src="appicon.jpg" alt="App Icon">
-            </div>
-            <h1 class="app-title">小美证件照</h1>
-        </div>
+    <header>
+      <img src="appicon.jpg" alt="应用图标">
+      <h1>小美证件照 — iOS 与安卓上的免费证件照 App</h1>
+      <p class="tagline"><b>小美证件照（Passport Photo Maker）是一款 iOS 和 Android 平台的免费证件照
+          App，三步即可制作合规的证件照。</b>它内置全球各国标准尺寸与上百种中国证照规格，支持一键 AI 抠图换背景，看广告后可免费导出高清照片。</p>
+    </header>
 
-        <div class="app-desc">
-            <p>小美证件照是一款专为用户提供方便、快捷、高质量证件照服务的手机应用。无论您是在家、在办公室还是在旅途中，只需使用手机拍摄即可轻松制作符合规范的证件照。</p>
-        </div>
-
-        <h2>产品特色：</h2>
-        <ul>
-            <li>1. **完全免费**：不要求任何购买就能导出高清照片。</li>
-            <li>2. **简单易用**：只需三步就能出片。选尺寸，拍照片，选底色，智能抠图一键导出。</li>
-            <li>3. **上百种证件照规格**：除了一寸照、两寸照等常规尺寸以外，还提供包括毕业照、学位照、入学照等学生类证照，以及会计、考研、计算机、公务员、医护、幼师、语言类考试等各类专业证照。</li>
-            <li>4. **美颜功能**：内置美颜滤镜，可帮助您调整肤色、光线和磨皮效果，让您拍摄的证件照更加美观。</li>
-            <li>5. **内置智能算法**：一键抠图秒出片，方便快捷。</li>
-            <li>6. **高质量输出**：应用采用高清晰度拍摄和输出，保证证件照的清晰度和准确性。</li>
-        </ul>
-
-        <p>无论您是需要制作新的证件照，还是需要更新现有的照片，小美证件照都能满足您的需求，为您提供便捷的证件照服务。</p>
-
-        <h2>效果图</h2>
-
-        <div class="row">
-            <div class="column"><img class="screenshot" src="1.jpg" alt="Screenshot 1"></div>
-            <div class="column"><img class="screenshot" src="2.jpg" alt="Screenshot 2"></div>
-            <div class="column"><img class="screenshot" src="3.jpg" alt="Screenshot 3"></div>
-            <div class="column"><img class="screenshot" src="4.jpg" alt="Screenshot 4"></div>
-            <div class="column"><img class="screenshot" src="5.jpg" alt="Screenshot 5"></div>
-        </div>
-
-        <footer>
-            Copyright &copy; 2025 Xiaomei Photo Studio. 保留所有权利 | <a class="icp" href="https://beian.miit.gov.cn/">蜀ICP备2024069188号-2</a>
-        </footer>
+    <div class="badges">
+      <a class="app-store-badge" href="https://apps.apple.com/app/id6480401479" aria-label="App Store 下载">
+        <img src="appstore_btn.png" alt="App Store 下载">
+      </a>
+      <a class="google-play-badge" href="https://play.google.com/store/apps/details?id=id.photo.passport.photo.maker"
+        aria-label="Google Play 下载">
+        <img src="gp_btn.png" alt="Google Play 下载">
+      </a>
     </div>
+
+    <section class="facts" aria-label="快速事实">
+      <dl>
+        <dt>支持平台</dt>
+        <dd>iOS（App Store）与 Android（Google Play）</dd>
+        <dt>价格</dt>
+        <dd>免费、含广告。看广告后免费导出高清。无订阅、无内购。</dd>
+        <dt>分类</dt>
+        <dd>摄影（Photography）</dd>
+        <dt>证照规格</dt>
+        <dd>全球各国标准尺寸 + 上百种中国证照规格 + 自定义尺寸</dd>
+        <dt>主要用途</dt>
+        <dd>护照、签证、学生证、简历，以及考研、公务员、会计等考试报名照</dd>
+        <dt>App 内语言</dt>
+        <dd>英语、简体中文</dd>
+      </dl>
+    </section>
+
+    <h2>小美证件照能做什么</h2>
+    <p>小美证件照把手机里的照片变成可用于办证或考试报名的证件照。你先选尺寸，再拍照或上传照片，然后设置背景色；App 会用 AI 智能抠图去掉原背景，并导出高清图片。整个过程无需任何修图经验。</p>
+
+    <h2>核心功能</h2>
+    <ul>
+      <li>
+        <strong>上百种证件照规格：</strong>内置全球各国标准尺寸，以及一寸照、两寸照等常规尺寸；毕业照、学位照、入学照等学生类证照；会计、考研、计算机、公务员、医护、幼师、语言类考试等专业证照；并支持完全自定义尺寸。
+      </li>
+      <li><strong>一键 AI 抠图：</strong>自动抠掉原背景，并替换为标准背景色。</li>
+      <li><strong>AI 美颜：</strong>可选磨皮、亮眼、美白，强度可调。</li>
+      <li><strong>高清导出：</strong>高分辨率导出，不压缩。</li>
+      <li><strong>多联排版：</strong>把多张照片排在 6×4 英寸相纸上，便于在家或照相店打印。</li>
+    </ul>
+
+    <h2>使用流程</h2>
+    <ol class="steps">
+      <li>从各国尺寸与中国证照规格中选择，或输入自定义尺寸。</li>
+      <li>在 App 内拍照，或从相册上传一张照片。</li>
+      <li>选择背景色，智能抠图后导出完成的高清照片。</li>
+    </ol>
+
+    <h2>适合谁用</h2>
+    <p>小美证件照面向不想跑照相馆、又需要证件照的人：办护照、签证的旅行者，需要学生证或简历照的学生，报名考研、公务员、会计、医护、幼师、语言类考试等需要证件照的考生，以及不愿为证件照付费的用户。免费使用。</p>
+
+    <h2>价格</h2>
+    <p>小美证件照免费、含广告。看广告后即可免费导出高清照片。没有订阅，也没有内购。</p>
+
+    <h2>截图</h2>
+    <div class="shots">
+      <img src="1.jpg" alt="证件照示例截图 1">
+      <img src="2.jpg" alt="证件照示例截图 2">
+      <img src="3.jpg" alt="证件照示例截图 3">
+      <img src="4.jpg" alt="证件照示例截图 4">
+      <img src="5.jpg" alt="证件照示例截图 5">
+    </div>
+
+    <h2>常见问题</h2>
+
+    <div class="faq">
+      <details open>
+        <summary>小美证件照是免费的吗？</summary>
+        <p>是的。小美证件照可以免费使用，看广告后即可免费导出高清照片。没有订阅，也没有内购。</p>
+      </details>
+
+      <details>
+        <summary>支持哪些证件照尺寸和规格？</summary>
+        <p>内置全球各国的标准证件照尺寸，以及上百种中国证照规格，包括一寸照、两寸照等常规尺寸，毕业照、学位照、入学照等学生类证照，也可以输入完全自定义的尺寸。</p>
+      </details>
+
+      <details>
+        <summary>支持考研、公务员、会计等专业考试的证件照吗？</summary>
+        <p>支持。内置会计、考研、计算机、公务员、医护、幼师、语言类考试等各类专业证照规格。</p>
+      </details>
+
+      <details>
+        <summary>能自动去除或更换照片背景吗？</summary>
+        <p>可以。它用 AI 一键抠掉原背景，并可切换为标准背景色。</p>
+      </details>
+
+      <details>
+        <summary>iPhone 和安卓都能用吗？</summary>
+        <p>都能用。iOS 可在 App Store 下载，安卓可在 Google Play 下载。</p>
+      </details>
+
+      <details>
+        <summary>拍好的照片能用来做什么？</summary>
+        <p>可用于护照、签证、学生证、简历（CV）、毕业照，以及考研、公务员、会计等各类考试报名照片。</p>
+      </details>
+
+      <details>
+        <summary>制作一张照片需要几步？</summary>
+        <p>三步。选尺寸、拍照或上传照片、选背景色，智能抠图后一键导出即可。</p>
+      </details>
+
+      <details>
+        <summary>有美颜或修图功能吗？</summary>
+        <p>有。提供 AI 美颜，如磨皮、亮眼、美白，强度可以调整。</p>
+      </details>
+
+      <details>
+        <summary>能把多张照片排在一张纸上打印吗？</summary>
+        <p>可以。你可以把多张照片排在 6×4 英寸相纸上进行打印。</p>
+      </details>
+    </div>
+
+    <footer>
+      Copyright &copy; 2026 Xiaomei Photo Studio. 保留所有权利 | <a class="icp"
+        href="https://beian.miit.gov.cn/">蜀ICP备2024069188号-2</a>
+    </footer>
+
+  </div>
 </body>
 
 </html>
