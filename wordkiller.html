@@ -1,0 +1,5652 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>word-study-a4</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+  body {
+    padding: 2cm; 
+  }
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">人教版8年级上册英语词汇表学习笔记</h1>
+
+<p>词汇范围：人教版8年级上册词汇表（Unit 1—Unit 2）<br>
+适用范围：中学英语学习与中考/高考基础词汇复习<br>
+版式：A4 纵向、黑白打印友好；多词性分开显示，例句与中文翻译用 <code>/</code> 同行显示。
+星级由日常使用频率和中高考出现频率综合评定；<code>⭐</code> 最低，<code>⭐⭐⭐⭐⭐</code> 最高。</p>
+
+<h2 id="toc_1">Unit 1</h2>
+
+<h2 id="toc_2">ancient  /ˈeɪnʃənt/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_3">形容词 adjective</h4>
+
+<ul>
+<li>释义：very old; belonging to a long time ago 古老的；古代的</li>
+<li>例句：We visited an ancient temple during our vacation.  /  我们假期期间参观了一座古老的寺庙。</li>
+<li>比较级与最高级：more ancient；most ancient</li>
+<li>反义词：modern（现代的）</li>
+</ul>
+
+<h4 id="toc_4">常用短语与考试搭配</h4>
+
+<h4 id="toc_5">1. <code>ancient history</code>     古代史</h4>
+
+<ul>
+<li>例句：We are learning about ancient history at school.  /  我们正在学校学习古代史。</li>
+</ul>
+
+<h4 id="toc_6">2. <code>ancient city</code>     古城</h4>
+
+<ul>
+<li>例句：The ancient city attracts thousands of visitors every year.  /  这座古城每年吸引成千上万的游客。</li>
+</ul>
+
+<h4 id="toc_7">3. <code>in ancient times</code>     在古代</h4>
+
+<ul>
+<li>例句：People in ancient times had no modern machines.  /  古代的人没有现代机器。</li>
+</ul>
+
+<h4 id="toc_8">词族与词根</h4>
+
+<ul>
+<li>词干：ancient（古老的）；常见对照词：modern（现代的）。</li>
+<li>记忆方法：ancient 表示“古老的”，modern 表示“现代的”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_9">camp  /kæmp/     ⭐⭐⭐</h2>
+
+<h4 id="toc_10">1. 名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a place where people stay in tents or in simple buildings, often for a holiday 营地；度假营</li>
+<li>例句：The students stayed at a summer camp for a week.  /  学生们在夏令营待了一个星期。</li>
+<li>可数性：可数；camp → camps</li>
+</ul>
+
+<h4 id="toc_11">2. 动词 verb</h4>
+
+<ul>
+<li>释义：to stay outdoors in a tent 露营；宿营</li>
+<li>例句：We camped near the lake last weekend.  /  上周末我们在湖边露营。</li>
+<li>类型：不及物动词</li>
+<li>变化：camp — camped — camped，规则变化</li>
+</ul>
+
+<h4 id="toc_12">常用短语与考试搭配</h4>
+
+<h4 id="toc_13">1. <code>summer camp</code>     夏令营</h4>
+
+<ul>
+<li>例句：My sister made many friends at summer camp.  /  我妹妹在夏令营结交了许多朋友。</li>
+</ul>
+
+<h4 id="toc_14">2. <code>go camping</code>     去露营</h4>
+
+<ul>
+<li>例句：We often go camping in the summer.  /  我们夏天经常去露营。</li>
+</ul>
+
+<h4 id="toc_15">3. <code>camp out</code>     在户外露营</h4>
+
+<ul>
+<li>例句：The boys camped out in the garden.  /  男孩们在花园里露营。</li>
+</ul>
+
+<h4 id="toc_16">词族与词根</h4>
+
+<ul>
+<li>camper（名词，露营者；野营车）；camping（名词/动名词，露营）。</li>
+<li>记忆方法：camp 加 <code>-er</code> 指“露营者”，加 <code>-ing</code> 指“露营这项活动”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_17">landscape  /ˈlændskeɪp/     ⭐⭐⭐</h2>
+
+<h4 id="toc_18">名词 noun（可数/不可数名词）</h4>
+
+<h5 id="toc_19">1. 释义：the natural features of an area, such as hills, forests and rivers  自然风景；景色</h5>
+
+<ul>
+<li>例句：The mountain landscape was beautiful in the morning.  /  早晨的山景很美。</li>
+<li>可数性：可数；landscape → landscapes；表示某地整体风貌时也可作不可数名词</li>
+</ul>
+
+<h5 id="toc_20">2. 释义：a picture showing a natural view    风景画</h5>
+
+<ul>
+<li>例句：Our art teacher asked us to paint a landscape.  /  美术老师要求我们画一幅风景画。</li>
+</ul>
+
+<h4 id="toc_21">常用短语与考试搭配</h4>
+
+<h4 id="toc_22">1. <code>beautiful landscape</code>     美丽的风景</h4>
+
+<ul>
+<li>例句：The beautiful landscape made us stop and take photos.  /  美丽的风景让我们停下来拍照。</li>
+</ul>
+
+<h4 id="toc_23">2. <code>natural landscape</code>     自然景观</h4>
+
+<ul>
+<li>例句：We should protect the natural landscape.  /  我们应该保护自然景观。</li>
+</ul>
+
+<h4 id="toc_24">3. <code>landscape painting</code>     风景画</h4>
+
+<ul>
+<li>例句：She won a prize for her landscape painting.  /  她的风景画获了奖。</li>
+</ul>
+
+<h4 id="toc_25">词族与词根</h4>
+
+<ul>
+<li>词干：land（陆地）+ scape（景象）；相关常用词：land（陆地）、seascape（海景）。</li>
+<li>记忆方法：把 landscape 想成“陆地上的景象”，可表示风景，也可表示风景画。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_26">strange  /streɪndʒ/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_27">形容词 adjective</h4>
+
+<h5 id="toc_28">1. 释义：unusual or surprising   奇怪的；不寻常的</h5>
+
+<ul>
+<li>例句：A strange sound came from the old house.  /  一阵奇怪的声音从那座老房子里传来。</li>
+<li>比较级与最高级：stranger；strangest</li>
+<li>反义词：familiar（熟悉的）；ordinary（普通的）</li>
+</ul>
+
+<h5 id="toc_29">2. 释义：not known or familiar   陌生的</h5>
+
+<ul>
+<li>例句：I felt strange in the new school at first.  /  刚开始我在新学校感到很陌生。</li>
+</ul>
+
+<h4 id="toc_30">常用短语与考试搭配</h4>
+
+<h4 id="toc_31">1. <code>a strange thing</code>     奇怪的事情</h4>
+
+<ul>
+<li>例句：It is a strange thing to see snow here in summer.  /  在这里夏天看到雪是一件奇怪的事。</li>
+</ul>
+
+<h4 id="toc_32">2. <code>feel strange</code>     感到奇怪；感到不适应</h4>
+
+<ul>
+<li>例句：The new shoes feel strange on my feet.  /  这双新鞋穿在脚上感觉很不适应。</li>
+</ul>
+
+<h4 id="toc_33">3. <code>strange to sb</code>     对某人来说陌生</h4>
+
+<ul>
+<li>例句：The city was strange to me when I first arrived.  /  我刚到这座城市时，它对我来说很陌生。</li>
+</ul>
+
+<h4 id="toc_34">词族与词根</h4>
+
+<ul>
+<li>strangely（副词，奇怪地）；strangeness（名词，奇怪；陌生感）。</li>
+<li>记忆方法：strange 加 <code>-ly</code> 变副词，加 <code>-ness</code> 变名词。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_35">vacation  /vəˈkeɪʃn/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_36">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a period when you do not work or go to school, usually for travel or rest  假期；度假</li>
+<li>例句：We are going to Yunnan during the summer vacation.  /  暑假期间我们要去云南。</li>
+<li>可数性：可数；vacation → vacations。英式英语中 holiday 更常用，vacation 也正确。</li>
+</ul>
+
+<h4 id="toc_37">常用短语与考试搭配</h4>
+
+<h4 id="toc_38">1. <code>summer vacation</code>     暑假</h4>
+
+<ul>
+<li>例句：I plan to read more books during the summer vacation.  /  我计划在暑假多读些书。</li>
+</ul>
+
+<h4 id="toc_39">2. <code>on vacation</code>     在度假</h4>
+
+<ul>
+<li>例句：My parents are on vacation in Italy.  /  我父母正在意大利度假。</li>
+</ul>
+
+<h4 id="toc_40">3. <code>take a vacation</code>     休假；度假</h4>
+
+<ul>
+<li>例句：Everyone needs to take a vacation sometimes.  /  每个人有时都需要度假。</li>
+</ul>
+
+<h4 id="toc_41">词族与词根</h4>
+
+<ul>
+<li>词根：vac-（空闲）；相关常用词：holiday（假期）、vacation（假期）。英式英语中 holiday 更常用。</li>
+<li>记忆方法：把 vacation 联想为“从日常工作和学习中空出来的时间”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_42">fantastic  /fænˈtæstɪk/     ⭐⭐⭐</h2>
+
+<h4 id="toc_43">形容词 adjective</h4>
+
+<h5 id="toc_44">1. 释义：extremely good or impressive    极好的；吸引人的</h5>
+
+<ul>
+<li>例句：The school trip was fantastic.  /  这次学校旅行棒极了。</li>
+<li>比较级与最高级：more fantastic；most fantastic</li>
+<li>反义词：terrible（糟糕的）；ordinary（普通的）</li>
+</ul>
+
+<h5 id="toc_45">2. 释义：very unusual or imaginative 奇异的；想象出来的</h5>
+
+<ul>
+<li>例句：The story is full of fantastic animals.  /  这个故事里有许多奇异的动物。</li>
+</ul>
+
+<h4 id="toc_46">常用短语与考试搭配</h4>
+
+<h4 id="toc_47">1. <code>a fantastic idea</code>     绝妙的主意</h4>
+
+<ul>
+<li>例句：That is a fantastic idea for our class project.  /  那是一个关于班级项目的绝妙主意。</li>
+</ul>
+
+<h4 id="toc_48">2. <code>sound fantastic</code>     听起来很棒</h4>
+
+<ul>
+<li>例句：Your plan sounds fantastic.  /  你的计划听起来很棒。</li>
+</ul>
+
+<h4 id="toc_49">3. <code>a fantastic job</code>     做得非常好</h4>
+
+<ul>
+<li>例句：You did a fantastic job in the speech contest.  /  你在演讲比赛中表现得非常好。</li>
+</ul>
+
+<h4 id="toc_50">词族与词根</h4>
+
+<ul>
+<li>fantasy（名词，幻想；想象）；fantastic（形容词，极好的；奇异的）。二者都与“想象”有关。</li>
+<li>记忆方法：fantastic 来自 fantasy，先记“充满想象”，再引申为“极好的”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_51">town  /taʊn/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_52">名词 noun（可数名词）</h4>
+
+<h5 id="toc_53">1. 释义：a place larger than a village but smaller than a city   镇；城镇</h5>
+
+<ul>
+<li>例句：My grandparents live in a small town.  /  我的祖父母住在一个小镇上。</li>
+<li>可数性：可数；town → towns</li>
+</ul>
+
+<h5 id="toc_54">2. 释义：the central shopping and business area of a town    商业区；市中心</h5>
+
+<ul>
+<li>例句：I am going into town to buy a present.  /  我要去商业区买一件礼物。</li>
+</ul>
+
+<h4 id="toc_55">常用短语与考试搭配</h4>
+
+<h4 id="toc_56">1. <code>town centre</code>     市中心</h4>
+
+<ul>
+<li>例句：There is a large library in the town centre.  /  市中心有一座大型图书馆。</li>
+</ul>
+
+<h4 id="toc_57">2. <code>in town</code>     在镇上；在市中心</h4>
+
+<ul>
+<li>例句：I met my English teacher in town.  /  我在市中心遇到了英语老师。</li>
+</ul>
+
+<h4 id="toc_58">3. <code>go into town</code>     进城；去市中心</h4>
+
+<ul>
+<li><p>例句：We went into town by bus.  /  我们乘公共汽车去了市中心。</p>
+
+<h4 id="toc_59">词族与词根</h4></li>
+<li><p>town（城镇）；downtown（名词/副词，市中心；在市中心）。</p></li>
+<li><p>记忆方法：downtown 可理解为“进到城镇中心”，常指市中心。</p></li>
+</ul>
+
+<hr>
+
+<h2 id="toc_60">breath  /breθ/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_61">名词 noun（可数名词）</h4>
+
+<h5 id="toc_62">1. 释义：the air that you take into and send out of your lungs   呼吸的空气</h5>
+
+<ul>
+<li>例句：Take a deep breath before you speak.  /  说话前深吸一口气。</li>
+<li>可数性：可数；a breath → breaths</li>
+</ul>
+
+<h5 id="toc_63">2. 释义：a single act of breathing   一口气</h5>
+
+<ul>
+<li><p>例句：She stopped to catch her breath.  /  她停下来喘口气。</p></li>
+<li><p>语法辨析：breath /breθ/ 是名词；breathe /briːð/ 是动词。</p></li>
+</ul>
+
+<h4 id="toc_64">常用短语与考试搭配</h4>
+
+<h4 id="toc_65">1. <code>take a deep breath</code>     深吸一口气</h4>
+
+<ul>
+<li>例句：Take a deep breath and try again.  /  深吸一口气，再试一次。</li>
+</ul>
+
+<h4 id="toc_66">2. <code>hold one&#39;s breath</code>     屏住呼吸</h4>
+
+<ul>
+<li>例句：We held our breath as the player took the shot.  /  球员投篮时，我们屏住了呼吸。</li>
+</ul>
+
+<h4 id="toc_67">3. <code>out of breath</code>     上气不接下气</h4>
+
+<ul>
+<li>例句：I was out of breath after running up the stairs.  /  跑上楼梯后我上气不接下气。</li>
+</ul>
+
+<h4 id="toc_68">4. <code>catch one&#39;s breath</code>     喘口气；恢复呼吸</h4>
+
+<ul>
+<li>例句：She stopped to catch her breath.  /  她停下来喘口气。</li>
+</ul>
+
+<h4 id="toc_69">词族与词根</h4>
+
+<ul>
+<li>breathe（动词，呼吸）；breathing（呼吸）；breathless（气喘吁吁的；屏息的）。</li>
+<li>记忆方法：breath 是名词，breathe 是动词，多一个 <code>e</code>；注意 /θ/ 与 /ð/ 的读音区别。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_70">take sb&#39;s breath away  /teɪk ˈsʌmbədiz breθ əˈweɪ/     ⭐⭐⭐</h2>
+
+<h4 id="toc_71">固定短语 phrase</h4>
+
+<ul>
+<li>释义：to make someone feel greatly surprised or full of admiration   令人惊叹；让人叹为观止</li>
+<li>例句：The view from the mountain took our breath away.  /  从山上看到的景色令我们叹为观止。</li>
+<li>结构：take + sb&#39;s + breath + away；take — took — taken</li>
+</ul>
+
+<h4 id="toc_72">常用短语与考试搭配</h4>
+
+<h4 id="toc_73">1. <code>a breathtaking view</code>     令人惊叹的景色</h4>
+
+<ul>
+<li>例句：We enjoyed a breathtaking view of the rainbow.  /  我们欣赏了令人惊叹的彩虹景色。</li>
+</ul>
+
+<h4 id="toc_74">2. <code>be left breathless</code>     惊得说不出话；惊叹不已</h4>
+
+<ul>
+<li><p>例句：The final performance left the audience breathless.  /  最后的表演让观众惊叹不已。</p>
+
+<h4 id="toc_75">词族与词根</h4></li>
+<li><p>breath（名词，呼吸）；breathtaking（形容词，惊人的；令人叹为观止的）。</p></li>
+<li><p>记忆方法：能“带走你的呼吸”的景色就是 breathtaking，意为“令人惊叹的”。</p></li>
+</ul>
+
+<hr>
+
+<h2 id="toc_76">especially  /ɪˈspeʃəli/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_77">副词 adverb</h4>
+
+<ul>
+<li>释义：more than usual or more than others    尤其；特别</li>
+<li>例句：I like fruit, especially apples.  /  我喜欢水果，尤其是苹果。</li>
+</ul>
+
+<h4 id="toc_78">常用短语与考试搭配</h4>
+
+<h4 id="toc_79">1. <code>especially important</code>     尤其重要</h4>
+
+<ul>
+<li>例句：Sleep is especially important for teenagers.  /  睡眠对青少年尤其重要。</li>
+</ul>
+
+<h4 id="toc_80">2. <code>especially for</code>     尤其对……来说</h4>
+
+<ul>
+<li>例句：This advice is especially for new students.  /  这个建议尤其是给新生的。</li>
+</ul>
+
+<h4 id="toc_81">3. <code>especially when</code>     尤其当……时</h4>
+
+<ul>
+<li>例句：Wear warm clothes, especially when you go outside.  /  要穿暖和的衣服，尤其是外出时。</li>
+</ul>
+
+<h4 id="toc_82">词族与词根</h4>
+
+<ul>
+<li>special（形容词，特别的）；specially（副词，专门地）。especially 与 specially 含义不同。</li>
+<li>记忆方法：especially 强调“尤其”，specially 强调“专门地”；都由 special 派生。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_83">steamed chicken soup  /stiːmd ˈtʃɪkɪn suːp/     ⭐</h2>
+
+<h4 id="toc_84">菜名 noun phrase（不可数名词）</h4>
+
+<ul>
+<li>释义：a traditional Yunnan dish made by steaming chicken and soup in a special pot   汽锅鸡</li>
+<li>例句：We tried steamed chicken soup in Kunming.  /  我们在昆明品尝了汽锅鸡。</li>
+<li>可数性：通常作不可数菜名；可说 a bowl of steamed chicken soup</li>
+</ul>
+
+<h4 id="toc_85">常用短语与考试搭配</h4>
+
+<h4 id="toc_86">1. <code>a bowl of steamed chicken soup</code>     一碗汽锅鸡</h4>
+
+<ul>
+<li>例句：My grandmother made a bowl of steamed chicken soup for us.  /  奶奶为我们做了一碗汽锅鸡。</li>
+</ul>
+
+<h4 id="toc_87">2. <code>traditional steamed chicken soup</code>     传统汽锅鸡</h4>
+
+<ul>
+<li>例句：Traditional steamed chicken soup is popular with visitors.  /  传统汽锅鸡很受游客欢迎。</li>
+</ul>
+
+<h4 id="toc_88">3. <code>be famous for steamed chicken soup</code>     以汽锅鸡闻名</h4>
+
+<ul>
+<li><p>例句：The town is famous for steamed chicken soup.  /  这个城镇以汽锅鸡闻名。</p>
+
+<h4 id="toc_89">词族与词根</h4></li>
+<li><p>steam（动词/名词，蒸；蒸汽）；steamed（过去分词作形容词，蒸制的）。</p></li>
+<li><p>记忆方法：steam 是“蒸汽/蒸”，加 <code>-ed</code> 表示“被蒸制的”。</p></li>
+</ul>
+
+<hr>
+
+<h2 id="toc_90">anywhere  /ˈeniweə(r)/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_91">1. 副词 adverb</h4>
+
+<ul>
+<li>释义：in, to or at any place 在任何地方；到任何地方</li>
+<li>例句：You can sit anywhere you like.  /  你可以坐在任何你喜欢的地方。</li>
+</ul>
+
+<h4 id="toc_92">2. 代词 pronoun</h4>
+
+<ul>
+<li>释义：any place at all   随便哪个地方；任何地方</li>
+<li>例句：I cannot find my keys anywhere.  /  我到处都找不到钥匙。</li>
+</ul>
+
+<h4 id="toc_93">常用短语与考试搭配</h4>
+
+<h4 id="toc_94">1. <code>anywhere else</code>     其他任何地方</h4>
+
+<ul>
+<li>例句：Would you like to go anywhere else?  /  你还想去其他地方吗？</li>
+</ul>
+
+<h4 id="toc_95">2. <code>anywhere in the world</code>     世界上任何地方</h4>
+
+<ul>
+<li>例句：You can learn from people anywhere in the world.  /  你可以向世界上任何地方的人学习。</li>
+</ul>
+
+<h4 id="toc_96">3. <code>not ... anywhere</code>     哪里都不……</h4>
+
+<ul>
+<li>例句：We did not see any litter anywhere.  /  我们哪里都没有看到垃圾。</li>
+</ul>
+
+<h4 id="toc_97">词族与词根</h4>
+
+<ul>
+<li>any（限定词/代词，任何的；任一）；anywhere = any + where。</li>
+<li>记忆方法：any 表示“任何”，where 表示“哪里”，合起来就是“任何地方”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_98">nothing  /ˈnʌθɪŋ/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_99">代词 pronoun</h4>
+
+<h5 id="toc_100">1. 释义：not anything; no thing  没有任何东西；什么也没有</h5>
+
+<ul>
+<li>例句：There is nothing in the box.  /  盒子里什么也没有。</li>
+</ul>
+
+<h5 id="toc_101">2. 释义：no event or matter  没有什么事</h5>
+
+<ul>
+<li><p>例句：Nothing happened on the way home.  /  回家的路上什么事也没有发生。</p></li>
+<li><p>语法要点：作主语时谓语动词通常用单数；否定句中不要再使用 not。</p></li>
+</ul>
+
+<h4 id="toc_102">常用短语与考试搭配</h4>
+
+<h4 id="toc_103">1. <code>nothing else</code>     没有别的东西/事情</h4>
+
+<ul>
+<li>例句：There is nothing else in the bag.  /  包里没有别的东西。</li>
+</ul>
+
+<h4 id="toc_104">2. <code>nothing to do</code>     无事可做</h4>
+
+<ul>
+<li>例句：I felt bored because I had nothing to do.  /  我感到很无聊，因为我无事可做。</li>
+</ul>
+
+<h4 id="toc_105">3. <code>say nothing</code>     什么也不说</h4>
+
+<ul>
+<li>例句：He said nothing about the strange sound.  /  他没有谈及那个奇怪的声音。</li>
+</ul>
+
+<h4 id="toc_106">词族与词根</h4>
+
+<ul>
+<li>nothing = no + thing；相关常用词：no（没有）、none（一个也没有），注意它们与 nothing 的用法区别。</li>
+<li>记忆方法：nothing 直接拆成 no + thing，即“没有任何东西”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_107">guide  /ɡaɪd/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_108">1. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_109">1. 释义：a person who shows visitors around a place  导游；向导</h5>
+
+<ul>
+<li>例句：Our guide showed us around the ancient city.  /  我们的导游带我们参观了古城。</li>
+<li>可数性：可数；guide → guides</li>
+</ul>
+
+<h5 id="toc_110">2. 释义：a book or set of instructions that helps you    指南；手册</h5>
+
+<ul>
+<li>例句：I bought a guide to the local scenery.  /  我买了一本当地风景指南。</li>
+<li>可数性：可数；guide → guides</li>
+</ul>
+
+<h4 id="toc_111">2. 动词 verb</h4>
+
+<ul>
+<li>释义：to show someone the way or help someone    给某人领路；指导</li>
+<li>例句：The teacher guided us through the project.  /  老师指导我们完成了这个项目。</li>
+<li>类型：及物动词；guide sb around/through/to</li>
+<li>变化：guide — guided — guided，规则变化</li>
+</ul>
+
+<h4 id="toc_112">常用短语与考试搭配</h4>
+
+<h4 id="toc_113">1. <code>tour guide</code>     导游</h4>
+
+<ul>
+<li>例句：The tour guide told us an interesting story.  /  导游给我们讲了一个有趣的故事。</li>
+</ul>
+
+<h4 id="toc_114">2. <code>guidebook</code>     旅行指南；手册</h4>
+
+<ul>
+<li>例句：This guidebook gives useful information about hotels.  /  这本旅行指南提供了关于旅馆的有用信息。</li>
+</ul>
+
+<h4 id="toc_115">3. <code>guide sb around</code>     带某人参观</h4>
+
+<ul>
+<li>例句：Can you guide the visitors around the town?  /  你能带游客参观这个城镇吗？</li>
+</ul>
+
+<h4 id="toc_116">4. <code>guide sb through</code>     指导某人完成或了解</h4>
+
+<ul>
+<li>例句：The nurse guided the patient through the exercise.  /  护士指导病人完成了这项练习。</li>
+</ul>
+
+<h4 id="toc_117">词族与词根</h4>
+
+<ul>
+<li>guidance（名词，指导）；guided（形容词，有指导的）；guideline（名词，指导方针）。</li>
+<li>记忆方法：guide 是“引路”，guidance 是“指导”，guideline 是“指导线/准则”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_118">scenery  /ˈsiːnəri/     ⭐⭐⭐</h2>
+
+<h4 id="toc_119">名词 noun（不可数名词）</h4>
+
+<ul>
+<li>释义：the natural features of a place that are beautiful to look at  风景；景色</li>
+<li>例句：The scenery along the road was amazing.  /  沿路的风景美极了。</li>
+<li>可数性：不可数；通常没有复数 scenery，不能说 a scenery</li>
+</ul>
+
+<h4 id="toc_120">常用短语与考试搭配</h4>
+
+<h4 id="toc_121">1. <code>beautiful scenery</code>     美丽的风景</h4>
+
+<ul>
+<li>例句：The train passed through beautiful scenery.  /  火车穿过了美丽的风景。</li>
+</ul>
+
+<h4 id="toc_122">2. <code>natural scenery</code>     自然风景</h4>
+
+<ul>
+<li>例句：Tourists come here to enjoy the natural scenery.  /  游客来这里欣赏自然风景。</li>
+</ul>
+
+<h4 id="toc_123">3. <code>enjoy the scenery</code>     欣赏风景</h4>
+
+<ul>
+<li>例句：We opened the window to enjoy the scenery.  /  我们打开窗户欣赏风景。</li>
+</ul>
+
+<h4 id="toc_124">词族与词根</h4>
+
+<ul>
+<li>scenic（形容词，风景优美的）；scene（名词，场景；景色），但 scenery 通常不可数。</li>
+<li>记忆方法：scene 是“一幕场景”，scenery 是整体“风景”，注意 scenery 不可数。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_125">silk  /sɪlk/     ⭐⭐⭐</h2>
+
+<h4 id="toc_126">名词 noun（不可数名词）</h4>
+
+<ul>
+<li>释义：a soft material made from the thread produced by silkworms 丝绸；蚕丝</li>
+<li>例句：The scarf is made of silk.  /  这条围巾是丝绸做的。</li>
+<li>可数性：通常作不可数物质名词；表示不同种类时可用 silks</li>
+</ul>
+
+<h4 id="toc_127">常用短语与考试搭配</h4>
+
+<h4 id="toc_128">1. <code>made of silk</code>     由丝绸制成</h4>
+
+<ul>
+<li>例句：She wore a dress made of silk.  /  她穿着一条丝绸做的连衣裙。</li>
+</ul>
+
+<h4 id="toc_129">2. <code>silk scarf</code>     丝绸围巾</h4>
+
+<ul>
+<li>例句：I bought a blue silk scarf for my mother.  /  我给妈妈买了一条蓝色丝绸围巾。</li>
+</ul>
+
+<h4 id="toc_130">3. <code>the Silk Road</code>     丝绸之路</h4>
+
+<ul>
+<li>例句：The Silk Road connected China with many other countries.  /  丝绸之路把中国和许多其他国家联系起来。</li>
+</ul>
+
+<h4 id="toc_131">词族与词根</h4>
+
+<ul>
+<li>silkworm（名词，蚕）；silky（形容词，丝绸般的；柔滑的）。</li>
+<li>记忆方法：silkworm 是“产丝的虫”，silky 表示“像丝一样柔滑”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_132">scarf  /skɑːf/     ⭐⭐⭐</h2>
+
+<h4 id="toc_133">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a piece of cloth worn around the neck or head  围巾；披巾</li>
+<li>例句：She wore a warm scarf on the cold morning.  /  寒冷的早晨她戴着一条暖和的围巾。</li>
+<li>可数性：可数；scarf → scarves 或 scarfs，考试中通常写 scarves</li>
+</ul>
+
+<h4 id="toc_134">常用短语与考试搭配</h4>
+
+<h4 id="toc_135">1. <code>wear a scarf</code>     戴围巾</h4>
+
+<ul>
+<li>例句：You should wear a scarf in cold weather.  /  寒冷天气你应该戴围巾。</li>
+</ul>
+
+<h4 id="toc_136">2. <code>silk scarf</code>     丝绸围巾</h4>
+
+<ul>
+<li>例句：The silk scarf was a gift from my aunt.  /  这条丝绸围巾是我姑姑送的礼物。</li>
+</ul>
+
+<h4 id="toc_137">3. <code>wrap a scarf around</code>     把围巾围在……周围</h4>
+
+<ul>
+<li>例句：He wrapped a scarf around his neck.  /  他把围巾围在脖子上。</li>
+</ul>
+
+<h4 id="toc_138">词族与词根</h4>
+
+<ul>
+<li>词形变化：scarf → scarves / scarfs；相关常用词：scarf pin（围巾别针）。</li>
+<li>记忆方法：优先记 scarf → scarves，和 leaf → leaves 一样常见。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_139">ready  /ˈredi/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_140">形容词 adjective</h4>
+
+<h5 id="toc_141">1. 释义：prepared for sth    准备好的</h5>
+
+<ul>
+<li>例句：Are you ready for the English test?  /  你准备好英语考试了吗？</li>
+<li>比较级与最高级：readier；readiest</li>
+<li>反义词：unready 或 not ready</li>
+</ul>
+
+<h5 id="toc_142">2. 释义：finished and available to use   现成的；准备好的</h5>
+
+<ul>
+<li>例句：The food is ready.  /  饭准备好了。</li>
+<li>词性说明：ready 在中学语法中主要作形容词；“已做完”常根据语境译为 ready 或 done</li>
+</ul>
+
+<h4 id="toc_143">常用短语与考试搭配</h4>
+
+<h4 id="toc_144">1. <code>get ready for</code>     为……做准备</h4>
+
+<ul>
+<li>例句：We are getting ready for the school trip.  /  我们正在为学校旅行做准备。</li>
+</ul>
+
+<h4 id="toc_145">2. <code>be ready for</code>     为……准备好</h4>
+
+<ul>
+<li>例句：The students are ready for the exam.  /  学生们已经准备好考试了。</li>
+</ul>
+
+<h4 id="toc_146">3. <code>be ready to do</code>     准备/愿意做某事</h4>
+
+<ul>
+<li>例句：I am ready to help you.  /  我准备好帮助你了。</li>
+</ul>
+
+<h4 id="toc_147">词族与词根</h4>
+
+<ul>
+<li>readiness（名词，准备就绪）；readily（副词，容易地；乐意地）。</li>
+<li>记忆方法：ready 加 <code>-ness</code> 变“准备状态”，把 <code>y</code> 变 <code>i</code> 加 <code>-ly</code> 变副词 readily。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_148">ready to do sth  /ˈredi tə duː ˈsʌmθɪŋ/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_149">固定结构 phrase</h4>
+
+<ul>
+<li>释义：prepared or willing to do something soon   马上要做某事；愿意做某事</li>
+<li>例句：The players are ready to start the game.  /  队员们准备开始比赛了。</li>
+<li>结构：be ready to do sth；ready 后接不定式</li>
+</ul>
+
+<h4 id="toc_150">常用短语与考试搭配</h4>
+
+<h4 id="toc_151">1. <code>be ready to help</code>     准备/愿意帮助</h4>
+
+<ul>
+<li>例句：Our classmates are ready to help the new student.  /  我们的同学愿意帮助新同学。</li>
+</ul>
+
+<h4 id="toc_152">2. <code>be ready to leave</code>     准备离开</h4>
+
+<ul>
+<li>例句：We are ready to leave for the airport.  /  我们准备出发去机场。</li>
+</ul>
+
+<h4 id="toc_153">3. <code>get ready to do</code>     准备做某事</h4>
+
+<ul>
+<li>例句：Get ready to answer the question.  /  准备回答这个问题。</li>
+</ul>
+
+<h4 id="toc_154">易混结构</h4>
+
+<ul>
+<li><code>be ready for + 名词</code>；<code>be ready to do + 动词原形</code>。</li>
+</ul>
+
+<h4 id="toc_155">词族与词根</h4>
+
+<ul>
+<li>ready（形容词，准备好的）；readiness（名词，准备就绪）；readily（副词，乐意地；容易地）。</li>
+<li>记忆方法：ready for 后接名词，ready to do 后接动词原形；把两种结构成对记忆。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_156">somewhere  /ˈsʌmweə(r)/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_157">1. 副词 adverb</h4>
+
+<ul>
+<li>释义：in, to or at a place that is not known or not named    在某处；到某处</li>
+<li>例句：Let us find somewhere quiet to study.  /  我们找个安静的地方学习吧。</li>
+</ul>
+
+<h4 id="toc_158">2. 代词 pronoun</h4>
+
+<ul>
+<li>释义：a place that is not named  某个地方</li>
+<li>例句：They live somewhere near the town centre.  /  他们住在市中心附近的某个地方。</li>
+</ul>
+
+<h4 id="toc_159">常用短语与考试搭配</h4>
+
+<h4 id="toc_160">1. <code>somewhere else</code>     别的地方</h4>
+
+<ul>
+<li>例句：We can meet somewhere else tomorrow.  /  我们明天可以在别的地方见面。</li>
+</ul>
+
+<h4 id="toc_161">2. <code>go somewhere</code>     去某处</h4>
+
+<ul>
+<li>例句：I want to go somewhere warm in winter.  /  我冬天想去一个温暖的地方。</li>
+</ul>
+
+<h4 id="toc_162">3. <code>live somewhere near</code>     住在附近某处</h4>
+
+<ul>
+<li>例句：They live somewhere near the town centre.  /  他们住在市中心附近的某个地方。</li>
+</ul>
+
+<h4 id="toc_163">词族与词根</h4>
+
+<ul>
+<li>some（一些；某个）；somewhere = some + where。</li>
+<li>记忆方法：some 表示“某个”，where 表示“哪里”，合起来就是“某个地方”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_164">myself  /maɪˈself/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_165">反身代词/强调代词 pronoun</h4>
+
+<h5 id="toc_166">1. 释义：used as the object when the subject is I    我自己</h5>
+
+<ul>
+<li>例句：I taught myself to cook.  /  我自学了做饭。</li>
+</ul>
+
+<h5 id="toc_167">2. 释义：used to emphasize I 我本人；我亲自</h5>
+
+<ul>
+<li>例句：I myself checked all the answers.  /  我亲自检查了所有答案。</li>
+</ul>
+
+<h4 id="toc_168">常用短语与考试搭配</h4>
+
+<h4 id="toc_169">1. <code>by myself</code>     独自；靠自己</h4>
+
+<ul>
+<li>例句：I finished the homework by myself.  /  我独自完成了作业。</li>
+</ul>
+
+<h4 id="toc_170">2. <code>do sth myself</code>     亲自做某事</h4>
+
+<ul>
+<li>例句：I made the card myself.  /  这张卡片是我亲自做的。</li>
+</ul>
+
+<h4 id="toc_171">3. <code>keep sth to myself</code>     把某事藏在心里</h4>
+
+<ul>
+<li>例句：I kept the secret to myself.  /  我把这个秘密藏在心里。</li>
+</ul>
+
+<h4 id="toc_172">词族与词根</h4>
+
+<ul>
+<li>my（形容词性物主代词）；me（宾格）；mine（名词性物主代词）。</li>
+<li>记忆方法：按句中作用记：my 后接名词，me 作宾语，mine 单独表示“我的”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_173">nothing but  /ˈnʌθɪŋ bət/     ⭐⭐⭐</h2>
+
+<h4 id="toc_174">固定短语 phrase</h4>
+
+<ul>
+<li>释义：only; no more than 只有；只是</li>
+<li>例句：The box contained nothing but old photos.  /  盒子里只有旧照片。</li>
+<li>结构：nothing but + 名词；do nothing but + 动词原形</li>
+</ul>
+
+<h4 id="toc_175">常用短语与考试搭配</h4>
+
+<h4 id="toc_176">1. <code>nothing but + noun</code>     只有……</h4>
+
+<ul>
+<li>例句：There was nothing but sand around us.  /  我们周围除了沙子什么也没有。</li>
+</ul>
+
+<h4 id="toc_177">2. <code>do nothing but do</code>     只做某事</h4>
+
+<ul>
+<li>例句：The child did nothing but watch TV all day.  /  那个孩子一整天只看电视。</li>
+</ul>
+
+<h4 id="toc_178">3. <code>nothing but the truth</code>     只有事实；真相</h4>
+
+<ul>
+<li>例句：The teacher wanted nothing but the truth.  /  老师只想知道真相。</li>
+</ul>
+
+<h4 id="toc_179">词族与词根</h4>
+
+<ul>
+<li>核心词 nothing；同义表达 only，但 nothing but 语气更强调“除此之外没有”。</li>
+<li>记忆方法：but 在这里相当于“除了”，nothing but 即“除……之外什么都没有”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_180">hotel  /həʊˈtel/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_181">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a building where people pay to stay for a short time   旅馆；旅社</li>
+<li>例句：We stayed at a small hotel near the lake.  /  我们住在湖边的一家小旅馆。</li>
+<li>可数性：可数；hotel → hotels</li>
+</ul>
+
+<h4 id="toc_182">常用短语与考试搭配</h4>
+
+<h4 id="toc_183">1. <code>stay at a hotel</code>     住在旅馆</h4>
+
+<ul>
+<li>例句：We stayed at a hotel during our vacation.  /  假期期间我们住在一家旅馆。</li>
+</ul>
+
+<h4 id="toc_184">2. <code>hotel room</code>     旅馆房间</h4>
+
+<ul>
+<li>例句：Our hotel room had a beautiful view.  /  我们的旅馆房间有美丽的景色。</li>
+</ul>
+
+<h4 id="toc_185">3. <code>book a hotel room</code>     预订旅馆房间</h4>
+
+<ul>
+<li>例句：My father booked a hotel room online.  /  我爸爸在网上预订了旅馆房间。</li>
+</ul>
+
+<h4 id="toc_186">词族与词根</h4>
+
+<ul>
+<li>相关常用词：guest（客人）、hotel guest（旅馆客人）；重点掌握 stay at a hotel。</li>
+<li>记忆方法：把 hotel 和常用搭配 stay at a hotel、hotel guest 一起记。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_187">comfortable  /ˈkʌmftəbl/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_188">形容词 adjective</h4>
+
+<h5 id="toc_189">1. 释义：making you feel physically relaxed  使人舒服的；舒适的</h5>
+
+<ul>
+<li>例句：This chair is comfortable enough for reading.  /  这把椅子读书坐很舒服。</li>
+<li>比较级与最高级：more comfortable；most comfortable</li>
+<li>反义词：uncomfortable</li>
+</ul>
+
+<h5 id="toc_190">2. 释义：feeling relaxed and not worried 感到自在的</h5>
+
+<ul>
+<li>例句：I feel comfortable speaking English with my classmates.  /  我和同学说英语时感到很自在。</li>
+</ul>
+
+<h4 id="toc_191">常用短语与考试搭配</h4>
+
+<h4 id="toc_192">1. <code>feel comfortable</code>     感到舒服/自在</h4>
+
+<ul>
+<li>例句：The guests felt comfortable in the clean hotel.  /  客人在干净的旅馆里感到很舒适。</li>
+</ul>
+
+<h4 id="toc_193">2. <code>be comfortable with</code>     对……感到自在；适应……</h4>
+
+<ul>
+<li>例句：She is comfortable with the new plan.  /  她对这个新计划感到适应。</li>
+</ul>
+
+<h4 id="toc_194">3. <code>comfortable clothes</code>     舒适的衣服</h4>
+
+<ul>
+<li>例句：Wear comfortable clothes for the long walk.  /  长途步行时穿舒适的衣服。</li>
+</ul>
+
+<h4 id="toc_195">词族与词根</h4>
+
+<ul>
+<li>comfort（名词/动词，舒适；安慰）；comfortably（副词，舒服地）；uncomfortable（形容词，不舒服的）。</li>
+<li>记忆方法：comfort 是核心；加 <code>-able</code> 成 comfortable，加 <code>un-</code> 表否定，加 <code>-ly</code> 变副词。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_196">bored  /bɔːd/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_197">形容词 adjective</h4>
+
+<ul>
+<li>释义：feeling tired and unhappy because nothing interesting is happening 厌倦的；烦闷的</li>
+<li>例句：I felt bored when the long meeting continued.  /  冗长的会议继续时我感到很烦闷。</li>
+<li>比较级与最高级：more bored；most bored</li>
+<li>反义词：interested；excited</li>
+<li>语法辨析：bored 描述人的感受；boring 描述事物。</li>
+</ul>
+
+<h4 id="toc_198">常用短语与考试搭配</h4>
+
+<h4 id="toc_199">1. <code>be bored with</code>     对……感到厌倦</h4>
+
+<ul>
+<li>例句：He is bored with the same game.  /  他对同一个游戏感到厌倦。</li>
+</ul>
+
+<h4 id="toc_200">2. <code>be bored by</code>     被……弄得厌烦</h4>
+
+<ul>
+<li>例句：The students were bored by the long speech.  /  学生们被冗长的演讲弄得很厌烦。</li>
+</ul>
+
+<h4 id="toc_201">3. <code>get bored</code>     变得无聊；厌倦</h4>
+
+<ul>
+<li>例句：You may get bored if you do nothing all day.  /  如果整天无所事事，你可能会感到无聊。</li>
+</ul>
+
+<h4 id="toc_202">词族与词根</h4>
+
+<ul>
+<li>bore（动词，使厌烦）；boring（形容词，令人厌烦的）；boredom（名词，无聊）。</li>
+<li>记忆方法：boring 形容“令人厌烦的事”，bored 形容“感到厌烦的人”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_203">sky  /skaɪ/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_204">名词 noun（可数/不可数名词）</h4>
+
+<ul>
+<li>释义：the space above the earth where clouds, the sun and stars can be seen  天空</li>
+<li>例句：The sky was clear after the rain.  /  雨后天空很晴朗。</li>
+<li>可数性：通常说 the sky；sky → skies 可表示不同地方或文学语境中的天空</li>
+</ul>
+
+<h4 id="toc_205">常用短语与考试搭配</h4>
+
+<h4 id="toc_206">1. <code>in the sky</code>     在天空中</h4>
+
+<ul>
+<li>例句：We saw a rainbow in the sky.  /  我们看见天空中有一道彩虹。</li>
+</ul>
+
+<h4 id="toc_207">2. <code>night sky</code>     夜空</h4>
+
+<ul>
+<li>例句：The stars looked bright in the night sky.  /  星星在夜空中看起来很明亮。</li>
+</ul>
+
+<h4 id="toc_208">3. <code>a clear blue sky</code>     晴朗的蓝天</h4>
+
+<ul>
+<li>例句：We enjoyed a clear blue sky on our trip.  /  旅行中我们欣赏了晴朗的蓝天。</li>
+</ul>
+
+<h4 id="toc_209">词族与词根</h4>
+
+<ul>
+<li>sky（天空）；skyscraper（名词，摩天大楼）。</li>
+<li>记忆方法：skyscraper 可理解为“刮到天空的楼”，即摩天大楼。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_210">towards  /təˈwɔːdz; tɔːrdz/     ⭐⭐⭐</h2>
+
+<h4 id="toc_211">介词 preposition</h4>
+
+<h5 id="toc_212">1. 释义：in the direction of a person, place or thing    向；朝</h5>
+
+<ul>
+<li>例句：The children ran towards the rainbow.  /  孩子们朝彩虹跑去。</li>
+</ul>
+
+<h5 id="toc_213">2. 释义：in relation to a time or situation  接近；朝着某个时间或目标</h5>
+
+<ul>
+<li>例句：Towards the end of the holiday, we returned home.  /  假期快结束时，我们回到了家。</li>
+</ul>
+
+<h4 id="toc_214">常用短语与考试搭配</h4>
+
+<h4 id="toc_215">1. <code>move towards</code>     向……移动</h4>
+
+<ul>
+<li>例句：The boat moved slowly towards the town.  /  船慢慢向城镇驶去。</li>
+</ul>
+
+<h4 id="toc_216">2. <code>work towards a goal</code>     朝目标努力</h4>
+
+<ul>
+<li>例句：We are working towards our goal together.  /  我们正在共同朝目标努力。</li>
+</ul>
+
+<h4 id="toc_217">3. <code>towards the end of</code>     接近……末尾</h4>
+
+<ul>
+<li>例句：Towards the end of the story, the hero wins.  /  故事接近结尾时，主人公赢了。</li>
+</ul>
+
+<h4 id="toc_218">词族与词根</h4>
+
+<ul>
+<li>相关常用词：toward/towards（向；朝）、forward（向前）；towards/toward 是同义拼写变体。</li>
+<li>记忆方法：towards 比 toward 多一个 <code>s</code>，二者都表示“向；朝”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_219">rainbow  /ˈreɪnbəʊ/     ⭐⭐⭐</h2>
+
+<h4 id="toc_220">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a curved band of colours seen in the sky after rain    虹；彩虹</li>
+<li>例句：A bright rainbow appeared after the storm.  /  暴风雨后出现了一道鲜艳的彩虹。</li>
+<li>可数性：可数；rainbow → rainbows</li>
+</ul>
+
+<h4 id="toc_221">常用短语与考试搭配</h4>
+
+<h4 id="toc_222">1. <code>see a rainbow</code>     看到彩虹</h4>
+
+<ul>
+<li>例句：We were lucky to see a rainbow after the rain.  /  雨后看到彩虹，我们很幸运。</li>
+</ul>
+
+<h4 id="toc_223">2. <code>rainbow colours</code>     彩虹的颜色</h4>
+
+<ul>
+<li>例句：The picture is full of rainbow colours.  /  这幅画充满了彩虹的色彩。</li>
+</ul>
+
+<h4 id="toc_224">3. <code>a double rainbow</code>     双彩虹</h4>
+
+<ul>
+<li>例句：A double rainbow appeared over the lake.  /  湖上出现了一道双彩虹。</li>
+</ul>
+
+<h4 id="toc_225">词族与词根</h4>
+
+<ul>
+<li>复合词：rain（雨）+ bow（弓形）。相关高频词：rainy（形容词，多雨的）；rainfall（名词，降雨量）。</li>
+<li>记忆方法：rainbow 是“雨后天空中的弓形色带”，直接拆为 rain + bow。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_226">square  /skweə(r)/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_227">1. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_228">1. 释义：an open area in a town, often with buildings around it  广场</h5>
+
+<ul>
+<li>例句：People met in the town square.  /  人们在城镇广场集合。</li>
+<li>可数性：可数；square → squares</li>
+</ul>
+
+<h5 id="toc_229">2. 释义：a shape with four equal sides and four right angles 正方形</h5>
+
+<ul>
+<li>例句：Draw a square on the paper.  /  在纸上画一个正方形。</li>
+</ul>
+
+<h4 id="toc_230">2. 形容词 adjective</h4>
+
+<ul>
+<li>释义：having four equal sides and four right angles; relating to a power of two  正方形的；平方的</li>
+<li>例句：The room is twenty square metres in size.  /  这个房间面积是二十平方米。</li>
+<li>比较级与最高级：通常不适用</li>
+</ul>
+
+<h4 id="toc_231">常用短语与考试搭配</h4>
+
+<h4 id="toc_232">1. <code>town square</code>     城镇广场</h4>
+
+<ul>
+<li>例句：The festival will be held in the town square.  /  节日将在城镇广场举行。</li>
+</ul>
+
+<h4 id="toc_233">2. <code>square metre</code>     平方米</h4>
+
+<ul>
+<li>例句：The room is twenty square metres in size.  /  这个房间面积是二十平方米。</li>
+</ul>
+
+<h4 id="toc_234">3. <code>square root</code>     平方根</h4>
+
+<ul>
+<li>例句：The square root of nine is three.  /  9 的平方根是3。</li>
+</ul>
+
+<h4 id="toc_235">词族与词根</h4>
+
+<ul>
+<li>square（名词/形容词/动词，广场/正方形的/使成方形）；相关常用词：square root（平方根）、square metre（平方米）。</li>
+<li>记忆方法：正方形有四条相等的边，看到 square 就联想“四边相等”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_236">during  /ˈdjʊərɪŋ/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_237">介词 preposition</h4>
+
+<ul>
+<li>释义：at some time in a period of time   在……期间</li>
+<li>例句：I read three books during the vacation.  /  假期期间我读了三本书。</li>
+<li>语法要点：during + 名词/名词短语，不能直接接完整从句；比较 during the holiday 与 while I was on holiday。</li>
+</ul>
+
+<h4 id="toc_238">常用短语与考试搭配</h4>
+
+<h4 id="toc_239">1. <code>during the summer</code>     在夏季期间</h4>
+
+<ul>
+<li>例句：Many people go camping during the summer.  /  许多人夏天去露营。</li>
+</ul>
+
+<h4 id="toc_240">2. <code>during the holiday</code>     在假期期间</h4>
+
+<ul>
+<li>例句：We visited several ancient towns during the holiday.  /  假期期间我们参观了几个古镇。</li>
+</ul>
+
+<h4 id="toc_241">3. <code>during class</code>     上课期间</h4>
+
+<ul>
+<li>例句：Students should not use phones during class.  /  学生上课期间不应使用手机。</li>
+</ul>
+
+<h4 id="toc_242">词族与词根</h4>
+
+<ul>
+<li>during 是介词；相关常用结构：during the holiday、during the lesson；重点掌握 during + 名词/名词短语。</li>
+<li>记忆方法：把 during 固定记成“during + 一段时间/名词”，不要直接接完整句子。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_243">victory  /ˈvɪktəri/     ⭐⭐⭐</h2>
+
+<h4 id="toc_244">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：success in a game, competition or war  胜利；成功</li>
+<li>例句：The team celebrated its victory.  /  球队庆祝了胜利。</li>
+<li>可数性：可数；victory → victories</li>
+</ul>
+
+<h4 id="toc_245">常用短语与考试搭配</h4>
+
+<h4 id="toc_246">1. <code>win a victory</code>     取得胜利</h4>
+
+<ul>
+<li>例句：Hard work helped us win a victory.  /  努力帮助我们取得了胜利。</li>
+</ul>
+
+<h4 id="toc_247">2. <code>a victory over</code>     战胜……的胜利</h4>
+
+<ul>
+<li>例句：The victory over the strong team gave us confidence.  /  战胜强队的胜利给了我们信心。</li>
+</ul>
+
+<h4 id="toc_248">3. <code>celebrate a victory</code>     庆祝胜利</h4>
+
+<ul>
+<li>例句：The players celebrated their victory together.  /  队员们一起庆祝胜利。</li>
+</ul>
+
+<h4 id="toc_249">词族与词根</h4>
+
+<ul>
+<li>victor（名词，胜利者）；victorious（形容词，胜利的）；victoriously（副词，胜利地）。</li>
+<li>记忆方法：victor 是“胜利者”，victory 是“胜利”，victorious 是“胜利的”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_250">Russian  /ˈrʌʃn/     ⭐⭐⭐</h2>
+
+<h4 id="toc_251">1. 形容词 adjective</h4>
+
+<ul>
+<li>释义：belonging to Russia or its people  俄罗斯的；俄罗斯人的</li>
+<li>例句：We learned about Russian culture.  /  我们了解了俄罗斯文化。</li>
+<li>比较级与最高级：不适用</li>
+</ul>
+
+<h4 id="toc_252">2. 名词 noun（可数/不可数名词）</h4>
+
+<h5 id="toc_253">1. 释义：a person from Russia    俄罗斯人</h5>
+
+<ul>
+<li>例句：A Russian helped us find the hotel.  /  一位俄罗斯人帮助我们找到了旅馆。</li>
+<li>可数性：可数；a Russian → Russians</li>
+</ul>
+
+<h5 id="toc_254">2. 释义：the language of Russia  俄语</h5>
+
+<ul>
+<li>例句：She can speak Russian.  /  她会说俄语。</li>
+<li>可数性：通常不可数，不加复数</li>
+</ul>
+
+<h4 id="toc_255">常用短语与考试搭配</h4>
+
+<h4 id="toc_256">1. <code>Russian culture</code>     俄罗斯文化</h4>
+
+<ul>
+<li>例句：Russian culture has a long history.  /  俄罗斯文化有悠久的历史。</li>
+</ul>
+
+<h4 id="toc_257">2. <code>a Russian</code>     一名俄罗斯人</h4>
+
+<ul>
+<li>例句：A Russian helped us find the hotel.  /  一位俄罗斯人帮助我们找到了旅馆。</li>
+</ul>
+
+<h4 id="toc_258">3. <code>speak Russian</code>     说俄语</h4>
+
+<ul>
+<li>例句：My friend wants to learn to speak Russian.  /  我的朋友想学说俄语。</li>
+</ul>
+
+<h4 id="toc_259">词族与词根</h4>
+
+<ul>
+<li>Russia（专有名词，俄罗斯）；Russian（形容词/名词，俄罗斯的；俄罗斯人；俄语）。</li>
+<li>记忆方法：地名 Russia 对应 Russian，后者既可表示“俄罗斯的”，也可表示“俄罗斯人/俄语”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_260">fight  /faɪt/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_261">1. 名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a physical struggle or a struggle against a problem    战斗；搏斗；斗争</li>
+<li>例句：The firefighters had a difficult fight against the fire.  /  消防员与大火进行了艰苦的斗争。</li>
+<li>可数性：可数；a fight → fights</li>
+</ul>
+
+<h4 id="toc_262">2. 动词 verb</h4>
+
+<ul>
+<li>释义：to use physical force or make a strong effort against sth  打仗；打架；斗争</li>
+<li>例句：We must fight pollution together.  /  我们必须共同与污染作斗争。</li>
+<li>类型：可及物或不及物</li>
+<li>变化：fight — fought — fought，不规则变化</li>
+</ul>
+
+<h4 id="toc_263">常用短语与考试搭配</h4>
+
+<h4 id="toc_264">1. <code>fight for</code>     为……而斗争</h4>
+
+<ul>
+<li>例句：People fight for peace and freedom.  /  人们为和平和自由而斗争。</li>
+</ul>
+
+<h4 id="toc_265">2. <code>fight with</code>     与某人打架或争吵</h4>
+
+<ul>
+<li>例句：He had a fight with his brother.  /  他和弟弟打了一架。</li>
+</ul>
+
+<h4 id="toc_266">3. <code>fight back</code>     还击；反击</h4>
+
+<ul>
+<li>例句：The team fought back in the second half.  /  球队在下半场进行了反击。</li>
+</ul>
+
+<h4 id="toc_267">词族与词根</h4>
+
+<ul>
+<li>fighter（名词，战士；斗士）；fighting（名词/形容词，战斗；斗争的）。</li>
+<li>记忆方法：fight 加 <code>-er</code> 指“战斗的人”，加 <code>-ing</code> 指“战斗这件事”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_268">against  /əˈɡenst/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_269">介词 preposition</h4>
+
+<h5 id="toc_270">1. 释义：opposing someone or sth 反对；与……相反</h5>
+
+<ul>
+<li>例句：Our team played against the best school in town.  /  我们队与镇上最好的学校比赛。</li>
+</ul>
+
+<h5 id="toc_271">2. 释义：touching and supported by something 紧靠；倚着</h5>
+
+<ul>
+<li>例句：The bicycle was leaning against the wall.  /  自行车靠在墙上。</li>
+</ul>
+
+<h4 id="toc_272">常用短语与考试搭配</h4>
+
+<h4 id="toc_273">1. <code>be against</code>     反对……</h4>
+
+<ul>
+<li>例句：My parents are against wasting food.  /  我的父母反对浪费食物。</li>
+</ul>
+
+<h4 id="toc_274">2. <code>against the law</code>     违法</h4>
+
+<ul>
+<li>例句：Driving without a licence is against the law.  /  无证驾驶是违法的。</li>
+</ul>
+
+<h4 id="toc_275">3. <code>lean against</code>     倚靠在……上</h4>
+
+<ul>
+<li>例句：The old man leaned against the tree.  /  老人倚靠在树上。</li>
+</ul>
+
+<h4 id="toc_276">词族与词根</h4>
+
+<ul>
+<li>相关常用表达：be against（反对）、be for（支持）；against 与 for 常构成反义对比。</li>
+<li>记忆方法：be against 表“反对”，be for 表“赞成”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_277">fight against sb/sth  /faɪt əˈɡenst/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_278">固定搭配 phrase</h4>
+
+<ul>
+<li>释义：to struggle against a person, disease, danger or problem   与……作战；与……作斗争</li>
+<li>例句：We should fight against climate change.  /  我们应该与气候变化作斗争。</li>
+<li>结构：fight against + 人/事物；fight — fought — fought</li>
+</ul>
+
+<h4 id="toc_279">常用短语与考试搭配</h4>
+
+<h4 id="toc_280">1. <code>fight against pollution</code>     与污染作斗争</h4>
+
+<ul>
+<li>例句：All of us can fight against pollution by using less plastic.  /  我们都可以通过少用塑料来与污染作斗争。</li>
+</ul>
+
+<h4 id="toc_281">2. <code>fight against disease</code>     与疾病斗争</h4>
+
+<ul>
+<li>例句：Doctors are fighting against the disease.  /  医生们正在与这种疾病作斗争。</li>
+</ul>
+
+<h4 id="toc_282">3. <code>fight against unfairness</code>     反对不公平</h4>
+
+<ul>
+<li>例句：The students decided to fight against unfairness.  /  学生们决定反对不公平。</li>
+</ul>
+
+<h4 id="toc_283">易混结构</h4>
+
+<ul>
+<li><code>fight for</code> 表示“为……而斗争”；<code>fight against</code> 表示“反对或对抗……”。</li>
+</ul>
+
+<h4 id="toc_284">词族与词根</h4>
+
+<ul>
+<li>fight（动词/名词，打架；斗争）；fighter（名词，战士；斗士）。</li>
+<li>记忆方法：fight against 表示“对抗某人或某事”，against 后面直接接对抗对象；fight for 表示“为某目标而斗争”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_285">artwork  /ˈɑːtwɜːk/     ⭐⭐</h2>
+
+<h4 id="toc_286">名词 noun（可数/不可数名词）</h4>
+
+<ul>
+<li>释义：a painting, drawing or other work of art   艺术作品；插图</li>
+<li>例句：The museum has an interesting artwork by a young artist.  /  博物馆里有一件年轻艺术家的有趣艺术作品。</li>
+<li>可数性：通常作不可数集合名词；表示一件作品时可说 an artwork</li>
+</ul>
+
+<h4 id="toc_287">常用短语与考试搭配</h4>
+
+<h4 id="toc_288">1. <code>a work of art</code>     一件艺术品</h4>
+
+<ul>
+<li>例句：This painting is a beautiful work of art.  /  这幅画是一件美丽的艺术品。</li>
+</ul>
+
+<h4 id="toc_289">2. <code>original artwork</code>     原创艺术作品</h4>
+
+<ul>
+<li>例句：The poster uses original artwork.  /  这张海报使用了原创艺术作品。</li>
+</ul>
+
+<h4 id="toc_290">3. <code>artwork by</code>     由……创作的艺术作品</h4>
+
+<ul>
+<li>例句：The gallery displayed artwork by local students.  /  画廊展出了当地学生创作的艺术作品。</li>
+</ul>
+
+<h4 id="toc_291">词族与词根</h4>
+
+<ul>
+<li>artist（名词，艺术家）；artistic（形容词，艺术的）；artistically（副词，以艺术的方式）。</li>
+<li>记忆方法：art 加 <code>-ist</code> 成 artist，加 <code>-ic</code> 成 artistic，再加 <code>-ally</code> 成副词。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_292">thousands of  /ˈθaʊzəndz əv/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_293">数量短语 quantity phrase</h4>
+
+<ul>
+<li>释义：a very large number of, more than a thousand   数以千计的；成千上万的</li>
+<li>例句：Thousands of people visit the ancient town every year.  /  每年有成千上万的人参观这座古镇。</li>
+<li>结构：thousands of + 可数名词复数；具体数字前不加 of，如 two thousand students</li>
+</ul>
+
+<h4 id="toc_294">常用短语与考试搭配</h4>
+
+<h4 id="toc_295">1. <code>thousands of people</code>     成千上万的人</h4>
+
+<ul>
+<li>例句：Thousands of people took part in the charity walk.  /  成千上万的人参加了慈善步行活动。</li>
+</ul>
+
+<h4 id="toc_296">2. <code>thousands of years</code>     数千年</h4>
+
+<ul>
+<li>例句：This ancient bridge has stood for thousands of years.  /  这座古桥已经矗立了数千年。</li>
+</ul>
+
+<h4 id="toc_297">3. <code>thousands upon thousands of</code>     成千上万的，强调数量很大</h4>
+
+<ul>
+<li>例句：Thousands upon thousands of stars filled the sky.  /  成千上万的星星布满了天空。</li>
+</ul>
+
+<h4 id="toc_298">词族与词根</h4>
+
+<ul>
+<li>thousand（数词，一千）；hundreds of、millions of 是相同结构。</li>
+<li>记忆方法：具体数字后用 two thousand；表示“成千上万”才用 thousands of + 复数名词。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_299">tear  /tɪə(r)/     ⭐⭐⭐</h2>
+
+<h4 id="toc_300">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a drop of liquid that comes from your eye when you cry 眼泪；泪水</li>
+<li>例句：A tear rolled down her cheek.  /  一滴眼泪从她的脸颊滑落。</li>
+<li><p>可数性：可数；a tear → tears</p></li>
+<li><p>语法辨析：tear /teə(r)/ 还可作动词“撕裂”，与本词义发音不同。</p></li>
+</ul>
+
+<h4 id="toc_301">常用短语与考试搭配</h4>
+
+<h4 id="toc_302">1. <code>tears of joy</code>     喜悦的泪水</h4>
+
+<ul>
+<li>例句：Her eyes filled with tears of joy.  /  她的眼里充满了喜悦的泪水。</li>
+</ul>
+
+<h4 id="toc_303">2. <code>burst into tears</code>     突然哭起来</h4>
+
+<ul>
+<li>例句：The little girl burst into tears after losing her toy.  /  小女孩丢了玩具后突然哭了起来。</li>
+</ul>
+
+<h4 id="toc_304">3. <code>in tears</code>     含泪；哭泣</h4>
+
+<ul>
+<li>例句：He was in tears when he heard the news.  /  听到这个消息时他哭了。</li>
+</ul>
+
+<h4 id="toc_305">词族与词根</h4>
+
+<ul>
+<li>tearful（形容词，含泪的）；tearfully（副词，含泪地）。</li>
+<li>记忆方法：tear 加 <code>-ful</code> 表“充满眼泪的”，再加 <code>-ly</code> 表“含泪地”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_306">remind  /rɪˈmaɪnd/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_307">动词 verb</h4>
+
+<h5 id="toc_308">1. 释义：to make someone remember sth    使想起</h5>
+
+<ul>
+<li>例句：This song reminds me of my childhood.  /  这首歌使我想起了童年。</li>
+<li>类型：及物动词</li>
+<li>变化：remind — reminded — reminded，规则变化</li>
+</ul>
+
+<h5 id="toc_309">2. 释义：to tell someone not to forget something 提醒</h5>
+
+<ul>
+<li>例句：Please remind me to bring my guidebook.  /  请提醒我带上旅行指南。</li>
+<li>类型：及物动词</li>
+</ul>
+
+<h4 id="toc_310">常用短语与考试搭配</h4>
+
+<h4 id="toc_311">1. <code>remind sb of sth</code>     使某人想起某事</h4>
+
+<ul>
+<li>例句：The old photo reminds me of my grandparents.  /  这张旧照片使我想起了祖父母。</li>
+</ul>
+
+<h4 id="toc_312">2. <code>remind sb to do sth</code>     提醒某人做某事</h4>
+
+<ul>
+<li>例句：Please remind Tom to take his medicine.  /  请提醒汤姆吃药。</li>
+</ul>
+
+<h4 id="toc_313">3. <code>remind sb that</code>     提醒某人……</h4>
+
+<ul>
+<li>例句：The sign reminds us that the lake is dangerous.  /  告示提醒我们湖很危险。</li>
+</ul>
+
+<h4 id="toc_314">词族与词根</h4>
+
+<ul>
+<li>reminder（名词，提醒；提示）；remind（动词，提醒；使想起）。</li>
+<li>记忆方法：remind 可拆为 re-（再次）+ mind（想起），reminder 是“提醒物”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_315">peace  /piːs/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_316">名词 noun（不可数名词）</h4>
+
+<h5 id="toc_317">1. 释义：a situation in which there is no war or fighting    和平；太平</h5>
+
+<ul>
+<li>例句：Everyone hopes to live in peace.  /  每个人都希望生活在和平中。</li>
+<li>可数性：通常作不可数名词；peace 没有普通复数</li>
+</ul>
+
+<h5 id="toc_318">2. 释义：a calm and quiet state  安宁；平静</h5>
+
+<ul>
+<li>例句：The quiet scenery brought me peace.  /  安静的景色带给我平静。</li>
+</ul>
+
+<h4 id="toc_319">常用短语与考试搭配</h4>
+
+<h4 id="toc_320">1. <code>world peace</code>     世界和平</h4>
+
+<ul>
+<li>例句：People around the world work for world peace.  /  全世界的人都为世界和平而努力。</li>
+</ul>
+
+<h4 id="toc_321">2. <code>make peace</code>     讲和；和解</h4>
+
+<ul>
+<li>例句：The two friends made peace after the fight.  /  两个朋友打架后和解了。</li>
+</ul>
+
+<h4 id="toc_322">3. <code>keep the peace</code>     维护和平或秩序</h4>
+
+<ul>
+<li>例句：The police were there to keep the peace.  /  警察在那里维护和平与秩序。</li>
+</ul>
+
+<h4 id="toc_323">4. <code>in peace</code>     和平地；安静地</h4>
+
+<ul>
+<li>例句：The family lived in peace for many years.  /  这个家庭多年来和平地生活。</li>
+</ul>
+
+<h4 id="toc_324">词族与词根</h4>
+
+<ul>
+<li>peaceful（形容词，和平的；宁静的）；peacefully（副词，和平地）。</li>
+<li>记忆方法：peace 加 <code>-ful</code> 表“充满和平的”，再加 <code>-ly</code> 变副词。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_325">easily  /ˈiːzəli/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_326">副词 adverb</h4>
+
+<h5 id="toc_327">1. 释义：without difficulty  容易地；轻易地</h5>
+
+<ul>
+<li>例句：With practice, you can easily improve your English.  /  通过练习，你可以轻松提高英语。</li>
+</ul>
+
+<h5 id="toc_328">2. 释义：by far; clearly 明显地；远远地</h5>
+
+<ul>
+<li>例句：This is easily the best artwork in the exhibition.  /  这显然是展览中最好的艺术品。</li>
+</ul>
+
+<h4 id="toc_329">常用短语与考试搭配</h4>
+
+<h4 id="toc_330">1. <code>easily understand</code>     容易理解</h4>
+
+<ul>
+<li>例句：The teacher explained the rule so that we could easily understand it.  /  老师解释了规则，以便我们能够轻松理解。</li>
+</ul>
+
+<h4 id="toc_331">2. <code>easily the best</code>     显然是最好的</h4>
+
+<ul>
+<li>例句：She is easily the best player on the team.  /  她显然是队里最好的运动员。</li>
+</ul>
+
+<h4 id="toc_332">3. <code>not easily</code>     不轻易地</h4>
+
+<ul>
+<li>例句：He does not give up easily.  /  他不会轻易放弃。</li>
+</ul>
+
+<h4 id="toc_333">词族与词根</h4>
+
+<ul>
+<li>easy（形容词，容易的）；ease（名词/动词，轻松；缓解）；uneasy（形容词，不安的）。</li>
+<li>记忆方法：easy 变 easily 时把 <code>y</code> 变 <code>i</code> 再加 <code>-ly</code>；uneasy 加 <code>un-</code> 表“不安的”。</li>
+</ul>
+
+<h2 id="toc_334">forget  /fəˈɡet/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_335">动词 verb</h4>
+
+<ul>
+<li>释义：to fail to remember something or someone   忘记；遗忘</li>
+<li>例句：Don&#39;t forget your passport.  /  别忘了带护照。</li>
+<li>类型：及物或不及物动词</li>
+<li>变化：forget — forgot — forgotten，不规则变化</li>
+</ul>
+
+<h4 id="toc_336">常用短语与考试搭配</h4>
+
+<h4 id="toc_337">1. <code>forget to do sth</code>     忘记做某事</h4>
+
+<ul>
+<li>例句：I forgot to lock the door.  /  我忘记锁门了。</li>
+</ul>
+
+<h4 id="toc_338">2. <code>forget doing sth</code>     忘记做过某事</h4>
+
+<ul>
+<li>例句：I will never forget meeting my first English teacher.  /  我永远不会忘记见到我的第一位英语老师。</li>
+</ul>
+
+<h4 id="toc_339">词族与词根</h4>
+
+<ul>
+<li>forgetful（形容词，健忘的）；forgetfulness（名词，健忘）。</li>
+<li>记忆方法：forget to do 是“忘记要做”，forget doing 是“忘记做过”；注意 forgot 是过去式，forgotten 是过去分词。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_340">noon  /nuːn/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_341">名词 noun（不可数名词）</h4>
+
+<ul>
+<li>释义：twelve o&#39;clock in the middle of the day    正午；中午</li>
+<li>例句：We arrived at noon.  /  我们中午到达。</li>
+<li>可数性：不可数；通常不加复数</li>
+</ul>
+
+<h4 id="toc_342">常用短语与考试搭配</h4>
+
+<h4 id="toc_343">1. <code>at noon</code>     在中午</h4>
+
+<ul>
+<li>例句：The train leaves at noon.  /  火车中午出发。</li>
+</ul>
+
+<h4 id="toc_344">2. <code>by noon</code>     到中午为止</h4>
+
+<ul>
+<li>例句：Please finish the work by noon.  /  请在中午前完成工作。</li>
+</ul>
+
+<h4 id="toc_345">词族与词根</h4>
+
+<ul>
+<li>noon（正午）；noonday（正午的；正午）。</li>
+<li>记忆方法：at noon 表示“在中午”，by noon 表示“到中午为止”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_346">sick  /sɪk/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_347">形容词 adjective</h4>
+
+<h5 id="toc_348">1. 释义：not well; suffering from an illness 生病的；不舒服的</h5>
+
+<ul>
+<li>例句：She stayed at home because she was sick.  /  她因为生病待在家里。</li>
+<li>比较级与最高级：sicker；sickest</li>
+<li>反义词：well；healthy</li>
+</ul>
+
+<h5 id="toc_349">2. 释义：feeling that you are going to vomit 恶心的</h5>
+
+<ul>
+<li>例句：I felt sick after the long bus journey.  /  长途乘车后我感到恶心。</li>
+</ul>
+
+<h4 id="toc_350">常用短语与考试搭配</h4>
+
+<h4 id="toc_351">1. <code>feel sick</code>     感到恶心；感到不舒服</h4>
+
+<ul>
+<li>例句：I feel sick when I read in a car.  /  我坐车看书时会感到恶心。</li>
+</ul>
+
+<h4 id="toc_352">2. <code>be sick</code>     生病；不舒服</h4>
+
+<ul>
+<li>例句：Tom is sick and cannot come to school today.  /  汤姆生病了，今天不能来学校。</li>
+</ul>
+
+<h4 id="toc_353">词族与词根</h4>
+
+<ul>
+<li>sickness（名词，疾病；恶心）；sickly（形容词，病弱的）。</li>
+<li>记忆方法：sick 可表示“生病的”或“恶心的”，由上下文判断。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_354">metro  /ˈmetrəʊ/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_355">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：an underground railway system in a city    地下铁道系统</li>
+<li>例句：We took the metro to the city centre.  /  我们乘地铁去了市中心。</li>
+<li>可数性：可数；metro → metros</li>
+</ul>
+
+<h4 id="toc_356">常用短语与考试搭配</h4>
+
+<h4 id="toc_357">1. <code>take the metro</code>     乘地铁</h4>
+
+<ul>
+<li>例句：You can take the metro to the museum.  /  你可以乘地铁去博物馆。</li>
+</ul>
+
+<h4 id="toc_358">词族与词根</h4>
+
+<ul>
+<li>metro（地铁）；metropolitan（形容词/名词，大都市的；大都市人）。</li>
+<li>记忆方法：metro 与 metropolitan 都和“城市/大都市”有关，take the metro 表示“乘地铁”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_359">station  /ˈsteɪʃn/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_360">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a place where trains or buses stop; an office or building for a particular service 车站；所；局</li>
+<li>例句：We arrived at the station before six.  /  我们六点前到达了车站。</li>
+<li>可数性：可数；station → stations</li>
+</ul>
+
+<h4 id="toc_361">常用短语与考试搭配</h4>
+
+<h4 id="toc_362">1. <code>train station</code>     火车站</h4>
+
+<ul>
+<li>例句：The train station is near the hotel.  /  火车站在旅馆附近。</li>
+</ul>
+
+<h4 id="toc_363">2. <code>police station</code>     警察局</h4>
+
+<ul>
+<li>例句：The police station is next to the bank.  /  警察局在银行旁边。</li>
+</ul>
+
+<h4 id="toc_364">3. <code>at the station</code>     在车站</h4>
+
+<ul>
+<li>例句：I will meet you at the station.  /  我会在车站见你。</li>
+</ul>
+
+<h4 id="toc_365">词族与词根</h4>
+
+<ul>
+<li>stationary（形容词，固定的）；stationery（名词，文具），二者拼写和含义不同。</li>
+<li>记忆方法：station 可表示“车站、局、所”；stationary 表“固定的”，stationery 表“文具”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_366">palace  /ˈpæləs/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_367">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：the official home of a king, queen or other important person   王宫；宫殿</li>
+<li>例句：The tourists visited the old palace.  /  游客参观了那座古老的宫殿。</li>
+<li>可数性：可数；palace → palaces</li>
+</ul>
+
+<h4 id="toc_368">常用短语与考试搭配</h4>
+
+<h4 id="toc_369">1. <code>the Palace Museum</code>     故宫博物院</h4>
+
+<ul>
+<li>例句：The Palace Museum is in the centre of Beijing.  /  故宫博物院在北京市中心。</li>
+</ul>
+
+<h4 id="toc_370">2. <code>a royal palace</code>     王宫</h4>
+
+<ul>
+<li>例句：The guide told us about the royal palace.  /  导游给我们讲了王宫的情况。</li>
+</ul>
+
+<h4 id="toc_371">词族与词根</h4>
+
+<ul>
+<li>palace（宫殿）；Palace Museum（故宫博物院）。</li>
+<li>记忆方法：palace 常与 royal、king、queen、museum 等词一起记。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_372">accordion  /əˈkɔːdiən/     ⭐⭐</h2>
+
+<h4 id="toc_373">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a musical instrument that you play by stretching and squeezing it  手风琴</li>
+<li>例句：He can play the accordion very well.  /  他手风琴拉得很好。</li>
+<li>可数性：可数；accordion → accordions</li>
+</ul>
+
+<h4 id="toc_374">常用短语与考试搭配</h4>
+
+<h4 id="toc_375">1. <code>play the accordion</code>     拉手风琴</h4>
+
+<ul>
+<li>例句：My sister learned to play the accordion at school.  /  我妹妹在学校学会了拉手风琴。</li>
+</ul>
+
+<h4 id="toc_376">词族与词根</h4>
+
+<ul>
+<li>accordion player（名词，手风琴演奏者）。</li>
+<li>记忆方法：乐器前常用 play the；play the accordion 表示“拉手风琴”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_377">get together  /ɡet təˈɡeðə(r)/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_378">动词短语 phrasal verb</h4>
+
+<ul>
+<li>释义：to meet and spend time together    聚会；相聚</li>
+<li>例句：Let&#39;s get together after the exams.  /  考试后我们聚一聚吧。</li>
+</ul>
+
+<h4 id="toc_379">常用短语与考试搭配</h4>
+
+<h4 id="toc_380">1. <code>get together with sb</code>     和某人聚会</h4>
+
+<ul>
+<li>例句：I often get together with my classmates at weekends.  /  我周末经常和同学聚会。</li>
+</ul>
+
+<h4 id="toc_381">词族与词根</h4>
+
+<ul>
+<li>get（得到；变得）+ together（一起）= get together（聚在一起）。</li>
+<li>记忆方法：together 是“一起”，get together 直接联想“聚到一起”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_382">in the sun  /ɪn ðə sʌn/     ⭐⭐⭐</h2>
+
+<h4 id="toc_383">介词短语 prepositional phrase</h4>
+
+<ul>
+<li>释义：in a place where the sun is shining    在阳光下</li>
+<li>例句：The children played in the sun all afternoon.  /  孩子们整个下午都在阳光下玩耍。</li>
+</ul>
+
+<h4 id="toc_384">常用短语与考试搭配</h4>
+
+<h4 id="toc_385">1. <code>sit in the sun</code>     坐在阳光下</h4>
+
+<ul>
+<li>例句：My grandfather likes to sit in the sun.  /  我爷爷喜欢坐在阳光下。</li>
+</ul>
+
+<h4 id="toc_386">词族与词根</h4>
+
+<ul>
+<li>sun（太阳）→ sunny（形容词，晴朗的；阳光充足的）。</li>
+<li>记忆方法：sun 是名词“太阳”，sunny 是“充满阳光的”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_387">tower  /ˈtaʊə(r)/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_388">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a tall narrow building or structure    塔；塔楼</li>
+<li>例句：We climbed to the top of the tower.  /  我们爬到了塔顶。</li>
+<li>可数性：可数；tower → towers</li>
+</ul>
+
+<h4 id="toc_389">常用短语与考试搭配</h4>
+
+<h4 id="toc_390">1. <code>clock tower</code>     钟楼</h4>
+
+<ul>
+<li>例句：The old clock tower is in the town centre.  /  那座古老的钟楼在市中心。</li>
+</ul>
+
+<h4 id="toc_391">2. <code>tower over sb</code>     高耸于某人之上</h4>
+
+<ul>
+<li>例句：The tall building towers over the small houses.  /  那座高楼耸立在小房子之上。</li>
+</ul>
+
+<h4 id="toc_392">词族与词根</h4>
+
+<ul>
+<li>tower（塔）；towering（形容词，高耸的）。</li>
+<li>记忆方法：tower 是名词“塔”，tower over 表示“高耸于……之上”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_393">might  /maɪt/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_394">情态动词 modal verb</h4>
+
+<ul>
+<li>释义：used to say that something is possible 可能；可以</li>
+<li>例句：It might rain this evening.  /  今天晚上可能会下雨。</li>
+<li>类型：情态动词；后接动词原形</li>
+<li>变化：没有人称变化；否定式为 might not</li>
+</ul>
+
+<h4 id="toc_395">常用短语与考试搭配</h4>
+
+<h4 id="toc_396">1. <code>might be</code>     可能是</h4>
+
+<ul>
+<li>例句：That might be the right answer.  /  那可能是正确答案。</li>
+</ul>
+
+<h4 id="toc_397">2. <code>might do sth</code>     可能做某事</h4>
+
+<ul>
+<li>例句：We might go shopping after lunch.  /  午饭后我们可能去购物。</li>
+</ul>
+
+<h4 id="toc_398">词族与词根</h4>
+
+<ul>
+<li>may（可能；可以）与 might（可能；可以）都是情态动词。</li>
+<li>记忆方法：might 后接动词原形，语气通常比 may 表示的可能性更不确定。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_399">budget  /ˈbʌdʒɪt/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_400">1. 名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：an amount of money available for a particular purpose  预算</li>
+<li>例句：We planned the trip on a small budget.  /  我们用很少的预算计划了这次旅行。</li>
+<li>可数性：可数；budget → budgets</li>
+</ul>
+
+<h4 id="toc_401">2. 动词 verb</h4>
+
+<ul>
+<li>释义：to plan how much money you can spend   把……编入预算；精打细算</li>
+<li>例句：We need to budget for food and transport.  /  我们需要为食物和交通费用做预算。</li>
+<li>类型：及物或不及物</li>
+<li>变化：budget — budgeted — budgeted，规则变化</li>
+</ul>
+
+<h4 id="toc_402">常用短语与考试搭配</h4>
+
+<h4 id="toc_403">1. <code>on a budget</code>     按预算；预算有限</h4>
+
+<ul>
+<li>例句：We travelled on a tight budget.  /  我们的旅行预算很紧。</li>
+</ul>
+
+<h4 id="toc_404">2. <code>within budget</code>     在预算之内</h4>
+
+<ul>
+<li>例句：The school completed the project within budget.  /  学校在预算之内完成了项目。</li>
+</ul>
+
+<h4 id="toc_405">词族与词根</h4>
+
+<ul>
+<li>budget（预算）；budget-friendly（形容词，经济实惠的）。</li>
+<li>记忆方法：on a budget 表示“按预算生活”，within budget 表示“没有超出预算”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_406">passport  /ˈpɑːspɔːt/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_407">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：an official document that you need when travelling to another country  护照</li>
+<li>例句：You must take your passport when you travel abroad.  /  出国旅行时你必须带护照。</li>
+<li>可数性：可数；passport → passports</li>
+</ul>
+
+<h4 id="toc_408">常用短语与考试搭配</h4>
+
+<h4 id="toc_409">1. <code>show your passport</code>     出示护照</h4>
+
+<ul>
+<li>例句：Please show your passport at the border.  /  请在边境出示护照。</li>
+</ul>
+
+<h4 id="toc_410">2. <code>passport number</code>     护照号码</h4>
+
+<ul>
+<li>例句：Write your passport number on the form.  /  在表格上写下你的护照号码。</li>
+</ul>
+
+<h4 id="toc_411">词族与词根</h4>
+
+<ul>
+<li>pass（通过）+ port（港口）= passport（护照）。</li>
+<li>记忆方法：passport 可联想为“通过港口/关口的证件”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_412">forgetful  /fəˈɡetfl/     ⭐⭐⭐</h2>
+
+<h4 id="toc_413">形容词 adjective</h4>
+
+<ul>
+<li>释义：often forgetting things    健忘的；好忘事的</li>
+<li>例句：My grandfather is becoming forgetful.  /  我的爷爷变得越来越健忘。</li>
+<li>比较级与最高级：more forgetful；most forgetful</li>
+<li>反义词：not forgetful；good at remembering（记性好的）。</li>
+</ul>
+
+<h4 id="toc_414">常用短语与考试搭配</h4>
+
+<h4 id="toc_415">1. <code>be forgetful</code>     健忘</h4>
+
+<ul>
+<li>例句：He is forgetful and often loses his keys.  /  他很健忘，经常丢钥匙。</li>
+</ul>
+
+<h4 id="toc_416">词族与词根</h4>
+
+<ul>
+<li>forget（动词，忘记）；forgetfulness（名词，健忘）。</li>
+<li>记忆方法：forget 加 <code>-ful</code> 表示“充满忘记的状态”，即“健忘的”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_417">faraway  /ˈfɑːrəweɪ; ˌfɑːrəˈweɪ/     ⭐⭐</h2>
+
+<h4 id="toc_418">形容词 adjective</h4>
+
+<ul>
+<li>释义：far from the place where you are; distant  远方的；遥远的</li>
+<li>例句：She dreamed of travelling to a faraway land.  /  她梦想去一个遥远的地方旅行。</li>
+<li>比较级与最高级：通常不用于比较级和最高级</li>
+<li>反义词：nearby（附近的）</li>
+</ul>
+
+<h4 id="toc_419">常用短语与考试搭配</h4>
+
+<h4 id="toc_420">1. <code>a faraway place</code>     遥远的地方</h4>
+
+<ul>
+<li>例句：The story takes us to a faraway place.  /  这个故事把我们带到了一个遥远的地方。</li>
+</ul>
+
+<h4 id="toc_421">词族与词根</h4>
+
+<ul>
+<li>far（远的）+ away（离开；远离）= faraway（遥远的）。</li>
+<li>记忆方法：faraway 直接拆为 far + away，两个“远”的意思叠加。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_422">regular  /ˈreɡjələ(r)/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_423">形容词 adjective</h4>
+
+<ul>
+<li>释义：usual, normal or happening often   平常的；有规律的</li>
+<li>例句：Regular exercise is good for your health.  /  有规律的锻炼对健康有好处。</li>
+<li>比较级与最高级：more regular；most regular</li>
+<li>反义词：irregular（不规则的）</li>
+</ul>
+
+<h4 id="toc_424">常用短语与考试搭配</h4>
+
+<h4 id="toc_425">1. <code>regular exercise</code>     经常锻炼；规律运动</h4>
+
+<ul>
+<li>例句：Regular exercise helps us stay healthy.  /  经常锻炼有助于我们保持健康。</li>
+</ul>
+
+<h4 id="toc_426">2. <code>on a regular basis</code>     定期地</h4>
+
+<ul>
+<li>例句：The library checks its books on a regular basis.  /  图书馆定期检查书籍。</li>
+</ul>
+
+<h4 id="toc_427">词族与词根</h4>
+
+<ul>
+<li>regularly（副词，定期地）；irregular（形容词，不规则的）。</li>
+<li>记忆方法：regular 表“有规律的”，加 ir- 变成反义词 irregular。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_428">countryside  /ˈkʌntrisaɪd/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_429">名词 noun（不可数名词）</h4>
+
+<ul>
+<li>释义：land outside towns and cities, with fields and farms   乡村；农村</li>
+<li>例句：My grandparents live in the countryside.  /  我的祖父母住在乡村。</li>
+<li>可数性：不可数；通常不加复数</li>
+</ul>
+
+<h4 id="toc_430">常用短语与考试搭配</h4>
+
+<h4 id="toc_431">1. <code>in the countryside</code>     在乡村</h4>
+
+<ul>
+<li>例句：We spent the weekend in the countryside.  /  我们在乡村度过了周末。</li>
+</ul>
+
+<h4 id="toc_432">词族与词根</h4>
+
+<ul>
+<li>country（国家；乡村）+ side（区域）= countryside（乡村地区）。</li>
+<li>记忆方法：countryside 可拆为 country + side，表示“城市之外的乡村一带”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_433">turn around  /tɜːn əˈraʊnd/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_434">动词短语 phrasal verb</h4>
+
+<ul>
+<li>释义：to turn so that you face the opposite direction; to turn something over    转身；翻转</li>
+<li>例句：He turned around when he heard his name.  /  听到自己的名字时，他转过身来。</li>
+</ul>
+
+<h4 id="toc_435">常用短语与考试搭配</h4>
+
+<h4 id="toc_436">1. <code>turn around</code>     转身</h4>
+
+<ul>
+<li>例句：Please turn around and look at the picture.  /  请转过身来看看这幅画。</li>
+</ul>
+
+<h4 id="toc_437">2. <code>turn sth around</code>     把某物翻转</h4>
+
+<ul>
+<li>例句：Turn the card around to read the other side.  /  把卡片翻过来看看另一面。</li>
+</ul>
+
+<h4 id="toc_438">词族与词根</h4>
+
+<ul>
+<li>turn（转动；变成）+ around（周围；转过来）= turn around（转身；翻转）。</li>
+<li>记忆方法：around 有“转过来”的感觉，turn around 就是“转身”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_439">surprised  /səˈpraɪzd/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_440">形容词 adjective</h4>
+
+<ul>
+<li>释义：feeling surprise because something unexpected has happened 惊奇的；惊讶的</li>
+<li>例句：I was surprised by the good news.  /  这个好消息让我感到惊讶。</li>
+<li>比较级与最高级：通常不用于比较级和最高级</li>
+<li>反义词：unsurprised（不惊讶的）；not surprised</li>
+</ul>
+
+<h4 id="toc_441">常用短语与考试搭配</h4>
+
+<h4 id="toc_442">1. <code>be surprised at sth</code>     对某事感到惊讶</h4>
+
+<ul>
+<li>例句：We were surprised at the result.  /  我们对结果感到惊讶。</li>
+</ul>
+
+<h4 id="toc_443">2. <code>be surprised to do sth</code>     惊讶地做某事</h4>
+
+<ul>
+<li>例句：She was surprised to see her old friend.  /  她惊讶地见到了老朋友。</li>
+</ul>
+
+<h4 id="toc_444">词族与词根</h4>
+
+<ul>
+<li>surprise（名词/动词，惊奇；使惊讶）；surprising（形容词，令人惊讶的）。</li>
+<li>记忆方法：surprised 描述人的感受，surprising 描述引起感受的事物。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_445">deer  /dɪə(r)/     ⭐⭐⭐</h2>
+
+<h4 id="toc_446">名词 noun（单复数同形）</h4>
+
+<ul>
+<li>释义：a large wild animal with long legs; the plural is also deer    鹿</li>
+<li>例句：We saw three deer in the forest.  /  我们在森林里看到了三只鹿。</li>
+<li>可数性：可数；单数 a deer，复数 deer</li>
+</ul>
+
+<h4 id="toc_447">常用短语与考试搭配</h4>
+
+<h4 id="toc_448">1. <code>a herd of deer</code>     一群鹿</h4>
+
+<ul>
+<li>例句：A herd of deer crossed the road.  /  一群鹿穿过了马路。</li>
+</ul>
+
+<h4 id="toc_449">词族与词根</h4>
+
+<ul>
+<li>deer（鹿）；deer park（鹿苑）。</li>
+<li>记忆方法：deer 的单复数同形，数量词后仍用 deer，如 three deer。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_450">probably  /ˈprɒbəbli/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_451">副词 adverb</h4>
+
+<ul>
+<li>释义：used to say that something is likely to happen or be true  很可能；大概</li>
+<li>例句：She will probably arrive before noon.  /  她很可能在中午前到达。</li>
+</ul>
+
+<h4 id="toc_452">常用短语与考试搭配</h4>
+
+<h4 id="toc_453">1. <code>probably be</code>     很可能是</h4>
+
+<ul>
+<li>例句：It will probably be cold tomorrow.  /  明天很可能会很冷。</li>
+</ul>
+
+<h4 id="toc_454">2. <code>probably do sth</code>     很可能做某事</h4>
+
+<ul>
+<li>例句：We will probably go shopping this afternoon.  /  今天下午我们很可能去购物。</li>
+</ul>
+
+<h4 id="toc_455">词族与词根</h4>
+
+<ul>
+<li>probable（形容词，可能的）；probability（名词，可能性）。</li>
+<li>记忆方法：probably 是 probable 加 <code>-ly</code>，表示“很可能地”；通常放在实义动词前、be 后。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_456">look for  /lʊk fɔː(r)/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_457">动词短语 phrasal verb</h4>
+
+<ul>
+<li>释义：to try to find someone or something    寻找</li>
+<li>例句：I am looking for my keys.  /  我正在寻找我的钥匙。</li>
+</ul>
+
+<h4 id="toc_458">常用短语与考试搭配</h4>
+
+<h4 id="toc_459">1. <code>look for sth</code>     寻找某物</h4>
+
+<ul>
+<li>例句：She is looking for her passport.  /  她正在寻找她的护照。</li>
+</ul>
+
+<h4 id="toc_460">2. <code>look for sb</code>     寻找某人</h4>
+
+<ul>
+<li>例句：The teacher is looking for Tom.  /  老师正在找汤姆。</li>
+</ul>
+
+<h4 id="toc_461">词族与词根</h4>
+
+<ul>
+<li>look（看）+ for（为了）= look for（寻找）。</li>
+<li>记忆方法：look for 强调“寻找”，look at 强调“看”，look after 表示“照顾”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_462">Guest-Greeting Pine  /ˈɡest ˌɡriːtɪŋ paɪn/     ⭐</h2>
+
+<h4 id="toc_463">专有名词 proper noun</h4>
+
+<ul>
+<li>释义：a famous pine tree that seems to welcome visitors  迎客松</li>
+<li>例句：Visitors often take photos of the Guest-Greeting Pine.  /  游客经常给迎客松拍照。</li>
+</ul>
+
+<h4 id="toc_464">常用短语与考试搭配</h4>
+
+<h4 id="toc_465">1. <code>take photos of the Guest-Greeting Pine</code>     给迎客松拍照</h4>
+
+<ul>
+<li>例句：We took photos of the Guest-Greeting Pine on the mountain.  /  我们在山上给迎客松拍了照片。</li>
+</ul>
+
+<h4 id="toc_466">词族与词根</h4>
+
+<ul>
+<li>guest（客人）+ greeting（问候）+ pine（松树）。</li>
+<li>记忆方法：Guest-Greeting Pine 可拆为“欢迎客人的松树”，即迎客松。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_467">Sea of Clouds  /siː əv klaʊdz/     ⭐</h2>
+
+<h4 id="toc_468">专有名词 proper noun</h4>
+
+<ul>
+<li>释义：a view of clouds spread below a mountain like a sea    云海</li>
+<li>例句：We watched the sunrise above the Sea of Clouds.  /  我们在云海上方观看了日出。</li>
+</ul>
+
+<h4 id="toc_469">常用短语与考试搭配</h4>
+
+<h4 id="toc_470">1. <code>above the Sea of Clouds</code>     在云海上方</h4>
+
+<ul>
+<li>例句：The mountain looks beautiful above the Sea of Clouds.  /  云海上方的山景很美。</li>
+</ul>
+
+<h4 id="toc_471">词族与词根</h4>
+
+<ul>
+<li>sea（海）+ clouds（云）= Sea of Clouds（云海）。</li>
+<li>记忆方法：把云层想象成海面，Sea of Clouds 就是“云的海洋”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_472">Seattle  /siˈætl/     ⭐</h2>
+
+<h4 id="toc_473">专有名词 proper noun</h4>
+
+<ul>
+<li>释义：a city in the north-western United States  西雅图</li>
+<li>例句：Seattle is known for its rainy weather.  /  西雅图以多雨的天气而闻名。</li>
+</ul>
+
+<h4 id="toc_474">常用短语与考试搭配</h4>
+
+<h4 id="toc_475">1. <code>in Seattle</code>     在西雅图</h4>
+
+<ul>
+<li>例句：My cousin studies in Seattle.  /  我的表兄弟在西雅图学习。</li>
+</ul>
+
+<h4 id="toc_476">词族与词根</h4>
+
+<ul>
+<li>Seattle（西雅图）；Seattle weather（西雅图天气）。</li>
+<li>记忆方法：把 Seattle 与 rainy weather、the United States 一起记。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_477">Red Square  /red skweə(r)/     ⭐</h2>
+
+<h4 id="toc_478">专有名词 proper noun</h4>
+
+<ul>
+<li>释义：a famous square in Moscow  红场</li>
+<li>例句：We took photos in Red Square.  /  我们在红场拍了照片。</li>
+</ul>
+
+<h4 id="toc_479">常用短语与考试搭配</h4>
+
+<h4 id="toc_480">1. <code>in Red Square</code>     在红场</h4>
+
+<ul>
+<li>例句：Many tourists walk in Red Square every day.  /  每天有许多游客在红场散步。</li>
+</ul>
+
+<h4 id="toc_481">词族与词根</h4>
+
+<ul>
+<li>red（红色的）+ square（广场）= Red Square（红场）。</li>
+<li>记忆方法：专有地名按“颜色 + 地点”整体记忆。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_482">Alexander Garden  /ˌælɪɡˈzɑːndə(r) ˈɡɑːdn/     ⭐</h2>
+
+<h4 id="toc_483">专有名词 proper noun</h4>
+
+<ul>
+<li>释义：a famous garden in Moscow  亚历山大花园</li>
+<li>例句：We walked through Alexander Garden near the Kremlin.  /  我们步行穿过了克里姆林宫附近的亚历山大花园。</li>
+</ul>
+
+<h4 id="toc_484">常用短语与考试搭配</h4>
+
+<h4 id="toc_485">1. <code>walk through Alexander Garden</code>     步行穿过亚历山大花园</h4>
+
+<ul>
+<li>例句：Many visitors walk through Alexander Garden every day.  /  每天有许多游客步行穿过亚历山大花园。</li>
+</ul>
+
+<h4 id="toc_486">词族与词根</h4>
+
+<ul>
+<li>garden（名词，花园）；gardener（名词，园丁）。</li>
+<li>记忆方法：Garden 是“花园”，Alexander Garden 可直接按“亚历山大花园”整体记忆。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_487">Vincent  /ˈvɪnsnt/     ⭐</h2>
+
+<h4 id="toc_488">专有名词 proper noun</h4>
+
+<ul>
+<li>释义：a male first name  文森特</li>
+<li>例句：Vincent is a friend of my family.  /  文森特是我家人的朋友。</li>
+</ul>
+
+<h4 id="toc_489">常用短语与考试搭配</h4>
+
+<h4 id="toc_490">1. <code>Vincent van Gogh</code>     文森特·梵高</h4>
+
+<ul>
+<li>例句：Vincent van Gogh was a famous painter.  /  文森特·梵高是一位著名画家。</li>
+</ul>
+
+<h4 id="toc_491">词族与词根</h4>
+
+<ul>
+<li>Vincent（人名）；Vincent van Gogh（文森特·梵高）。</li>
+<li>记忆方法：Vincent 是人名，首字母要大写。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_492">Moscow  /ˈmɒskəʊ/     ⭐</h2>
+
+<h4 id="toc_493">专有名词 proper noun</h4>
+
+<ul>
+<li>释义：the capital city of Russia 莫斯科</li>
+<li>例句：Moscow is the capital of Russia.  /  莫斯科是俄罗斯的首都。</li>
+</ul>
+
+<h4 id="toc_494">常用短语与考试搭配</h4>
+
+<h4 id="toc_495">1. <code>in Moscow</code>     在莫斯科</h4>
+
+<ul>
+<li>例句：My uncle works in Moscow.  /  我叔叔在莫斯科工作。</li>
+</ul>
+
+<h4 id="toc_496">词族与词根</h4>
+
+<ul>
+<li>Moscow（莫斯科）；Moscow Metro（莫斯科地铁）。</li>
+<li>记忆方法：把 Moscow 与 Russia、capital city 一起记忆。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_497">Russia  /ˈrʌʃə/     ⭐⭐</h2>
+
+<h4 id="toc_498">专有名词 proper noun</h4>
+
+<ul>
+<li>释义：a country in eastern Europe and northern Asia  俄罗斯</li>
+<li>例句：Russia is the largest country in the world.  /  俄罗斯是世界上面积最大的国家。</li>
+</ul>
+
+<h4 id="toc_499">常用短语与考试搭配</h4>
+
+<h4 id="toc_500">1. <code>in Russia</code>     在俄罗斯</h4>
+
+<ul>
+<li>例句：My friend lives in Russia.  /  我的朋友住在俄罗斯。</li>
+</ul>
+
+<h4 id="toc_501">词族与词根</h4>
+
+<ul>
+<li>Russian（形容词/名词，俄罗斯的；俄罗斯人；俄语）；Russia（俄罗斯）。</li>
+<li>记忆方法：Russia 是国家名，Russian 是对应的形容词、语言或国民名。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_502">the Victory Museum  /ðə ˈvɪktəri mjuːˈziːəm/     ⭐</h2>
+
+<h4 id="toc_503">专有名词 proper noun</h4>
+
+<ul>
+<li>释义：a museum about victory and wartime history in Moscow   胜利博物馆</li>
+<li>例句：We visited the Victory Museum in Moscow.  /  我们参观了莫斯科的胜利博物馆。</li>
+</ul>
+
+<h4 id="toc_504">常用短语与考试搭配</h4>
+
+<h4 id="toc_505">1. <code>visit the Victory Museum</code>     参观胜利博物馆</h4>
+
+<ul>
+<li>例句：Many students visit the Victory Museum to learn about history.  /  许多学生参观胜利博物馆来了解历史。</li>
+</ul>
+
+<h4 id="toc_506">词族与词根</h4>
+
+<ul>
+<li>victory（名词，胜利）；museum（名词，博物馆）。</li>
+<li>记忆方法：the Victory Museum 可拆为“胜利 + 博物馆”，按专有名称整体记忆。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_507">Nazi  /ˈnɑːtsi/     ⭐</h2>
+
+<h4 id="toc_508">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a member of the Nazi Party 纳粹党人；纳粹分子</li>
+<li>例句：The museum tells the story of the people who suffered under the Nazis.  /  这座博物馆讲述了纳粹统治下受苦的人们的故事。</li>
+<li>可数性：可数；Nazi → Nazis</li>
+</ul>
+
+<h4 id="toc_509">常用短语与考试搭配</h4>
+
+<h4 id="toc_510">1. <code>the Nazis</code>     纳粹分子</h4>
+
+<ul>
+<li>例句：The Nazis caused great suffering during World War II.  /  纳粹分子在第二次世界大战期间造成了巨大的苦难。</li>
+</ul>
+
+<h4 id="toc_511">词族与词根</h4>
+
+<ul>
+<li>Nazi Party（纳粹党）；Nazi Germany（纳粹德国）。</li>
+<li>记忆方法：Nazi 常与 Party、Germany、World War II 等历史词汇一起记。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_512">World War II  /wɜːld wɔː tuː/     ⭐</h2>
+
+<h4 id="toc_513">专有名词 proper noun</h4>
+
+<ul>
+<li>释义：the war fought from 1939 to 1945   第二次世界大战</li>
+<li>例句：World War II ended in 1945.  /  第二次世界大战于1945年结束。</li>
+</ul>
+
+<h4 id="toc_514">常用短语与考试搭配</h4>
+
+<h4 id="toc_515">1. <code>during World War II</code>     在第二次世界大战期间</h4>
+
+<ul>
+<li>例句：Many people suffered during World War II.  /  第二次世界大战期间许多人遭受了苦难。</li>
+</ul>
+
+<h4 id="toc_516">词族与词根</h4>
+
+<ul>
+<li>world（世界）+ war（战争）+ II（二）= World War II。</li>
+<li>记忆方法：World War II 中 II 表示“第二次”，与 World War I 相对。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_517">Moscow Metro  /ˈmɒskəʊ ˈmetrəʊ/     ⭐</h2>
+
+<h4 id="toc_518">专有名词 proper noun</h4>
+
+<ul>
+<li>释义：the underground railway system in Moscow   莫斯科地铁</li>
+<li>例句：The Moscow Metro is famous for its beautiful stations.  /  莫斯科地铁以其美丽的车站而闻名。</li>
+</ul>
+
+<h4 id="toc_519">常用短语与考试搭配</h4>
+
+<h4 id="toc_520">1. <code>take the Moscow Metro</code>     乘坐莫斯科地铁</h4>
+
+<ul>
+<li>例句：We took the Moscow Metro to Red Square.  /  我们乘莫斯科地铁去了红场。</li>
+</ul>
+
+<h4 id="toc_521">词族与词根</h4>
+
+<ul>
+<li>Moscow（莫斯科）+ Metro（地铁）= Moscow Metro（莫斯科地铁）。</li>
+<li>记忆方法：按“城市名 + 交通工具”整体记忆。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_522">Scotland  /ˈskɒtlənd/     ⭐</h2>
+
+<h4 id="toc_523">专有名词 proper noun</h4>
+
+<ul>
+<li>释义：a country that is part of the United Kingdom   苏格兰</li>
+<li>例句：Scotland is famous for its beautiful mountains.  /  苏格兰以美丽的山脉闻名。</li>
+</ul>
+
+<h4 id="toc_524">常用短语与考试搭配</h4>
+
+<h4 id="toc_525">1. <code>in Scotland</code>     在苏格兰</h4>
+
+<ul>
+<li>例句：They spent a week in Scotland.  /  他们在苏格兰待了一个星期。</li>
+</ul>
+
+<h4 id="toc_526">词族与词根</h4>
+
+<ul>
+<li>Scottish（形容词，苏格兰的；苏格兰人的）；Scot（名词，苏格兰人）。</li>
+<li>记忆方法：Scotland 是国家名，Scottish 是“苏格兰的”，Scot 是“苏格兰人”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_527">Unit 2</h2>
+
+<h2 id="toc_528">pack  /pæk/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_529">动词 verb</h4>
+
+<ul>
+<li>释义：to put things into a bag or suitcase   打包；收拾</li>
+<li>例句：I need to pack my clothes for the trip.  /  我需要为旅行收拾衣服。</li>
+<li>类型：及物或不及物动词</li>
+<li>变化：pack — packed — packed，规则变化</li>
+</ul>
+
+<h4 id="toc_530">常用短语与考试搭配</h4>
+
+<h4 id="toc_531">1. <code>pack up</code>     打包；收拾好</h4>
+
+<ul>
+<li>例句：We packed up our books after class.  /  下课后我们收拾好了书。</li>
+</ul>
+
+<h4 id="toc_532">2. <code>pack sth into sth</code>     把某物装进某物</h4>
+
+<ul>
+<li>例句：She packed her clothes into a suitcase.  /  她把衣服装进了手提箱。</li>
+</ul>
+
+<h4 id="toc_533">词族与词根</h4>
+
+<ul>
+<li>package（名词，包裹；包装）；packing（名词，包装；收拾行李）。</li>
+<li>记忆方法：pack 是“打包”，package 是“包裹”，packing 是“打包这件事”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_534">pack up  /pæk ʌp/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_535">动词短语 phrasal verb</h4>
+
+<ul>
+<li>释义：to put things together and make them ready to take away    打包；收拾好</li>
+<li>例句：Please pack up your books before you leave.  /  离开前请收拾好你的书。</li>
+</ul>
+
+<h4 id="toc_536">常用短语与考试搭配</h4>
+
+<h4 id="toc_537">1. <code>pack up sth</code>     收拾好某物</h4>
+
+<ul>
+<li>例句：The students packed up their bags after class.  /  下课后学生们收拾好了书包。</li>
+</ul>
+
+<h4 id="toc_538">词族与词根</h4>
+
+<ul>
+<li>pack（打包）；package（包裹）；packing（打包；收拾行李）。</li>
+<li>记忆方法：up 有“完成、收好”的含义，pack up 就是“把东西收拾好”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_539">bathroom  /ˈbɑːθruːm/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_540">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a room with a toilet and a place to wash   浴室；洗手间</li>
+<li>例句：The bathroom is next to the bedroom.  /  浴室在卧室旁边。</li>
+<li>可数性：可数；bathroom → bathrooms</li>
+</ul>
+
+<h4 id="toc_541">常用短语与考试搭配</h4>
+
+<h4 id="toc_542">1. <code>go to the bathroom</code>     去洗手间</h4>
+
+<ul>
+<li>例句：Tom asked if he could go to the bathroom.  /  汤姆问他是否可以去洗手间。</li>
+</ul>
+
+<h4 id="toc_543">词族与词根</h4>
+
+<ul>
+<li>bath（名词，洗澡；浴缸）；room（名词，房间）；bathroom 是复合词。</li>
+<li>记忆方法：bath + room 就是“洗澡的房间”，即浴室或洗手间。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_544">sort  /sɔːt/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_545">1. 名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a group of people or things with similar qualities 种类</li>
+<li>例句：What sort of music do you like?  /  你喜欢哪种音乐？</li>
+<li>可数性：可数；sort → sorts</li>
+</ul>
+
+<h4 id="toc_546">2. 动词 verb</h4>
+
+<ul>
+<li>释义：to separate things into groups or arrange them 把……分类；整理</li>
+<li>例句：We sorted the books by subject.  /  我们按科目整理了这些书。</li>
+<li>类型：及物动词</li>
+<li>变化：sort — sorted — sorted，规则变化</li>
+</ul>
+
+<h4 id="toc_547">常用短语与考试搭配</h4>
+
+<h4 id="toc_548">1. <code>sort sth out</code>     把某事处理好；整理好某物</h4>
+
+<ul>
+<li>例句：We need to sort out the problem before Friday.  /  我们需要在周五前解决这个问题。</li>
+</ul>
+
+<h4 id="toc_549">2. <code>what sort of</code>     什么种类的</h4>
+
+<ul>
+<li>例句：What sort of books do you enjoy reading?  /  你喜欢读哪种书？</li>
+</ul>
+
+<h4 id="toc_550">词族与词根</h4>
+
+<ul>
+<li>sort（种类；分类）；sorter（名词，分类者；分拣机）。</li>
+<li>记忆方法：sort 作名词是“种类”，作动词是“分类”，what sort of 是高频句型。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_551">bedroom  /ˈbedruːm/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_552">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a room used for sleeping   卧室</li>
+<li>例句：I keep my books in my bedroom.  /  我把书放在卧室里。</li>
+<li>可数性：可数；bedroom → bedrooms</li>
+</ul>
+
+<h4 id="toc_553">常用短语与考试搭配</h4>
+
+<h4 id="toc_554">1. <code>in the bedroom</code>     在卧室里</h4>
+
+<ul>
+<li>例句：My brother is reading in the bedroom.  /  我弟弟正在卧室里读书。</li>
+</ul>
+
+<h4 id="toc_555">词族与词根</h4>
+
+<ul>
+<li>bed（床）+ room（房间）= bedroom（卧室）。</li>
+<li>记忆方法：看到 bed + room，直接联想“放床的房间”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_556">balcony  /ˈbælkəni/     ⭐⭐</h2>
+
+<h4 id="toc_557">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a platform that is built on the outside wall of a building 阳台</li>
+<li>例句：We sat on the balcony and watched the sunset.  /  我们坐在阳台上观看日落。</li>
+<li>可数性：可数；balcony → balconies</li>
+</ul>
+
+<h4 id="toc_558">常用短语与考试搭配</h4>
+
+<h4 id="toc_559">1. <code>on the balcony</code>     在阳台上</h4>
+
+<ul>
+<li>例句：The children were playing on the balcony.  /  孩子们正在阳台上玩耍。</li>
+</ul>
+
+<h4 id="toc_560">词族与词根</h4>
+
+<ul>
+<li>balcony（阳台）；balconies（复数形式）。</li>
+<li>记忆方法：以辅音字母加 <code>y</code> 结尾的名词，复数通常把 <code>y</code> 变成 <code>ies</code>。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_561">hang up  /hæŋ ʌp/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_562">动词短语 phrasal verb</h4>
+
+<ul>
+<li>释义：to put something on a hook; to end a telephone call    挂起；挂断电话</li>
+<li>例句：Please hang up your coat when you come in.  /  进来时请把外套挂起来。</li>
+</ul>
+
+<h4 id="toc_563">常用短语与考试搭配</h4>
+
+<h4 id="toc_564">1. <code>hang up the phone</code>     挂断电话</h4>
+
+<ul>
+<li>例句：She hung up the phone after saying goodbye.  /  她说完再见后挂断了电话。</li>
+</ul>
+
+<h4 id="toc_565">2. <code>hang sth up</code>     把某物挂起来</h4>
+
+<ul>
+<li>例句：Hang your coat up behind the door.  /  把你的外套挂在门后。</li>
+</ul>
+
+<h4 id="toc_566">词族与词根</h4>
+
+<ul>
+<li>hang（悬挂；挂断电话）；hung（过去式/过去分词，悬挂）。</li>
+<li>记忆方法：hang up 可理解为“向上挂起”；打电话时就是“挂断”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_567">invite  /ɪnˈvaɪt/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_568">动词 verb</h4>
+
+<ul>
+<li>释义：to ask someone to come to a place or take part in an event 邀请</li>
+<li>例句：I invited my friends to my birthday party.  /  我邀请朋友参加我的生日聚会。</li>
+<li>类型：及物动词</li>
+<li>变化：invite — invited — invited，规则变化</li>
+</ul>
+
+<h4 id="toc_569">常用短语与考试搭配</h4>
+
+<h4 id="toc_570">1. <code>invite sb to do sth</code>     邀请某人做某事</h4>
+
+<ul>
+<li>例句：She invited me to join the school club.  /  她邀请我加入学校社团。</li>
+</ul>
+
+<h4 id="toc_571">2. <code>invite sb to a party</code>     邀请某人参加聚会</h4>
+
+<ul>
+<li>例句：We invited our neighbours to a party.  /  我们邀请邻居参加聚会。</li>
+</ul>
+
+<h4 id="toc_572">词族与词根</h4>
+
+<ul>
+<li>invitation（名词，邀请；请柬）；inviting（形容词，吸引人的；诱人的）。</li>
+<li>记忆方法：invite 是动词“邀请”，invitation 是名词“邀请/请柬”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_573">living room  /ˈlɪvɪŋ ruːm/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_574">名词短语 noun phrase（可数名词）</h4>
+
+<ul>
+<li>释义：the room in a house where people relax and spend time together 客厅</li>
+<li>例句：We watched a film in the living room.  /  我们在客厅看了一部电影。</li>
+<li>可数性：可数；living room → living rooms</li>
+</ul>
+
+<h4 id="toc_575">常用短语与考试搭配</h4>
+
+<h4 id="toc_576">1. <code>in the living room</code>     在客厅里</h4>
+
+<ul>
+<li>例句：My parents are talking in the living room.  /  我的父母正在客厅里交谈。</li>
+</ul>
+
+<h4 id="toc_577">词族与词根</h4>
+
+<ul>
+<li>live（生活；居住）+ room（房间）= living room（客厅）。</li>
+<li>记忆方法：living room 是“生活起居的房间”，即客厅。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_578">arrival  /əˈraɪvl/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_579">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：the act of arriving at a place 到达；抵达</li>
+<li>例句：Please tell me your arrival time.  /  请告诉我你的到达时间。</li>
+<li>可数性：可数；arrival → arrivals</li>
+</ul>
+
+<h4 id="toc_580">常用短语与考试搭配</h4>
+
+<h4 id="toc_581">1. <code>on arrival</code>     到达时</h4>
+
+<ul>
+<li>例句：You must show your passport on arrival.  /  到达时你必须出示护照。</li>
+</ul>
+
+<h4 id="toc_582">2. <code>arrival time</code>     到达时间</h4>
+
+<ul>
+<li>例句：The train&#39;s arrival time is ten o&#39;clock.  /  火车的到达时间是十点。</li>
+</ul>
+
+<h4 id="toc_583">词族与词根</h4>
+
+<ul>
+<li>arrive（动词，到达）；arrival（名词，到达）；arrive at/in（到达某地）。</li>
+<li>记忆方法：arrive 加 <code>-al</code> 变 arrival；arrive at 接小地点，arrive in 接大地点。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_584">yet  /jet/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_585">1. 副词 adverb</h4>
+
+<ul>
+<li>释义：until now; used in questions and negative sentences    还；尚未</li>
+<li>例句：Have you finished your homework yet?  /  你还没有完成家庭作业吗？</li>
+<li>词序：常放在句末；not yet 表示“还没有”。</li>
+</ul>
+
+<h4 id="toc_586">2. 连词 conjunction</h4>
+
+<ul>
+<li>释义：but; nevertheless  但是；然而</li>
+<li>例句：The task was difficult, yet we finished it.  /  任务很难，但是我们完成了。</li>
+</ul>
+
+<h4 id="toc_587">常用短语与考试搭配</h4>
+
+<h4 id="toc_588">1. <code>not yet</code>     还没有</h4>
+
+<ul>
+<li>例句：The bus has not arrived yet.  /  公共汽车还没有到。</li>
+</ul>
+
+<h4 id="toc_589">2. <code>have you ... yet?</code>     你已经……了吗？</h4>
+
+<ul>
+<li>例句：Have you read the book yet?  /  你已经读过这本书了吗？</li>
+</ul>
+
+<h4 id="toc_590">词族与词根</h4>
+
+<ul>
+<li>yet（副词/连词，还；但是）；already（已经）常与 yet 对比。</li>
+<li>记忆方法：yet 放在疑问句或否定句末常表示“还”，与 already（已经）相对。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_591">add  /æd/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_592">动词 verb</h4>
+
+<ul>
+<li>释义：to put something with something else to increase the size or amount    添加；增加</li>
+<li>例句：Please add some sugar to the tea.  /  请在茶里加些糖。</li>
+<li>类型：及物动词</li>
+<li>变化：add — added — added，规则变化</li>
+</ul>
+
+<h4 id="toc_593">常用短语与考试搭配</h4>
+
+<h4 id="toc_594">1. <code>add sth to sth</code>     把……加入……</h4>
+
+<ul>
+<li>例句：Add the flour to the bowl and mix well.  /  把面粉加入碗中并搅拌均匀。</li>
+</ul>
+
+<h4 id="toc_595">2. <code>add up</code>     把……加起来</h4>
+
+<ul>
+<li>例句：Add up the numbers and write down the answer.  /  把这些数字加起来并写下答案。</li>
+</ul>
+
+<h4 id="toc_596">词族与词根</h4>
+
+<ul>
+<li>addition（名词，加法；增加）；additional（形容词，额外的）。</li>
+<li>记忆方法：add 是“加”，addition 是“加法/增加”，additional 是“额外的”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_597">add sth to sth  /æd ˈsʌmθɪŋ tə ˈsʌmθɪŋ/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_598">固定结构 phrase</h4>
+
+<ul>
+<li>释义：to put one thing with another  把……加入……</li>
+<li>例句：Add the fruit to the salad.  /  把水果加入沙拉中。</li>
+<li>结构：add A to B，表示“把 A 加到 B 中”。</li>
+</ul>
+
+<h4 id="toc_599">常用短语与考试搭配</h4>
+
+<h4 id="toc_600">1. <code>add salt to the soup</code>     往汤里加盐</h4>
+
+<ul>
+<li>例句：Add a little salt to the soup.  /  往汤里加一点盐。</li>
+</ul>
+
+<h4 id="toc_601">词族与词根</h4>
+
+<ul>
+<li>add（添加）；addition（增加；加法）；additional（额外的）。</li>
+<li>记忆方法：add A to B 中，A 是加入的东西，B 是被加入的对象。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_602">go shopping  /ɡəʊ ˈʃɒpɪŋ/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_603">动词短语 phrasal verb</h4>
+
+<ul>
+<li>释义：to go to shops to buy things   去购物</li>
+<li>例句：My mother and I often go shopping at weekends.  /  我妈妈和我周末经常去购物。</li>
+</ul>
+
+<h4 id="toc_604">常用短语与考试搭配</h4>
+
+<h4 id="toc_605">1. <code>go shopping for sth</code>     去买某物</h4>
+
+<ul>
+<li>例句：We went shopping for a birthday present.  /  我们去买生日礼物了。</li>
+</ul>
+
+<h4 id="toc_606">词族与词根</h4>
+
+<ul>
+<li>shop（商店；购物）→ shopping（购物）。</li>
+<li>记忆方法：go + 动词 <code>-ing</code> 常表示去进行某项活动，如 go swimming、go shopping。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_607">biscuit  /ˈbɪskɪt/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_608">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a small, hard, usually sweet cake  饼干</li>
+<li>例句：Would you like a biscuit with your tea?  /  你想吃一块饼干配茶吗？</li>
+<li>可数性：可数；biscuit → biscuits</li>
+</ul>
+
+<h4 id="toc_609">常用短语与考试搭配</h4>
+
+<h4 id="toc_610">1. <code>a packet of biscuits</code>     一包饼干</h4>
+
+<ul>
+<li>例句：She bought a packet of biscuits for the trip.  /  她为旅行买了一包饼干。</li>
+</ul>
+
+<h4 id="toc_611">词族与词根</h4>
+
+<ul>
+<li>biscuit（饼干）；biscuit tin（饼干盒）。</li>
+<li>记忆方法：biscuit 是可数名词，常与 a packet of biscuits 连用。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_612">borrow  /ˈbɒrəʊ/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_613">动词 verb</h4>
+
+<ul>
+<li>释义：to take and use something that belongs to someone else and return it later 借；借用</li>
+<li>例句：May I borrow your dictionary?  /  我可以借用你的词典吗？</li>
+<li>类型：及物动词</li>
+<li>变化：borrow — borrowed — borrowed，规则变化</li>
+</ul>
+
+<h4 id="toc_614">常用短语与考试搭配</h4>
+
+<h4 id="toc_615">1. <code>borrow sth from sb</code>     向某人借某物</h4>
+
+<ul>
+<li>例句：I borrowed a book from my friend.  /  我向朋友借了一本书。</li>
+</ul>
+
+<h4 id="toc_616">2. <code>borrow money</code>     借钱</h4>
+
+<ul>
+<li>例句：He had to borrow money from his parents.  /  他不得不向父母借钱。</li>
+</ul>
+
+<h4 id="toc_617">词族与词根</h4>
+
+<ul>
+<li>borrower（名词，借用者）；borrowed（形容词，借来的）。</li>
+<li>记忆方法：borrow 是“借入”，与 lend（借出）相对；borrow sth from sb。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_618">plan  /plæn/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_619">1. 动词 verb</h4>
+
+<h5 id="toc_620">1. 释义：to decide what you are going to do  中文释义：计划；打算</h5>
+
+<ul>
+<li>例句：We plan to visit our grandparents this weekend.  /  我们计划这个周末去看望祖父母。</li>
+<li>类型：及物或不及物动词</li>
+<li>变化：plan — planned — planned，规则变化</li>
+</ul>
+
+<h4 id="toc_621">2. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_622">1. 释义：an idea or arrangement for doing sth    中文释义：计划；方案</h5>
+
+<ul>
+<li>例句：The teacher made a plan for the school trip.  /  老师为学校旅行制订了计划。</li>
+<li>可数性：可数；plan → plans</li>
+</ul>
+
+<h4 id="toc_623">常用短语与考试搭配</h4>
+
+<h4 id="toc_624">1. <code>plan to do sth</code>     计划做某事</h4>
+
+<ul>
+<li>例句：I plan to improve my English this term.  /  我计划这学期提高英语水平。</li>
+</ul>
+
+<h4 id="toc_625">2. <code>make a plan</code>     制订计划</h4>
+
+<ul>
+<li>例句：Make a plan before you begin the project.  /  开始这个项目之前制订一个计划。</li>
+</ul>
+
+<h4 id="toc_626">词族与词根</h4>
+
+<ul>
+<li>相关词：planned（adj. 有计划的）；planning（n. 计划制定）。</li>
+<li>推荐背诵：planning。</li>
+<li>记忆方法：plan 末尾是辅元辅结构，变过去式和现在分词时双写 n：planned、planning。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_627">treasure  /ˈtreʒə(r)/     ⭐⭐⭐</h2>
+
+<h4 id="toc_628">1. 名词 noun（可数/不可数名词）</h4>
+
+<h5 id="toc_629">1. 释义：valuable things such as gold, silver, or jewels 中文释义：宝物；财富</h5>
+
+<ul>
+<li>例句：The museum displays treasures from ancient China.  /  博物馆展出了来自中国古代的珍宝。</li>
+<li>可数性：作“财宝”时通常不可数；作“一件珍品”时可数，treasure → treasures。</li>
+</ul>
+
+<h4 id="toc_630">2. 动词 verb</h4>
+
+<h5 id="toc_631">1. 释义：to value sth very much  中文释义：珍视；珍爱</h5>
+
+<ul>
+<li>例句：I treasure the time I spend with my family.  /  我珍惜和家人在一起的时光。</li>
+<li>类型：及物动词</li>
+<li>变化：treasure — treasured — treasured，规则变化</li>
+</ul>
+
+<h4 id="toc_632">常用短语与考试搭配</h4>
+
+<h4 id="toc_633">1. <code>treasure hunt</code>     寻宝游戏</h4>
+
+<ul>
+<li>例句：The children enjoyed the treasure hunt in the park.  /  孩子们喜欢公园里的寻宝游戏。</li>
+</ul>
+
+<h4 id="toc_634">2. <code>treasure sth</code>     珍视某物</h4>
+
+<ul>
+<li>例句：She treasures the photo of her old school.  /  她珍视那张老学校的照片。</li>
+</ul>
+
+<h4 id="toc_635">词族与词根</h4>
+
+<ul>
+<li>相关词：treasured（adj. 珍贵的；受珍爱的）。</li>
+<li>推荐背诵：treasured。</li>
+<li>记忆方法：treasure 既是“宝物”，也可作动词表示“把某物当作宝物来珍视”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_636">hunt  /hʌnt/     ⭐⭐⭐</h2>
+
+<h4 id="toc_637">1. 动词 verb</h4>
+
+<h5 id="toc_638">1. 释义：to search for sth or try to find it 中文释义：搜寻；寻找</h5>
+
+<ul>
+<li>例句：The children hunted for shells on the beach.  /  孩子们在海滩上寻找贝壳。</li>
+<li>类型：及物或不及物动词</li>
+<li>变化：hunt — hunted — hunted，规则变化</li>
+</ul>
+
+<h4 id="toc_639">2. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_640">1. 释义：an act of searching for sth 中文释义：搜寻；狩猎</h5>
+
+<ul>
+<li>例句：The class began a hunt for clues.  /  班级开始搜寻线索。</li>
+<li>可数性：可数；hunt → hunts</li>
+</ul>
+
+<h4 id="toc_641">常用短语与考试搭配</h4>
+
+<h4 id="toc_642">1. <code>hunt for sth</code>     寻找某物</h4>
+
+<ul>
+<li>例句：We are hunting for a good place to have lunch.  /  我们正在寻找一个吃午饭的好地方。</li>
+</ul>
+
+<h4 id="toc_643">2. <code>go hunting</code>     去打猎</h4>
+
+<ul>
+<li>例句：People should not go hunting for fun.  /  人们不应该为了取乐而去打猎。</li>
+</ul>
+
+<h4 id="toc_644">词族与词根</h4>
+
+<ul>
+<li>相关词：hunter（n. 猎人；搜寻者）。</li>
+<li>推荐背诵：hunter。</li>
+<li>记忆方法：hunt 是“寻找”，加 <code>-er</code> 构成 hunter，表示“寻找或打猎的人”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_645">treasure hunt  /ˈtreʒə(r) hʌnt/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_646">名词短语 noun phrase</h4>
+
+<ul>
+<li>释义：a game in which people look for hidden objects 中文释义：寻宝游戏</li>
+<li>例句：Our class had a treasure hunt after the picnic.  /  野餐后我们班举行了寻宝游戏。</li>
+</ul>
+
+<h4 id="toc_647">常用短语与考试搭配</h4>
+
+<h4 id="toc_648">1. <code>go on a treasure hunt</code>     参加寻宝游戏</h4>
+
+<ul>
+<li>例句：The children went on a treasure hunt at the museum.  /  孩子们在博物馆参加了寻宝游戏。</li>
+</ul>
+
+<h4 id="toc_649">词族与词根</h4>
+
+<ul>
+<li>相关词：treasure（n. 宝物）；hunt（v. 寻找）。</li>
+<li>推荐背诵：hunt for sth。</li>
+<li>记忆方法：treasure 是“宝物”，hunt 是“寻找”，合起来就是“寻宝”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_650">lift  /lɪft/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_651">1. 动词 verb</h4>
+
+<h5 id="toc_652">1. 释义：to raise sth or move it to a higher position    中文释义：举起；抬起</h5>
+
+<ul>
+<li>例句：Can you lift this box for me?  /  你能帮我抬起这个箱子吗？</li>
+<li>类型：及物动词</li>
+<li>变化：lift — lifted — lifted，规则变化</li>
+</ul>
+
+<h4 id="toc_653">2. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_654">1. 释义：a ride in someone&#39;s car 中文释义：搭便车</h5>
+
+<ul>
+<li>例句：My uncle gave me a lift to the station.  /  我叔叔开车送我去了车站。</li>
+</ul>
+
+<h5 id="toc_655">2. 释义：a machine that carries people between floors    中文释义：电梯</h5>
+
+<ul>
+<li>例句：Take the lift to the fifth floor.  /  乘电梯到五楼。</li>
+<li>可数性：可数；lift → lifts</li>
+</ul>
+
+<h4 id="toc_656">常用短语与考试搭配</h4>
+
+<h4 id="toc_657">1. <code>give sb a lift</code>     开车顺便送某人</h4>
+
+<ul>
+<li>例句：Could you give me a lift home?  /  你能开车顺路送我回家吗？</li>
+</ul>
+
+<h4 id="toc_658">2. <code>lift up</code>     举起</h4>
+
+<ul>
+<li>例句：Lift up your head and look ahead.  /  抬起头向前看。</li>
+</ul>
+
+<h4 id="toc_659">词族与词根</h4>
+
+<ul>
+<li>相关词：lifting（n. 举重；抬举）。</li>
+<li>推荐背诵：give sb a lift。</li>
+<li>记忆方法：lift 作名词时，英式英语常表示“电梯”或“搭便车”。</li>
+</ul>
+
+<h4 id="toc_660">易错点</h4>
+
+<ul>
+<li>英式英语常用 <code>lift</code>，美式英语常用 <code>elevator</code> 表示“电梯”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_661">give sb a lift  /ɡɪv ˈsʌmbədi ə lɪft/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_662">固定结构 phrase</h4>
+
+<ul>
+<li>释义：to take sb somewhere in your car   中文释义：开车顺便送某人</li>
+<li>例句：My dad gave me a lift to school this morning.  /  今天早上我爸爸开车送我去学校。</li>
+</ul>
+
+<h4 id="toc_663">常用短语与考试搭配</h4>
+
+<h4 id="toc_664">1. <code>give sb a lift home</code>     开车送某人回家</h4>
+
+<ul>
+<li>例句：Lucy gave her friend a lift home after the party.  /  聚会后露西开车送朋友回家。</li>
+</ul>
+
+<h4 id="toc_665">词族与词根</h4>
+
+<ul>
+<li>相关词：lift（n. 搭便车；电梯）。</li>
+<li>推荐背诵：give sb a lift。</li>
+<li>记忆方法：把 lift 记作“顺路带一程”，give sb a lift 就是“给某人一程车”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_666">until  /ənˈtɪl/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_667">1. 介词 preposition</h4>
+
+<h5 id="toc_668">1. 释义：up to the time of sth   中文释义：直到……为止</h5>
+
+<ul>
+<li>例句：We waited until six o&#39;clock.  /  我们一直等到六点钟。</li>
+</ul>
+
+<h4 id="toc_669">2. 连词 conjunction</h4>
+
+<h5 id="toc_670">1. 释义：up to the time when sth happens 中文释义：直到……时</h5>
+
+<ul>
+<li>例句：Do not leave until the teacher tells you to.  /  老师让你离开之前不要离开。</li>
+</ul>
+
+<h4 id="toc_671">常用短语与考试搭配</h4>
+
+<h4 id="toc_672">1. <code>not ... until ...</code>     直到……才……</h4>
+
+<ul>
+<li>例句：He did not go to bed until eleven.  /  他直到十一点才上床睡觉。</li>
+</ul>
+
+<h4 id="toc_673">2. <code>until then</code>     到那时为止</h4>
+
+<ul>
+<li>例句：The new library will open next month; until then, we can use the old one.  /  新图书馆下个月开放；在那之前，我们可以使用旧的。</li>
+</ul>
+
+<h4 id="toc_674">词族与词根</h4>
+
+<ul>
+<li>相关词：till（prep./conj. 直到）。</li>
+<li>推荐背诵：not ... until ...。</li>
+<li>记忆方法：until 与 till 意思相同；until 更正式，不能与表示持续的肯定句混淆。</li>
+</ul>
+
+<h4 id="toc_675">易错点</h4>
+
+<ul>
+<li><code>not ... until ...</code> 表示“直到……才……”；肯定句中 until 前的动作通常持续到某一时刻。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_676">be careful with  /bi ˈkeəfl wɪð/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_677">固定结构 phrase</h4>
+
+<ul>
+<li>释义：to use or deal with sth carefully  中文释义：小心使用；当心对待</li>
+<li>例句：Be careful with the scissors.  /  小心使用剪刀。</li>
+</ul>
+
+<h4 id="toc_678">常用短语与考试搭配</h4>
+
+<h4 id="toc_679">1. <code>be careful with sth</code>     小心对待某物</h4>
+
+<ul>
+<li>例句：Be careful with the hot soup.  /  小心这碗热汤。</li>
+</ul>
+
+<h4 id="toc_680">2. <code>be careful not to do sth</code>     小心不要做某事</h4>
+
+<ul>
+<li>例句：Be careful not to drop the glass.  /  小心别把玻璃杯掉了。</li>
+</ul>
+
+<h4 id="toc_681">词族与词根</h4>
+
+<ul>
+<li>相关词：careful（adj. 小心的）；carefully（adv. 小心地）。</li>
+<li>推荐背诵：be careful with sth。</li>
+<li>记忆方法：care 是“关心、注意”，careful 就是“注意的；小心的”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_682">movie  /ˈmuːvi/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_683">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a story shown in moving pictures   中文释义：电影</li>
+<li>例句：We watched a funny movie last night.  /  昨晚我们看了一部有趣的电影。</li>
+<li>可数性：可数；movie → movies</li>
+</ul>
+
+<h4 id="toc_684">常用短语与考试搭配</h4>
+
+<h4 id="toc_685">1. <code>watch a movie</code>     看电影</h4>
+
+<ul>
+<li>例句：They watched a movie after dinner.  /  他们晚饭后看了一场电影。</li>
+</ul>
+
+<h4 id="toc_686">2. <code>movie star</code>     电影明星</h4>
+
+<ul>
+<li>例句：Her dream is to become a movie star.  /  她的梦想是成为一名电影明星。</li>
+</ul>
+
+<h4 id="toc_687">词族与词根</h4>
+
+<ul>
+<li>相关词：movie-going（n. 看电影活动）。</li>
+<li>推荐背诵：watch a movie。</li>
+<li>记忆方法：movie 来自 move，电影是“会动的画面”。</li>
+</ul>
+
+<h4 id="toc_688">英美用法提示</h4>
+
+<ul>
+<li><code>movie</code> 在美式英语中更常用；英式英语更常说 <code>film</code>。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_689">the movies  /ðə ˈmuːviz/     ⭐⭐⭐</h2>
+
+<h4 id="toc_690">名词短语 noun phrase</h4>
+
+<ul>
+<li>释义：the cinema; the film industry  中文释义：电影院；电影业</li>
+<li>例句：We are going to the movies on Saturday.  /  我们星期六要去电影院。</li>
+</ul>
+
+<h4 id="toc_691">常用短语与考试搭配</h4>
+
+<h4 id="toc_692">1. <code>go to the movies</code>     去看电影</h4>
+
+<ul>
+<li>例句：Would you like to go to the movies with us?  /  你想和我们一起去看电影吗？</li>
+</ul>
+
+<h4 id="toc_693">词族与词根</h4>
+
+<ul>
+<li>相关词：movie（n. 电影）；film（n. 电影）。</li>
+<li>推荐背诵：go to the movies。</li>
+<li>记忆方法：the movies 用复数形式，但常整体表示“电影院”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_694">dead  /ded/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_695">形容词 adjective</h4>
+
+<h5 id="toc_696">1. 释义：no longer living    中文释义：死的</h5>
+
+<ul>
+<li>例句：The plant is dead because it had no water.  /  这株植物死了，因为它没有水。</li>
+</ul>
+
+<h5 id="toc_697">2. 释义：not working because there is no power   中文释义：不运行的；没电的</h5>
+
+<ul>
+<li>例句：My phone is dead, so I cannot call you.  /  我的手机没电了，所以不能给你打电话。</li>
+<li>比较级与最高级：deader；deadest（较少用于“死亡”义）</li>
+<li>反义词：alive；living</li>
+</ul>
+
+<h4 id="toc_698">常用短语与考试搭配</h4>
+
+<h4 id="toc_699">1. <code>be dead</code>     死了；没电了</h4>
+
+<ul>
+<li>例句：The battery is dead.  /  电池没电了。</li>
+</ul>
+
+<h4 id="toc_700">2. <code>dead battery</code>     没电的电池</h4>
+
+<ul>
+<li>例句：The car would not start because of a dead battery.  /  汽车因为电池没电而无法启动。</li>
+</ul>
+
+<h4 id="toc_701">词族与词根</h4>
+
+<ul>
+<li>相关词：death（n. 死亡）；die（v. 死）。</li>
+<li>推荐背诵：die—dead—death。</li>
+<li>记忆方法：die 是动词“死”，dead 是形容词“死的”，death 是名词“死亡”。</li>
+</ul>
+
+<h4 id="toc_702">易错点</h4>
+
+<ul>
+<li><code>dead</code> 是形容词，不能直接作谓语动词；应说 <code>The plant died.</code> 或 <code>The plant is dead.</code></li>
+</ul>
+
+<hr>
+
+<h2 id="toc_703">note  /nəʊt/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_704">1. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_705">1. 释义：a short written record or message   中文释义：笔记；记录；便条</h5>
+
+<ul>
+<li>例句：I left a note on the kitchen table.  /  我在厨房桌子上留了一张便条。</li>
+<li>可数性：可数；note → notes</li>
+</ul>
+
+<h4 id="toc_706">2. 动词 verb</h4>
+
+<h5 id="toc_707">1. 释义：to notice or mention sth    中文释义：注意到；指出</h5>
+
+<ul>
+<li>例句：Please note the time of the meeting.  /  请注意会议的时间。</li>
+<li>类型：及物动词</li>
+<li>变化：note — noted — noted，规则变化</li>
+</ul>
+
+<h4 id="toc_708">常用短语与考试搭配</h4>
+
+<h4 id="toc_709">1. <code>take notes</code>     做笔记</h4>
+
+<ul>
+<li>例句：Take notes while you are reading.  /  阅读时要做笔记。</li>
+</ul>
+
+<h4 id="toc_710">2. <code>make a note of sth</code>     记下某事</h4>
+
+<ul>
+<li>例句：Make a note of the new words.  /  记下这些新单词。</li>
+</ul>
+
+<h4 id="toc_711">词族与词根</h4>
+
+<ul>
+<li>相关词：notebook（n. 笔记本）；noted（adj. 著名的）。</li>
+<li>推荐背诵：notebook。</li>
+<li>记忆方法：note 是“记下的内容”，book 是“本子”，notebook 就是“笔记本”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_712">take notes  /teɪk nəʊts/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_713">固定结构 phrase</h4>
+
+<ul>
+<li>释义：to write down important information    中文释义：做笔记</li>
+<li>例句：We should take notes in science class.  /  我们应该在科学课上做笔记。</li>
+</ul>
+
+<h4 id="toc_714">常用短语与考试搭配</h4>
+
+<h4 id="toc_715">1. <code>take notes on sth</code>     就某事做笔记</h4>
+
+<ul>
+<li>例句：She took notes on the teacher&#39;s speech.  /  她就老师的讲话做了笔记。</li>
+</ul>
+
+<h4 id="toc_716">词族与词根</h4>
+
+<ul>
+<li>相关词：note（n. 笔记）；notebook（n. 笔记本）。</li>
+<li>推荐背诵：take notes。</li>
+<li>记忆方法：英语里用 take 表示“做”，不能说 make notes 来替代所有语境。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_717">clean up  /kliːn ʌp/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_718">短语动词 phrasal verb</h4>
+
+<ul>
+<li>释义：to make a place clean and tidy 中文释义：清扫；收拾干净</li>
+<li>例句：Please clean up the classroom after the activity.  /  活动后请清扫教室。</li>
+<li>类型：及物或不及物短语动词</li>
+</ul>
+
+<h4 id="toc_719">常用短语与考试搭配</h4>
+
+<h4 id="toc_720">1. <code>clean up sth</code>     清理某物</h4>
+
+<ul>
+<li>例句：We cleaned up the rubbish in the park.  /  我们清理了公园里的垃圾。</li>
+</ul>
+
+<h4 id="toc_721">2. <code>clean up after sb</code>     收拾某人留下的东西</h4>
+
+<ul>
+<li>例句：Children should clean up after themselves.  /  孩子们应该收拾好自己留下的东西。</li>
+</ul>
+
+<h4 id="toc_722">词族与词根</h4>
+
+<ul>
+<li>相关词：clean（adj./v. 干净的；打扫）；cleaner（n. 清洁工；清洁器）。</li>
+<li>推荐背诵：clean up。</li>
+<li>记忆方法：up 有“彻底完成”的感觉，clean up 就是“清理干净”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_723">community  /kəˈmjuːnəti/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_724">名词 noun（可数名词）</h4>
+
+<h5 id="toc_725">1. 释义：people living in the same area or sharing an interest   中文释义：社区；群体</h5>
+
+<ul>
+<li>例句：Our community holds a sports day every year.  /  我们社区每年举行一次运动会。</li>
+<li>可数性：可数；community → communities</li>
+</ul>
+
+<h4 id="toc_726">常用短语与考试搭配</h4>
+
+<h4 id="toc_727">1. <code>community centre</code>     社区活动中心</h4>
+
+<ul>
+<li>例句：The dance class meets at the community centre.  /  舞蹈课在社区活动中心上课。</li>
+</ul>
+
+<h4 id="toc_728">2. <code>local community</code>     当地社区</h4>
+
+<ul>
+<li>例句：The project helps the local community.  /  这个项目帮助当地社区。</li>
+</ul>
+
+<h4 id="toc_729">词族与词根</h4>
+
+<ul>
+<li>相关词：common（adj. 共同的；普通的）；communicate（v. 交流）。</li>
+<li>推荐背诵：community centre。</li>
+<li>记忆方法：community 中有 common，表示一群人拥有共同的地方或兴趣。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_730">rubbish  /ˈrʌbɪʃ/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_731">名词 noun（不可数名词）</h4>
+
+<ul>
+<li>释义：waste material that you throw away 中文释义：垃圾</li>
+<li>例句：Please put the rubbish in the bin.  /  请把垃圾放进垃圾桶。</li>
+<li>可数性：不可数；通常不用复数形式。</li>
+</ul>
+
+<h4 id="toc_732">常用短语与考试搭配</h4>
+
+<h4 id="toc_733">1. <code>take out the rubbish</code>     倒垃圾</h4>
+
+<ul>
+<li>例句：It is your turn to take out the rubbish.  /  轮到你倒垃圾了。</li>
+</ul>
+
+<h4 id="toc_734">2. <code>rubbish bin</code>     垃圾桶</h4>
+
+<ul>
+<li>例句：There is a rubbish bin near the gate.  /  大门旁边有一个垃圾桶。</li>
+</ul>
+
+<h4 id="toc_735">词族与词根</h4>
+
+<ul>
+<li>相关词：litter（n. 垃圾）；waste（n. 废弃物）。</li>
+<li>推荐背诵：take out the rubbish。</li>
+<li>记忆方法：rubbish 是不可数名词，不能说 <code>a rubbish</code>；一袋垃圾可说 a bag of rubbish。</li>
+</ul>
+
+<h4 id="toc_736">英美用法提示</h4>
+
+<ul>
+<li>英式英语常用 <code>rubbish</code>；美式英语常用 <code>trash</code> 或 <code>garbage</code>。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_737">almost  /ˈɔːlməʊst/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_738">副词 adverb</h4>
+
+<ul>
+<li>释义：nearly but not completely  中文释义：几乎；差不多</li>
+<li>例句：It is almost time for lunch.  /  差不多到午饭时间了。</li>
+</ul>
+
+<h4 id="toc_739">常用短语与考试搭配</h4>
+
+<h4 id="toc_740">1. <code>almost all</code>     几乎所有</h4>
+
+<ul>
+<li>例句：Almost all the students joined the game.  /  几乎所有学生都参加了这个游戏。</li>
+</ul>
+
+<h4 id="toc_741">2. <code>almost every</code>     几乎每一个</h4>
+
+<ul>
+<li>例句：I practise English almost every day.  /  我几乎每天练习英语。</li>
+</ul>
+
+<h4 id="toc_742">词族与词根</h4>
+
+<ul>
+<li>相关词：nearly（adv. 几乎）。</li>
+<li>推荐背诵：almost all。</li>
+<li>记忆方法：almost 表示“接近但还没有完全达到”，后面不能直接接 not。</li>
+</ul>
+
+<h4 id="toc_743">易错点</h4>
+
+<ul>
+<li><code>almost</code> 不与 <code>not</code> 连用表示“几乎不”；应说 <code>hardly</code> 或 <code>almost no</code>，如 almost no water。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_744">journey  /ˈdʒɜːni/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_745">1. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_746">1. 释义：an act of travelling from one place to another  中文释义：旅行；行程</h5>
+
+<ul>
+<li>例句：The train journey took three hours.  /  这趟火车旅程花了三个小时。</li>
+<li>可数性：可数；journey → journeys</li>
+</ul>
+
+<h4 id="toc_747">2. 动词 verb</h4>
+
+<h5 id="toc_748">1. 释义：to travel from one place to another 中文释义：旅行</h5>
+
+<ul>
+<li>例句：They journeyed across the country by train.  /  他们乘火车穿越全国旅行。</li>
+<li>类型：不及物动词</li>
+<li>变化：journey — journeyed — journeyed，规则变化</li>
+</ul>
+
+<h4 id="toc_749">常用短语与考试搭配</h4>
+
+<h4 id="toc_750">1. <code>go on a journey</code>     去旅行</h4>
+
+<ul>
+<li>例句：We went on a long journey during the holiday.  /  假期里我们进行了一次长途旅行。</li>
+</ul>
+
+<h4 id="toc_751">2. <code>train journey</code>     火车旅行</h4>
+
+<ul>
+<li>例句：The train journey was comfortable and quiet.  /  这趟火车旅行舒适而安静。</li>
+</ul>
+
+<h4 id="toc_752">词族与词根</h4>
+
+<ul>
+<li>相关词：journeying（n./adj. 旅行中的）。</li>
+<li>推荐背诵：go on a journey。</li>
+<li>记忆方法：journey 强调从一个地方到另一个地方的“行程”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_753">pull  /pʊl/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_754">1. 动词 verb</h4>
+
+<h5 id="toc_755">1. 释义：to move sth towards you by using force  中文释义：拉；拖；拽</h5>
+
+<ul>
+<li>例句：Pull the door open, please.  /  请把门拉开。</li>
+<li>类型：及物或不及物动词</li>
+<li>变化：pull — pulled — pulled，规则变化</li>
+</ul>
+
+<h4 id="toc_756">2. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_757">1. 释义：an act of pulling   中文释义：拉；拽</h5>
+
+<ul>
+<li>例句：Give the rope a hard pull.  /  用力拉一下绳子。</li>
+<li>可数性：可数；pull → pulls</li>
+</ul>
+
+<h4 id="toc_758">常用短语与考试搭配</h4>
+
+<h4 id="toc_759">1. <code>pull up</code>     停车；向上拉</h4>
+
+<ul>
+<li>例句：The bus pulled up outside the school.  /  公共汽车在学校外停下了。</li>
+</ul>
+
+<h4 id="toc_760">2. <code>pull sth out</code>     拉出某物</h4>
+
+<ul>
+<li>例句：He pulled a key out of his pocket.  /  他从口袋里掏出一把钥匙。</li>
+</ul>
+
+<h4 id="toc_761">词族与词根</h4>
+
+<ul>
+<li>相关词：pulling（n. 拉；拖）。</li>
+<li>推荐背诵：pull up。</li>
+<li>记忆方法：pull 是“往自己这边拉”，与 push（推）相对。</li>
+</ul>
+
+<h4 id="toc_762">易错点</h4>
+
+<ul>
+<li><code>pull</code> 是“拉”，<code>push</code> 是“推”；看门上的提示时要特别注意二者方向相反。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_763">luggage  /ˈlʌɡɪdʒ/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_764">名词 noun（不可数名词）</h4>
+
+<ul>
+<li>释义：bags and cases that you take when travelling   中文释义：行李</li>
+<li>例句：Her luggage is already on the train.  /  她的行李已经在火车上了。</li>
+<li>可数性：不可数；不能说 luggages，可说 a piece of luggage。</li>
+</ul>
+
+<h4 id="toc_765">常用短语与考试搭配</h4>
+
+<h4 id="toc_766">1. <code>a piece of luggage</code>     一件行李</h4>
+
+<ul>
+<li>例句：Each passenger can take one piece of luggage.  /  每位乘客可以带一件行李。</li>
+</ul>
+
+<h4 id="toc_767">2. <code>carry luggage</code>     搬运行李</h4>
+
+<ul>
+<li>例句：The porter helped us carry our luggage.  /  搬运工帮助我们搬运行李。</li>
+</ul>
+
+<h4 id="toc_768">词族与词根</h4>
+
+<ul>
+<li>相关词：bag（n. 包）；suitcase（n. 手提箱）。</li>
+<li>推荐背诵：a piece of luggage。</li>
+<li>记忆方法：luggage 是集合概念，和 furniture 一样通常作不可数名词。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_769">ah  /ɑː/     ⭐⭐</h2>
+
+<h4 id="toc_770">感叹词 interjection</h4>
+
+<ul>
+<li>释义：used to show surprise, pleasure, or understanding  中文释义：啊；哦</li>
+<li>例句：Ah, now I understand the question.  /  啊，现在我明白这个问题了。</li>
+</ul>
+
+<h4 id="toc_771">常用短语与考试搭配</h4>
+
+<h4 id="toc_772">1. <code>ah, I see</code>     啊，我明白了</h4>
+
+<ul>
+<li>例句：Ah, I see why you were late.  /  啊，我明白你为什么迟到了。</li>
+</ul>
+
+<h4 id="toc_773">词族与词根</h4>
+
+<ul>
+<li>相关词：oh（interj. 哦）；wow（interj. 哇）。</li>
+<li>推荐背诵：ah, I see。</li>
+<li>记忆方法：ah 是表达即时感受的声音，具体含义要结合语气和上下文判断。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_774">share sth with sb  /ʃeə(r) ˈsʌmθɪŋ wɪð ˈsʌmbədi/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_775">固定结构 phrase</h4>
+
+<ul>
+<li>释义：to use or have sth together with sb    中文释义：把某物与某人分享</li>
+<li>例句：Please share your ideas with the class.  /  请和全班分享你的想法。</li>
+</ul>
+
+<h4 id="toc_776">常用短语与考试搭配</h4>
+
+<h4 id="toc_777">1. <code>share sth with sb</code>     与某人分享某物</h4>
+
+<ul>
+<li>例句：I shared my lunch with my best friend.  /  我把午饭和最好的朋友分享。</li>
+</ul>
+
+<h4 id="toc_778">2. <code>share with sb</code>     与某人分享</h4>
+
+<ul>
+<li>例句：She likes to share stories with her family.  /  她喜欢和家人分享故事。</li>
+</ul>
+
+<h4 id="toc_779">词族与词根</h4>
+
+<ul>
+<li>相关词：shared（adj. 共同的）；sharing（n. 分享）。</li>
+<li>推荐背诵：share sth with sb。</li>
+<li>记忆方法：share 后接分享的内容，with 后接一起分享的人。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_780">mm  /m/     ⭐</h2>
+
+<h4 id="toc_781">感叹词 interjection</h4>
+
+<ul>
+<li>释义：used to show agreement, pleasure, or that you are thinking 中文释义：嗯</li>
+<li>例句：Mm, this soup smells good.  /  嗯，这汤闻起来很香。</li>
+</ul>
+
+<h4 id="toc_782">常用短语与考试搭配</h4>
+
+<h4 id="toc_783">1. <code>mm, yes</code>     嗯，是的</h4>
+
+<ul>
+<li>例句：Mm, yes, I agree with you.  /  嗯，是的，我同意你。</li>
+</ul>
+
+<h4 id="toc_784">词族与词根</h4>
+
+<ul>
+<li>相关词：mmm（interj. 嗯）。</li>
+<li>推荐背诵：mm。</li>
+<li>记忆方法：mm 常用于口语，书写时多用来表示简短的同意或思考声。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_785">familiar  /fəˈmɪliə(r)/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_786">形容词 adjective</h4>
+
+<ul>
+<li>释义：well known to you because you have seen or heard it before 中文释义：熟悉的</li>
+<li>例句：Her voice sounds familiar to me.  /  她的声音对我来说很熟悉。</li>
+<li>比较级与最高级：more familiar；most familiar</li>
+<li>反义词：unfamiliar</li>
+</ul>
+
+<h4 id="toc_787">常用短语与考试搭配</h4>
+
+<h4 id="toc_788">1. <code>be familiar with sth</code>     熟悉某物</h4>
+
+<ul>
+<li>例句：Are you familiar with this computer program?  /  你熟悉这个电脑程序吗？</li>
+</ul>
+
+<h4 id="toc_789">2. <code>look familiar</code>     看起来熟悉</h4>
+
+<ul>
+<li>例句：That name looks familiar.  /  那个名字看起来很熟悉。</li>
+</ul>
+
+<h4 id="toc_790">词族与词根</h4>
+
+<ul>
+<li>相关词：familiarity（n. 熟悉）；unfamiliar（adj. 不熟悉的）。</li>
+<li>推荐背诵：be familiar with sth。</li>
+<li>记忆方法：familiar 中有 family，常联想“像家人一样熟悉”。</li>
+</ul>
+
+<h4 id="toc_791">易错点</h4>
+
+<ul>
+<li><code>be familiar with sth</code> 表示“熟悉某物”；<code>sth be familiar to sb</code> 表示“某物为某人所熟悉”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_792">joke  /dʒəʊk/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_793">1. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_794">1. 释义：something said or done to make people laugh 中文释义：笑话；玩笑</h5>
+
+<ul>
+<li>例句：He told us a funny joke.  /  他给我们讲了一个有趣的笑话。</li>
+<li>可数性：可数；joke → jokes</li>
+</ul>
+
+<h4 id="toc_795">2. 动词 verb</h4>
+
+<h5 id="toc_796">1. 释义：to say things that are not serious in order to make people laugh    中文释义：开玩笑</h5>
+
+<ul>
+<li>例句：I was only joking.  /  我只是在开玩笑。</li>
+<li>类型：不及物动词</li>
+<li>变化：joke — joked — joked，规则变化</li>
+</ul>
+
+<h4 id="toc_797">常用短语与考试搭配</h4>
+
+<h4 id="toc_798">1. <code>tell a joke</code>     讲笑话</h4>
+
+<ul>
+<li>例句：My grandfather likes telling jokes.  /  我祖父喜欢讲笑话。</li>
+</ul>
+
+<h4 id="toc_799">2. <code>joke with sb</code>     和某人开玩笑</h4>
+
+<ul>
+<li>例句：Do not joke with him about his height.  /  不要拿他的身高和他开玩笑。</li>
+</ul>
+
+<h4 id="toc_800">词族与词根</h4>
+
+<ul>
+<li>相关词：joking（adj. 开玩笑的）。</li>
+<li>推荐背诵：tell a joke。</li>
+<li>记忆方法：joke 作名词是“笑话”，作动词时常用进行时 <code>be joking</code>。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_801">several  /ˈsevrəl/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_802">代词 pronoun</h4>
+
+<ul>
+<li>释义：more than two but not many 中文释义：几个；一些</li>
+<li>例句：Several of us went to the library after school.  /  我们中有几个人放学后去了图书馆。</li>
+</ul>
+
+<h4 id="toc_803">限定词 determiner</h4>
+
+<ul>
+<li>释义：a small number of people or things 中文释义：几个；数个</li>
+<li>例句：She bought several books for the holiday.  /  她为假期买了几本书。</li>
+</ul>
+
+<h4 id="toc_804">常用短语与考试搭配</h4>
+
+<h4 id="toc_805">1. <code>several of</code>     ……中的几个</h4>
+
+<ul>
+<li>例句：Several of the students can speak English well.  /  这些学生中有几个人英语说得很好。</li>
+</ul>
+
+<h4 id="toc_806">2. <code>for several days</code>     持续几天</h4>
+
+<ul>
+<li>例句：It rained for several days last week.  /  上周连续下了几天雨。</li>
+</ul>
+
+<h4 id="toc_807">词族与词根</h4>
+
+<ul>
+<li>相关词：few（det./pron. 很少）；some（det./pron. 一些）。</li>
+<li>推荐背诵：several of。</li>
+<li>记忆方法：several 通常表示“三个或更多但不多”，后接可数名词复数。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_808">nod  /nɒd/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_809">1. 动词 verb</h4>
+
+<h5 id="toc_810">1. 释义：to move your head up and down to show agreement 中文释义：点头</h5>
+
+<ul>
+<li>例句：She nodded to show that she understood.  /  她点头表示自己明白了。</li>
+<li>类型：及物或不及物动词</li>
+<li>变化：nod — nodded — nodded，规则变化</li>
+</ul>
+
+<h4 id="toc_811">2. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_812">1. 释义：a movement of the head up and down  中文释义：点头</h5>
+
+<ul>
+<li>例句：He answered my question with a nod.  /  他点头回答了我的问题。</li>
+<li>可数性：可数；nod → nods</li>
+</ul>
+
+<h4 id="toc_813">常用短语与考试搭配</h4>
+
+<h4 id="toc_814">1. <code>nod at sb</code>     向某人点头</h4>
+
+<ul>
+<li>例句：The teacher nodded at me and smiled.  /  老师向我点头微笑。</li>
+</ul>
+
+<h4 id="toc_815">2. <code>with a nod</code>     点着头；以点头示意</h4>
+
+<ul>
+<li>例句：She said yes with a nod.  /  她点头表示同意。</li>
+</ul>
+
+<h4 id="toc_816">词族与词根</h4>
+
+<ul>
+<li>相关词：nodding（n. 点头）。</li>
+<li>推荐背诵：nod at sb。</li>
+<li>记忆方法：nod 是短元音词，过去式双写 d：nodded。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_817">writer  /ˈraɪtə(r)/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_818">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a person who writes books, stories, or articles    中文释义：作者；作家</li>
+<li>例句：Lu Xun is a famous Chinese writer.  /  鲁迅是一位著名的中国作家。</li>
+<li>可数性：可数；writer → writers</li>
+</ul>
+
+<h4 id="toc_819">常用短语与考试搭配</h4>
+
+<h4 id="toc_820">1. <code>a famous writer</code>     一位著名作家</h4>
+
+<ul>
+<li>例句：The famous writer visited our school.  /  那位著名作家参观了我们学校。</li>
+</ul>
+
+<h4 id="toc_821">2. <code>story writer</code>     小说作者</h4>
+
+<ul>
+<li>例句：She wants to be a story writer in the future.  /  她将来想成为一名小说作者。</li>
+</ul>
+
+<h4 id="toc_822">词族与词根</h4>
+
+<ul>
+<li>相关词：write（v. 写）；writing（n. 作品；写作）。</li>
+<li>推荐背诵：write—writer。</li>
+<li>记忆方法：write 加 <code>-r</code> 变为 writer，注意 write 去掉词尾 e 再加 r。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_823">text  /tekst/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_824">1. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_825">1. 释义：the written words in a book, message, or document   中文释义：正文；文本；短信</h5>
+
+<ul>
+<li>例句：Read the text carefully before answering the questions.  /  回答问题前仔细阅读正文。</li>
+<li>可数性：可数；text → texts</li>
+</ul>
+
+<h4 id="toc_826">2. 动词 verb</h4>
+
+<h5 id="toc_827">1. 释义：to send sb a written message by mobile phone    中文释义：给某人发短信</h5>
+
+<ul>
+<li>例句：Text me when you get home.  /  你到家后给我发短信。</li>
+<li>类型：及物动词</li>
+<li>变化：text — texted — texted，规则变化</li>
+</ul>
+
+<h4 id="toc_828">常用短语与考试搭配</h4>
+
+<h4 id="toc_829">1. <code>text sb</code>     给某人发短信</h4>
+
+<ul>
+<li>例句：I will text you the address later.  /  我稍后把地址发短信给你。</li>
+</ul>
+
+<h4 id="toc_830">2. <code>text message</code>     短信</h4>
+
+<ul>
+<li>例句：She sent me a text message yesterday.  /  她昨天给我发了一条短信。</li>
+</ul>
+
+<h4 id="toc_831">词族与词根</h4>
+
+<ul>
+<li>相关词：textbook（n. 教科书）；texting（n. 发短信）。</li>
+<li>推荐背诵：text sb。</li>
+<li>记忆方法：text 作动词时常直接接人作宾语，表示“给某人发短信”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_832">describe  /dɪˈskraɪb/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_833">动词 verb</h4>
+
+<ul>
+<li>释义：to say or write what sb or sth is like 中文释义：描述；形容</li>
+<li>例句：Can you describe the man you saw?  /  你能描述一下你看到的那个人吗？</li>
+<li>类型：及物动词</li>
+<li>变化：describe — described — described，规则变化</li>
+</ul>
+
+<h4 id="toc_834">常用短语与考试搭配</h4>
+
+<h4 id="toc_835">1. <code>describe sth to sb</code>     向某人描述某物</h4>
+
+<ul>
+<li>例句：Please describe the problem to the doctor.  /  请向医生描述这个问题。</li>
+</ul>
+
+<h4 id="toc_836">2. <code>describe sb as ...</code>     把某人描述为……</h4>
+
+<ul>
+<li>例句：People describe her as kind and helpful.  /  人们把她描述为善良而乐于助人。</li>
+</ul>
+
+<h4 id="toc_837">词族与词根</h4>
+
+<ul>
+<li>相关词：description（n. 描述）；descriptive（adj. 描述性的）。</li>
+<li>推荐背诵：description。</li>
+<li>记忆方法：describe 加 <code>-tion</code> 变 description，注意拼写由 be 变为 ption。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_838">wherever  /weərˈevə(r)/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_839">1. 副词 adverb</h4>
+
+<h5 id="toc_840">1. 释义：in or to any place  中文释义：无论去哪里；在任何地方</h5>
+
+<ul>
+<li>例句：You can sit wherever you like.  /  你可以坐在任何你喜欢的地方。</li>
+</ul>
+
+<h4 id="toc_841">2. 连词 conjunction</h4>
+
+<h5 id="toc_842">1. 释义：no matter where 中文释义：无论在哪里</h5>
+
+<ul>
+<li>例句：Wherever you go, be polite to others.  /  无论你去哪里，都要对别人有礼貌。</li>
+</ul>
+
+<h4 id="toc_843">常用短语与考试搭配</h4>
+
+<h4 id="toc_844">1. <code>wherever sb goes</code>     无论某人去哪里</h4>
+
+<ul>
+<li>例句：Wherever he goes, he takes a book with him.  /  无论他去哪里，他都带着一本书。</li>
+</ul>
+
+<h4 id="toc_845">2. <code>from wherever</code>     从任何地方</h4>
+
+<ul>
+<li>例句：You can learn online from wherever you are.  /  无论你在哪里，都可以在线学习。</li>
+</ul>
+
+<h4 id="toc_846">词族与词根</h4>
+
+<ul>
+<li>相关词：where（adv. 哪里）；wherever（adv./conj. 无论哪里）。</li>
+<li>推荐背诵：wherever sb goes。</li>
+<li>记忆方法：where + ever 表示“无论哪里”；ever 加强“任何”的语气。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_847">matter  /ˈmætə(r)/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_848">1. 动词 verb</h4>
+
+<h5 id="toc_849">1. 释义：to be important 中文释义：要紧；有关系</h5>
+
+<ul>
+<li>例句：It does not matter if you make a small mistake.  /  即使你犯一个小错误也没关系。</li>
+<li>类型：不及物动词</li>
+<li>变化：matter — mattered — mattered，规则变化</li>
+</ul>
+
+<h4 id="toc_850">2. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_851">1. 释义：a situation or problem that needs attention 中文释义：事情；问题</h5>
+
+<ul>
+<li>例句：What is the matter with your computer?  /  你的电脑怎么了？</li>
+<li>可数性：可数；matter → matters</li>
+</ul>
+
+<h4 id="toc_852">常用短语与考试搭配</h4>
+
+<h4 id="toc_853">1. <code>it does not matter</code>     没关系；不要紧</h4>
+
+<ul>
+<li>例句：It does not matter if we are a little late.  /  我们稍微迟到一点没关系。</li>
+</ul>
+
+<h4 id="toc_854">2. <code>what is the matter?</code>     怎么了？</h4>
+
+<ul>
+<li>例句：You look worried. What is the matter?  /  你看起来很担心。怎么了？</li>
+</ul>
+
+<h4 id="toc_855">词族与词根</h4>
+
+<ul>
+<li>相关词：matters（v. 要紧；n. 事情）。</li>
+<li>推荐背诵：What is the matter?</li>
+<li>记忆方法：matter 作动词表示“要紧”，常用在 It does not matter 中。</li>
+</ul>
+
+<h4 id="toc_856">易错点</h4>
+
+<ul>
+<li>询问问题常说 <code>What is the matter with sb/sth?</code>，不说 <code>What is happened?</code>。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_857">no matter  /nəʊ ˈmætə(r)/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_858">固定结构 phrase</h4>
+
+<ul>
+<li>释义：regardless of; it is not important 中文释义：不论；不要紧</li>
+<li>例句：No matter what happens, do not give up.  /  无论发生什么，都不要放弃。</li>
+</ul>
+
+<h4 id="toc_859">常用短语与考试搭配</h4>
+
+<h4 id="toc_860">1. <code>no matter what</code>     无论什么</h4>
+
+<ul>
+<li>例句：No matter what you choose, I will support you.  /  无论你选择什么，我都会支持你。</li>
+</ul>
+
+<h4 id="toc_861">2. <code>no matter how</code>     无论多么</h4>
+
+<ul>
+<li>例句：No matter how tired you are, get enough sleep.  /  无论你多累，都要保证足够的睡眠。</li>
+</ul>
+
+<h4 id="toc_862">词族与词根</h4>
+
+<ul>
+<li>相关词：matter（v. 要紧）；whatever（pron./det. 无论什么）。</li>
+<li>推荐背诵：no matter what。</li>
+<li>记忆方法：no matter 后接疑问词，整体表示“无论……”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_863">perhaps  /pəˈhæps; præps/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_864">副词 adverb</h4>
+
+<ul>
+<li>释义：possibly; maybe    中文释义：也许；可能</li>
+<li>例句：Perhaps we can meet after school.  /  也许我们可以放学后见面。</li>
+</ul>
+
+<h4 id="toc_865">常用短语与考试搭配</h4>
+
+<h4 id="toc_866">1. <code>perhaps not</code>     也许不</h4>
+
+<ul>
+<li>例句：Perhaps not everyone will agree with the plan.  /  也许不是每个人都会同意这个计划。</li>
+</ul>
+
+<h4 id="toc_867">2. <code>perhaps because</code>     也许因为</h4>
+
+<ul>
+<li>例句：Perhaps because it was raining, few people came.  /  也许因为下雨，来的人很少。</li>
+</ul>
+
+<h4 id="toc_868">词族与词根</h4>
+
+<ul>
+<li>相关词：maybe（adv. 也许）。</li>
+<li>推荐背诵：perhaps。</li>
+<li>记忆方法：perhaps 和 maybe 都表“也许”；perhaps 稍正式，常放在句首。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_869">plate  /pleɪt/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_870">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a flat dish used for eating food   中文释义：盘子；碟子</li>
+<li>例句：Put the fruit on a clean plate.  /  把水果放在一个干净的盘子里。</li>
+<li>可数性：可数；plate → plates</li>
+</ul>
+
+<h4 id="toc_871">常用短语与考试搭配</h4>
+
+<h4 id="toc_872">1. <code>a plate of sth</code>     一盘某物</h4>
+
+<ul>
+<li>例句：She brought us a plate of sandwiches.  /  她给我们端来一盘三明治。</li>
+</ul>
+
+<h4 id="toc_873">2. <code>on the plate</code>     在盘子里</h4>
+
+<ul>
+<li>例句：There are two biscuits on the plate.  /  盘子里有两块饼干。</li>
+</ul>
+
+<h4 id="toc_874">词族与词根</h4>
+
+<ul>
+<li>相关词：paper plate（n. 纸盘）。</li>
+<li>推荐背诵：a plate of sth。</li>
+<li>记忆方法：plate 是吃饭用的平盘，常与 on、a plate of 连用。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_875">freshly  /ˈfreʃli/     ⭐⭐⭐</h2>
+
+<h4 id="toc_876">副词 adverb</h4>
+
+<ul>
+<li>释义：a short time ago; in a new way 中文释义：刚刚；新鲜地</li>
+<li>例句：The bread was freshly baked this morning.  /  这面包是今天早上刚烤好的。</li>
+</ul>
+
+<h4 id="toc_877">常用短语与考试搭配</h4>
+
+<h4 id="toc_878">1. <code>freshly made</code>     刚做好的</h4>
+
+<ul>
+<li>例句：We ate freshly made noodles for lunch.  /  我们午饭吃了刚做好的面条。</li>
+</ul>
+
+<h4 id="toc_879">2. <code>freshly cut</code>     刚剪下的；刚切好的</h4>
+
+<ul>
+<li>例句：The vase is full of freshly cut flowers.  /  花瓶里插满了刚剪下的花。</li>
+</ul>
+
+<h4 id="toc_880">词族与词根</h4>
+
+<ul>
+<li>相关词：fresh（adj. 新鲜的）；freshness（n. 新鲜）。</li>
+<li>推荐背诵：freshly made。</li>
+<li>记忆方法：fresh 加 <code>-ly</code> 变副词，常修饰 baked、made、cut 等过去分词。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_881">smell  /smel/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_882">1. 动词 verb</h4>
+
+<h5 id="toc_883">1. 释义：to notice a smell; to have a particular smell   中文释义：闻到；有……气味</h5>
+
+<ul>
+<li>例句：I can smell something burning.  /  我能闻到有东西烧焦的气味。</li>
+<li>类型：及物或不及物动词；也可作系动词，后接形容词</li>
+<li>变化：smell — smelled/smelt — smelled/smelt</li>
+</ul>
+
+<h4 id="toc_884">2. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_885">1. 释义：the quality that you notice with your nose  中文释义：气味；臭味</h5>
+
+<ul>
+<li>例句：There was a sweet smell in the kitchen.  /  厨房里有一股甜香味。</li>
+<li>可数性：可数；smell → smells</li>
+</ul>
+
+<h4 id="toc_886">常用短语与考试搭配</h4>
+
+<h4 id="toc_887">1. <code>smell like sth</code>     闻起来像某物</h4>
+
+<ul>
+<li>例句：This flower smells like lemon.  /  这朵花闻起来像柠檬。</li>
+</ul>
+
+<h4 id="toc_888">2. <code>smell of sth</code>     有某物的气味</h4>
+
+<ul>
+<li>例句：The room smells of paint.  /  房间里有油漆味。</li>
+</ul>
+
+<h4 id="toc_889">词族与词根</h4>
+
+<ul>
+<li>相关词：smelly（adj. 有臭味的）。</li>
+<li>推荐背诵：smell like sth。</li>
+<li>记忆方法：smell 作系动词时后接形容词，如 The soup smells good。</li>
+</ul>
+
+<h4 id="toc_890">易错点</h4>
+
+<ul>
+<li><code>smell</code> 作系动词后接形容词，不接副词：The soup smells good，不说 smells well。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_891">joy  /dʒɔɪ/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_892">名词 noun（不可数名词）</h4>
+
+<ul>
+<li>释义：a feeling of great happiness   中文释义：喜悦；乐趣</li>
+<li>例句：The children jumped with joy.  /  孩子们高兴得跳起来。</li>
+<li>可数性：通常不可数；表示“令人高兴的事”时可数，joy → joys。</li>
+</ul>
+
+<h4 id="toc_893">常用短语与考试搭配</h4>
+
+<h4 id="toc_894">1. <code>with joy</code>     高兴地</h4>
+
+<ul>
+<li>例句：She cried with joy when she heard the news.  /  听到这个消息时她高兴得哭了。</li>
+</ul>
+
+<h4 id="toc_895">2. <code>bring joy to sb</code>     给某人带来快乐</h4>
+
+<ul>
+<li>例句：Music brings joy to many people.  /  音乐给许多人带来快乐。</li>
+</ul>
+
+<h4 id="toc_896">词族与词根</h4>
+
+<ul>
+<li>相关词：joyful（adj. 快乐的）；enjoy（v. 享受）。</li>
+<li>推荐背诵：joyful。</li>
+<li>记忆方法：joy 是“喜悦”，joyful 是“充满喜悦的”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_897">apartment  /əˈpɑːtmənt/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_898">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a set of rooms for living in, usually in a large building  中文释义：公寓套房</li>
+<li>例句：They live in a small apartment near the metro station.  /  他们住在地铁站附近的一套小公寓里。</li>
+<li>可数性：可数；apartment → apartments</li>
+</ul>
+
+<h4 id="toc_899">常用短语与考试搭配</h4>
+
+<h4 id="toc_900">1. <code>apartment building</code>     公寓楼</h4>
+
+<ul>
+<li>例句：The apartment building has twelve floors.  /  这栋公寓楼有十二层。</li>
+</ul>
+
+<h4 id="toc_901">2. <code>live in an apartment</code>     住在公寓里</h4>
+
+<ul>
+<li>例句：My aunt lives in an apartment in the city centre.  /  我姑姑住在市中心的一套公寓里。</li>
+</ul>
+
+<h4 id="toc_902">词族与词根</h4>
+
+<ul>
+<li>相关词：flat（n. 公寓）。</li>
+<li>推荐背诵：live in an apartment。</li>
+<li>记忆方法：apartment 指一套独立居住的房间，不是普通的单个 room。</li>
+</ul>
+
+<h4 id="toc_903">英美用法提示</h4>
+
+<ul>
+<li>美式英语常用 <code>apartment</code>；英式英语常用 <code>flat</code>。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_904">block  /blɒk/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_905">1. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_906">1. 释义：a large building or an area of buildings    中文释义：大楼；街区</h5>
+
+<ul>
+<li>例句：The library is in the next block.  /  图书馆在下一个街区。</li>
+</ul>
+
+<h5 id="toc_907">2. 释义：a large solid piece of sth  中文释义：大块</h5>
+
+<ul>
+<li>例句：The children built a tower with blocks.  /  孩子们用积木搭了一座塔。</li>
+<li>可数性：可数；block → blocks</li>
+</ul>
+
+<h4 id="toc_908">2. 动词 verb</h4>
+
+<h5 id="toc_909">1. 释义：to stop sth from moving or passing  中文释义：阻挡；堵塞</h5>
+
+<ul>
+<li>例句：A fallen tree blocked the road.  /  一棵倒下的树挡住了道路。</li>
+<li>类型：及物动词</li>
+<li>变化：block — blocked — blocked，规则变化</li>
+</ul>
+
+<h4 id="toc_910">常用短语与考试搭配</h4>
+
+<h4 id="toc_911">1. <code>a block of flats</code>     一栋公寓楼</h4>
+
+<ul>
+<li>例句：They live in a block of flats near the river.  /  他们住在河边的一栋公寓楼里。</li>
+</ul>
+
+<h4 id="toc_912">2. <code>block the way</code>     挡住道路</h4>
+
+<ul>
+<li>例句：Do not block the way with your bike.  /  不要用自行车挡住路。</li>
+</ul>
+
+<h4 id="toc_913">词族与词根</h4>
+
+<ul>
+<li>相关词：blocked（adj. 堵塞的）；blockage（n. 堵塞）。</li>
+<li>推荐背诵：block the way。</li>
+<li>记忆方法：block 既可表示“大块”，也可表示“形成障碍，堵住”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_914">decorate  /ˈdekəreɪt/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_915">动词 verb</h4>
+
+<ul>
+<li>释义：to make sth look more attractive by adding things to it    中文释义：装饰；装潢</li>
+<li>例句：We decorated the classroom for the New Year party.  /  我们为新年聚会装饰了教室。</li>
+<li>类型：及物动词</li>
+<li>变化：decorate — decorated — decorated，规则变化</li>
+</ul>
+
+<h4 id="toc_916">常用短语与考试搭配</h4>
+
+<h4 id="toc_917">1. <code>decorate sth with sth</code>     用某物装饰某物</h4>
+
+<ul>
+<li>例句：They decorated the room with colourful paper-cuts.  /  他们用彩色剪纸装饰房间。</li>
+</ul>
+
+<h4 id="toc_918">2. <code>decorate for sth</code>     为某事装饰</h4>
+
+<ul>
+<li>例句：We are decorating for the school festival.  /  我们正在为学校节日装饰。</li>
+</ul>
+
+<h4 id="toc_919">词族与词根</h4>
+
+<ul>
+<li>相关词：decoration（n. 装饰）；decorative（adj. 装饰性的）。</li>
+<li>推荐背诵：decoration。</li>
+<li>记忆方法：decorate 加 <code>-ion</code> 变 decoration，表示“装饰物或装饰行为”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_920">cover  /ˈkʌvə(r)/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_921">1. 动词 verb</h4>
+
+<h5 id="toc_922">1. 释义：to put sth over or on sth   中文释义：遮盖；覆盖</h5>
+
+<ul>
+<li>例句：Snow covered the ground in the morning.  /  早晨雪覆盖了地面。</li>
+</ul>
+
+<h5 id="toc_923">2. 释义：to include sth  中文释义：包括；涉及</h5>
+
+<ul>
+<li>例句：The lesson covers two important topics.  /  这节课包括两个重要主题。</li>
+<li>类型：及物动词</li>
+<li>变化：cover — covered — covered，规则变化</li>
+</ul>
+
+<h4 id="toc_924">2. 名词 noun（可数名词）</h4>
+
+<h5 id="toc_925">1. 释义：something that protects or hides sth    中文释义：遮盖物；封皮</h5>
+
+<ul>
+<li>例句：The book has a bright blue cover.  /  这本书有一个亮蓝色的封皮。</li>
+<li>可数性：可数；cover → covers</li>
+</ul>
+
+<h4 id="toc_926">常用短语与考试搭配</h4>
+
+<h4 id="toc_927">1. <code>cover sth with sth</code>     用某物覆盖某物</h4>
+
+<ul>
+<li>例句：Cover the bowl with a plate.  /  用一个盘子盖住碗。</li>
+</ul>
+
+<h4 id="toc_928">2. <code>cover ... with ...</code>     用……把……盖住</h4>
+
+<ul>
+<li>例句：The child covered his face with his hands.  /  孩子用手捂住了脸。</li>
+</ul>
+
+<h4 id="toc_929">词族与词根</h4>
+
+<ul>
+<li>相关词：covered（adj. 被覆盖的）；uncover（v. 揭开）。</li>
+<li>推荐背诵：cover sth with sth。</li>
+<li>记忆方法：cover 是“盖住”，uncover 加 un- 表示“揭开”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_930">poster  /ˈpəʊstə(r)/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_931">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a large printed picture or notice put on a wall    中文释义：海报</li>
+<li>例句：We made a poster about protecting the environment.  /  我们制作了一张关于保护环境的海报。</li>
+<li>可数性：可数；poster → posters</li>
+</ul>
+
+<h4 id="toc_932">常用短语与考试搭配</h4>
+
+<h4 id="toc_933">1. <code>make a poster</code>     制作海报</h4>
+
+<ul>
+<li>例句：The students made a poster for the reading club.  /  学生们为读书俱乐部制作了一张海报。</li>
+</ul>
+
+<h4 id="toc_934">2. <code>put up a poster</code>     张贴海报</h4>
+
+<ul>
+<li>例句：Please put up the poster on the noticeboard.  /  请把海报贴在公告栏上。</li>
+</ul>
+
+<h4 id="toc_935">词族与词根</h4>
+
+<ul>
+<li>相关词：post（v. 张贴；n. 邮件）。</li>
+<li>推荐背诵：put up a poster。</li>
+<li>记忆方法：poster 来自 post，指“张贴出来供人看的东西”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_936">scissors  /ˈsɪzəz/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_937">名词 noun（复数名词）</h4>
+
+<ul>
+<li>释义：a tool with two sharp blades for cutting things    中文释义：剪刀</li>
+<li>例句：These scissors are too sharp for young children.  /  这把剪刀对小孩子来说太锋利了。</li>
+<li>可数性：通常作复数；a pair of scissors 表示“一把剪刀”。</li>
+</ul>
+
+<h4 id="toc_938">常用短语与考试搭配</h4>
+
+<h4 id="toc_939">1. <code>a pair of scissors</code>     一把剪刀</h4>
+
+<ul>
+<li>例句：Could you pass me a pair of scissors?  /  你能递给我一把剪刀吗？</li>
+</ul>
+
+<h4 id="toc_940">2. <code>cut sth with scissors</code>     用剪刀剪某物</h4>
+
+<ul>
+<li>例句：Cut the paper with scissors carefully.  /  小心地用剪刀剪纸。</li>
+</ul>
+
+<h4 id="toc_941">词族与词根</h4>
+
+<ul>
+<li>相关词：scissor（v. 剪；用剪刀剪）。</li>
+<li>推荐背诵：a pair of scissors。</li>
+<li>记忆方法：scissors 总是用复数动词，如 These scissors are new。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_942">glue  /ɡluː/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_943">1. 名词 noun（不可数名词）</h4>
+
+<h5 id="toc_944">1. 释义：a sticky substance used for joining things together 中文释义：胶水</h5>
+
+<ul>
+<li>例句：We need some glue to make the poster.  /  我们需要一些胶水来做海报。</li>
+<li>可数性：不可数；可说 a tube of glue。</li>
+</ul>
+
+<h4 id="toc_945">2. 动词 verb</h4>
+
+<h5 id="toc_946">1. 释义：to join things together using glue  中文释义：用胶水粘；粘贴</h5>
+
+<ul>
+<li>例句：Glue the picture onto the card.  /  把图片粘到卡纸上。</li>
+<li>类型：及物动词</li>
+<li>变化：glue — glued — glued，规则变化</li>
+</ul>
+
+<h4 id="toc_947">常用短语与考试搭配</h4>
+
+<h4 id="toc_948">1. <code>glue sth to sth</code>     把某物粘到某物上</h4>
+
+<ul>
+<li>例句：Glue the paper-cut to the window.  /  把剪纸粘到窗户上。</li>
+</ul>
+
+<h4 id="toc_949">2. <code>a tube of glue</code>     一管胶水</h4>
+
+<ul>
+<li>例句：Buy a tube of glue for the art lesson.  /  为美术课买一管胶水。</li>
+</ul>
+
+<h4 id="toc_950">词族与词根</h4>
+
+<ul>
+<li>相关词：glued（adj. 粘住的）。</li>
+<li>推荐背诵：glue sth to sth。</li>
+<li>记忆方法：glue 作动词时常接 to，表示“把……粘到……上”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_951">paper-cut  /ˈpeɪpə(r) kʌt/     ⭐⭐⭐</h2>
+
+<h4 id="toc_952">名词 noun（可数名词）</h4>
+
+<ul>
+<li>释义：a picture or design made by cutting paper  中文释义：剪纸</li>
+<li>例句：The red paper-cut on the window looks beautiful.  /  窗户上的红色剪纸看起来很漂亮。</li>
+<li>可数性：可数；paper-cut → paper-cuts</li>
+</ul>
+
+<h4 id="toc_953">常用短语与考试搭配</h4>
+
+<h4 id="toc_954">1. <code>make a paper-cut</code>     制作剪纸</h4>
+
+<ul>
+<li>例句：We learned to make a paper-cut in art class.  /  我们在美术课上学习制作剪纸。</li>
+</ul>
+
+<h4 id="toc_955">2. <code>paper-cut art</code>     剪纸艺术</h4>
+
+<ul>
+<li>例句：Paper-cut art is popular during the Spring Festival.  /  剪纸艺术在春节期间很受欢迎。</li>
+</ul>
+
+<h4 id="toc_956">词族与词根</h4>
+
+<ul>
+<li>相关词：paper（n. 纸）；cut（v. 剪；切）。</li>
+<li>推荐背诵：paper-cut art。</li>
+<li>记忆方法：paper + cut 就是“把纸剪出来的图案”。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_957">Unit 3</h2>
+
+<h2 id="toc_958">compare  /kəmˈpeə(r)/     ⭐⭐⭐⭐⭐</h2>
+
+<h4 id="toc_959">动词 verb</h4>
+
+<ul>
+<li>释义：to examine two or more things to find similarities and differences 中文释义：比较；对比</li>
+<li>例句：Compare the two pictures and find three differences.  /  比较这两张图片，找出三处不同。</li>
+<li>类型：及物或不及物动词</li>
+<li>变化：compare — compared — compared，规则变化</li>
+</ul>
+
+<h4 id="toc_960">常用短语与考试搭配</h4>
+
+<h4 id="toc_961">1. <code>compare A with B</code>     把 A 与 B 比较</h4>
+
+<ul>
+<li>例句：Compare your answer with your partner&#39;s answer.  /  把你的答案和同伴的答案比较一下。</li>
+</ul>
+
+<h4 id="toc_962">2. <code>compared with</code>     与……相比</h4>
+
+<ul>
+<li>例句：Compared with last year, our school is cleaner now.  /  与去年相比，我们学校现在更干净了。</li>
+</ul>
+
+<h4 id="toc_963">词族与词根</h4>
+
+<ul>
+<li>相关词：comparison（n. 比较）；comparative（adj. 比较的）。</li>
+<li>推荐背诵：compare A with B。</li>
+<li>记忆方法：compare 后常用 with 或 to；基础学习先掌握 compare A with B。</li>
+</ul>
+
+<h4 id="toc_964">易错点</h4>
+
+<ul>
+<li><code>compare A with B</code> 强调比较异同；<code>compare A to B</code> 常表示把 A 比作 B。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_965">shy  /ʃaɪ/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_966">形容词 adjective</h4>
+
+<ul>
+<li>释义：nervous and uncomfortable with other people    中文释义：害羞的；腼腆的</li>
+<li>例句：The new student is shy and does not speak much.  /  新同学很害羞，不怎么说话。</li>
+<li>比较级与最高级：shyer；shyest</li>
+<li>反义词：outgoing</li>
+</ul>
+
+<h4 id="toc_967">常用短语与考试搭配</h4>
+
+<h4 id="toc_968">1. <code>be shy about sth</code>     对某事感到害羞</h4>
+
+<ul>
+<li>例句：Do not be shy about asking questions.  /  不要害羞于提问。</li>
+</ul>
+
+<h4 id="toc_969">2. <code>shy away from sth</code>     回避某事</h4>
+
+<ul>
+<li>例句：She does not shy away from difficult tasks.  /  她不回避困难的任务。</li>
+</ul>
+
+<h4 id="toc_970">词族与词根</h4>
+
+<ul>
+<li>相关词：shyness（n. 害羞）；shyly（adv. 害羞地）。</li>
+<li>推荐背诵：shyness。</li>
+<li>记忆方法：shy 以 <code>y</code> 结尾，比较级和最高级为 shyer、shyest。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_971">lazy  /ˈleɪzi/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_972">形容词 adjective</h4>
+
+<h5 id="toc_973">1. 释义：not willing to work or be active    中文释义：懒惰的</h5>
+
+<ul>
+<li>例句：It is lazy to leave all your homework until Sunday.  /  把所有作业拖到星期日做是懒惰的。</li>
+</ul>
+
+<h5 id="toc_974">2. 释义：slow and relaxed    中文释义：懒洋洋的；悠闲的</h5>
+
+<ul>
+<li>例句：We spent a lazy afternoon in the park.  /  我们在公园度过了一个悠闲的下午。</li>
+<li>比较级与最高级：lazier；laziest</li>
+<li>反义词：hard-working；active</li>
+</ul>
+
+<h4 id="toc_975">常用短语与考试搭配</h4>
+
+<h4 id="toc_976">1. <code>be lazy about sth</code>     在某事上懒散</h4>
+
+<ul>
+<li>例句：Do not be lazy about checking your work.  /  检查作业时不要偷懒。</li>
+</ul>
+
+<h4 id="toc_977">2. <code>lazy afternoon</code>     悠闲的下午</h4>
+
+<ul>
+<li>例句：We enjoyed a lazy afternoon at home.  /  我们在家享受了一个悠闲的下午。</li>
+</ul>
+
+<h4 id="toc_978">词族与词根</h4>
+
+<ul>
+<li>相关词：laziness（n. 懒惰）；lazily（adv. 懒洋洋地）。</li>
+<li>推荐背诵：laziness。</li>
+<li>记忆方法：lazy 以辅音字母加 y 结尾，比较级和最高级变 y 为 i：lazier、laziest。</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_979">loud  /laʊd/     ⭐⭐⭐⭐</h2>
+
+<h4 id="toc_980">1. 形容词 adjective</h4>
+
+<h5 id="toc_981">1. 释义：making a lot of noise   中文释义：响亮的；大声的</h5>
+
+<ul>
+<li>例句：The music is too loud for the library.  /  音乐声对图书馆来说太大了。</li>
+<li>比较级与最高级：louder；loudest</li>
+<li>反义词：quiet</li>
+</ul>
+
+<h4 id="toc_982">2. 副词 adverb</h4>
+
+<h5 id="toc_983">1. 释义：in a loud way   中文释义：大声地</h5>
+
+<ul>
+<li>例句：Please do not talk loud in the reading room.  /  请不要在阅览室大声说话。</li>
+</ul>
+
+<h4 id="toc_984">常用短语与考试搭配</h4>
+
+<h4 id="toc_985">1. <code>speak loud and clear</code>     清楚响亮地说</h4>
+
+<ul>
+<li>例句：Please speak loud and clear so everyone can hear.  /  请说得清楚响亮些，让每个人都能听见。</li>
+</ul>
+
+<h4 id="toc_986">2. <code>too loud</code>     太大声</h4>
+
+<ul>
+<li>例句：The TV is too loud. Please turn it down.  /  电视声音太大了。请调小一点。</li>
+</ul>
+
+<h4 id="toc_987">词族与词根</h4>
+
+<ul>
+<li>相关词：loudly（adv. 大声地）；loudness（n. 响度）。</li>
+<li>推荐背诵：loudly。</li>
+<li>记忆方法：loud 可作形容词；作副词较口语化，正式写作中常用 loudly。</li>
+</ul>
+
+<h4 id="toc_988">易错点</h4>
+
+<ul>
+<li><code>loud</code> 可作副词但较口语化；修饰多数动词时，作文中优先使用 <code>loudly</code>。</li>
+</ul>
+
+<hr>
+
+
+
+
+</body>
+
+</html>
