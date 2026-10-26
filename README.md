@@ -1,5 +1,9 @@
 # 小美证件照官网
 
+## 默认语言入口修正
+
+用户确认App Store及Google Play后台均填写根网址，因此保留原有默认英文行为：根地址及没有lang=zh的index.html请求跳转index_en.html；?lang=zh显示中文。网址、商店后台配置和新增页面均不变。下方首轮“根地址不再默认跳转”的说明为历史实现，已由此修正替代。
+
 GitHub Pages生产分支为gh-pages；首版优化已通过PR #1合并，2026-10-27核实部署成功；后续审查修正在codex/ai-discovery-review。合并到gh-pages会更新生产网站。
 
 ## 本轮范围
