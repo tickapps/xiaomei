@@ -1,0 +1,5 @@
+# Keep maintenance instructions out of the published website.
+exclude:
+  - AGENTS.md
+  - README.md
+  - VALIDATION.md
